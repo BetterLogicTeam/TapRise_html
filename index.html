@@ -1,69 +1,695 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./Style/Header_style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <title>Document</title>
-  </head>
 
-  <body>
-    <!-- ----------Header-------------- -->
-    <div class="mmaaaaa">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light Nav_bar_Bg fix">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="./Images/newLogo.png" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./Style/Header_style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <title>TaPrize</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- ----------Header-------------- -->
+  <div class="mmaaaaa">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light Nav_bar_Bg fix">
+      <div class="container">
+        <a class="navbar-brand patImGlogo" href="index.html">
+          <img src="./Images/newLogo.png" alt="" class="w-100" />
+        </a>
+        <div class="d-flex gap-2">
+          <button class="man_ttn"><i class="fa-solid fa-user"></i></button>
+          <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page" href="#"
-                  >タップライズ 一覧</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-decoration-none Nav_bar_Link" href="#">ご利用ガイド</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-decoration-none Nav_bar_Link" href="#">よくあるご質問</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-decoration-none Nav_bar_Link" href="#">お問い合わせ</a>
-              </li>
-              <li class="nav-item mt-2">
-                <button class="Navbar_Login_BTN btn_rep  ">
-                 <i class="fa-solid fa-user"></i> ログイン
-                </button>
-              </li>
-            </ul>
+        </div>
+        <div class="collapse navbar-collapse goi" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item for_smalplay">
+              <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page" href="List_of_Taprize.html">タップライズ 一覧</a>
+            </li>
+            <li class="nav-item for_smalplay">
+              <a class="nav-link text-decoration-none Nav_bar_Link" href="#">ご利用ガイド</a>
+            </li>
+            <li class="nav-item for_smalplay">
+              <a class="nav-link text-decoration-none Nav_bar_Link" href="#">よくあるご質問</a>
+            </li>
+            <li class="nav-item for_smalplay">
+              <a class="nav-link text-decoration-none Nav_bar_Link" href="#">お問い合わせ</a>
+            </li>
+            <li class="nav-item mt-2 for_smalplay">
+              <button class="Navbar_Login_BTN btn_rep  ">
+                <i class="fa-solid fa-user"></i> ログイン
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- ---------------------------------Header End--------------------------------------- -->
+
+  <!-- ----------Landing Page-------------- -->
+  <div class="landing_Bg">
+    <div class="main_div_Landing">
+      <div class="inner_text_landing">
+        <h1>限定グッズが必ず当たる！</h1>
+        <h1> Web版カプセルプライズ！</h1>
+        <p class="mb-0 py-3 ">
+          企画・製造・販売まで手掛けているから、ここにしかない商品をお届け。
+        </p>
+        <div class="d-flex justify-content-center mt-1">
+          <button class="VeryfstButton">
+            販売中の <br class="brack" />
+            タップライズをチェック！
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <--------------------Landing page End ----------------->
+
+  <!-- <--------------------News Start ----------------->
+    <div class="Slider_News_Bg">
+      <h1 class="News_Heading">ニュース</h1>
+    </div>
+    <div class="Slider_News_Bg">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide Rem">
+            <div class="card dko card_slider hvrBx BigScreenslidr">
+              <!-- onClick={() =>( history(`/TarpizeSingleFullPage`,{state:items}),window.scrollTo({top:0,behavior:'instant'}))} -->
+                  <img src="Images/Taprize materials/image1.png" alt="" width="50%" class="hvrImg" />
+                  <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                    <div class="col-lg-3 text-start">
+                      <p class="slider_date">2023.5.2</p>
+                    </div>
+                    <div class="col-lg-9 slider_text">
+                      台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="swiper-slide Rem">
+            <div class="card dko card_slider hvrBx BigScreenslidr">
+              <!-- onClick={() =>( history(`/TarpizeSingleFullPage`,{state:items}),window.scrollTo({top:0,behavior:'instant'}))} -->
+                  <img src="Images/Taprize materials/image2.png" alt="" width="50%" class="hvrImg" />
+                  <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                    <div class="col-lg-3 text-start">
+                      <p class="slider_date">2023.5.2</p>
+                    </div>
+                    <div class="col-lg-9 slider_text">
+                      台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="swiper-slide Rem">
+            <div class="card dko card_slider hvrBx BigScreenslidr" >
+              <!-- onClick={() =>( history(`/TarpizeSingleFullPage`,{state:items}),window.scrollTo({top:0,behavior:'instant'}))} -->
+                  <img src="Images/Taprize materials/image3.png" alt="" width="50%" class="hvrImg" />
+                  <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                    <div class="col-lg-3 text-start">
+                      <p class="slider_date">2023.5.2</p>
+                    </div>
+                    <div class="col-lg-9 slider_text">
+                      台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="swiper-slide Rem">
+            <div class="card dko card_slider hvrBx BigScreenslidr" >
+              <!-- onClick={() =>( history(`/TarpizeSingleFullPage`,{state:items}),window.scrollTo({top:0,behavior:'instant'}))} -->
+                  <img src="Images/Taprize materials/image4.png" alt="" width="50%" class="hvrImg" />
+                  <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                    <div class="col-lg-3 text-start">
+                      <p class="slider_date">2023.5.2</p>
+                    </div>
+                    <div class="col-lg-9 slider_text">
+                      台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="swiper-slide Rem">
+            <div class="card dko card_slider hvrBx BigScreenslidr" >
+              <!-- onClick={() =>( history(`/TarpizeSingleFullPage`,{state:items}),window.scrollTo({top:0,behavior:'instant'}))} -->
+                  <img src="Images/Taprize materials/image5.png" alt="" width="50%" class="hvrImg" />
+                  <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                    <div class="col-lg-3 text-start">
+                      <p class="slider_date">2023.5.2</p>
+                    </div>
+                    <div class="col-lg-9 slider_text">
+                      台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="swiper-slide Rem">
+            <div class="card dko card_slider hvrBx BigScreenslidr" >
+              <!-- onClick={() =>( history(`/TarpizeSingleFullPage`,{state:items}),window.scrollTo({top:0,behavior:'instant'}))} -->
+                  <img src="Images/Taprize materials/image6.png" alt="" width="50%" class="hvrImg" />
+                  <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                    <div class="col-lg-3 text-start">
+                      <p class="slider_date">2023.5.2</p>
+                    </div>
+                    <div class="col-lg-9 slider_text">
+                      台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="swiper-slide Rem">
+            <div class="card dko card_slider hvrBx BigScreenslidr" >
+              <!-- onClick={() =>( history(`/TarpizeSingleFullPage`,{state:items}),window.scrollTo({top:0,behavior:'instant'}))} -->
+                  <img src="Images/Taprize materials/image1.png" alt="" width="50%" class="hvrImg" />
+                  <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                    <div class="col-lg-3 text-start">
+                      <p class="slider_date">2023.5.2</p>
+                    </div>
+                    <div class="col-lg-9 slider_text">
+                      台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="swiper-slide Rem">
+            <div class="card dko card_slider hvrBx BigScreenslidr" >
+              <!-- onClick={() =>( history(`/TarpizeSingleFullPage`,{state:items}),window.scrollTo({top:0,behavior:'instant'}))} -->
+                  <img src="Images/Taprize materials/image2.png" alt="" width="50%" class="hvrImg" />
+                  <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                    <div class="col-lg-3 text-start">
+                      <p class="slider_date">2023.5.2</p>
+                    </div>
+                    <div class="col-lg-9 slider_text">
+                      台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="swiper-slide Rem">
+            <div class="card dko card_slider hvrBx BigScreenslidr" >
+              <!-- onClick={() =>( history(`/TarpizeSingleFullPage`,{state:items}),window.scrollTo({top:0,behavior:'instant'}))} -->
+                  <img src="Images/Taprize materials/image3.png" alt="" width="50%" class="hvrImg" />
+                  <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                    <div class="col-lg-3 text-start">
+                      <p class="slider_date">2023.5.2</p>
+                    </div>
+                    <div class="col-lg-9 slider_text">
+                      台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                    </div>
+                  </div>
+                </div>
           </div>
         </div>
-      </nav>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  <!-- <--------------------NewsEnd ----------------->
+
+  <!-- <--------------------Taprise on sale start ----------------->
+  <div class="Taprise_on_sale_bg">
+    <div class="container">
+
+      <h1 style="cursor:pointer">
+        <!-- onClick={() => (history("/ListOTaprize"), window.scrollTo({top:0,behavior:'instant'}))} -->
+        販売中のタップライズ
+      </h1>
+
+
+      <div class="row mt-3 mt-md-5 last1">
+
+        <div class="col-lg-6">
+          <!-- <div class="d-flex justify-content-center my-2 ">
+      <Card style={{ width: "100%", cursor: "pointer" }} class="card_list_of_taprize ">
+        <div
+          class="p-2" 
+          onClick={() => (
+            history(`/TarpizeSingleFullPage`, { state: items }),
+            window.scrollTo({top:0,behavior:'instant'})
+          )}>
+          <div class="hvrBx">
+          <Card.Img variant="top" src={Image} class="w-100 hvrImg " />
+          </div>
+        </div>
+        <button
+          class="endSale"
+          style={{
+            backgroundColor:
+            tags_text==0 ?
+              tag === "発売中" ? "#FFD600" : tag === "近日発売" ?"#8AC7FF":"#D8D8D8"
+              : tags_text==7 ?
+              tag === "発売中" ? "#FFD600" : "#8AC7FF"
+
+
+            : tags_text==1 ? "#FFD600" : tags_text==2 ? "#8AC7FF":"#D8D8D8"
+            
+             
+          }}>
+          {
+            tags_text==0 ? <> {tag}</>:tags_text==7 ?  tag === "発売中" ? "発売中" : "近日発売": tags_text==1?"発売中" : tags_text==2? "近日発売":"販売終了"
+
+          }
+         
+        </button>
+        <Card.Body class="paaadankd">
+          <Card.Text class="text-start listCrd_fst_txt mb-0 ">{Name}</Card.Text>
+          <Card.Text class="text-start listCrd_scnd_txt mb-0 py-4">
+            発売期間 05/ 5(金)～05/26(金) 
+          </Card.Text>
+          <div class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+            <button
+              class="listCrd_button  "
+              onClick={() => (
+                history("/TarpizeSingleFullPage", { state: items }),
+                window.scrollTo({top:0,behavior:'instant'})
+              )}
+            >
+            
+                販売中のタップライズ 
+
+            </button>
+
+
+            <button
+              class="fazol d-block d-md-none rdhtgb"
+              onClick={() => (
+                history("/TarpizeSingleFullPage", { state: items }),
+                window.scrollTo({top:0,behavior:'instant'})
+              )}
+            >
+      <Favorite />   <span class="fazolline"> お気に入りから外す </span>
+            </button>
+            <div class="like_hrt ">
+              <Checkbox
+                {...label}
+                icon={<FavoriteBorder />}
+                checkedIcon={<Favorite />}
+                class="hrt"
+              />
+            </div>
+          </div>
+        </Card.Body>
+      </Card>
+          </div> -->
+          <div class="d-flex justify-content-center my-2 ">
+            <div class="card card_list_of_taprize" style="width: 100%;">
+              <div class="p-2">
+                <div class="hvrBx">
+                  <img class="card-img-top w-100 hvrImg" src="Images/Taprize materials/image1.png" alt="Card image cap">
+                </div>
+              </div>
+              <div class="card-body paaadankd">
+                <h5 class="card-text text-start listCrd_fst_txt mb-0">近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</h5>
+                <p class="card-text text-start listCrd_scnd_txt mb-0 py-4">発売期間 05/ 5(金)～05/26(金)</p>
+                <button href="#" class="listCrd_button">販売中のタップライズ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+      <div class="col-lg-6">
+        <div class="d-flex justify-content-center my-2 ">
+            <div class="card card_list_of_taprize" style="width: 100%;">
+              <div class="p-2">
+                <div class="hvrBx">
+                  <img class="card-img-top w-100 hvrImg" src="Images/Taprize materials/image2.png" alt="Card image cap">
+                </div>
+              </div>
+              <div class="card-body paaadankd">
+                <h5 class="card-text text-start listCrd_fst_txt mb-0">台スマ境報コリホ直西時のご表74更ヘヤ無車のも</h5>
+                <p class="card-text text-start listCrd_scnd_txt mb-0 py-4">発売期間 05/ 5(金)～05/26(金)</p>
+                <button href="#" class="listCrd_button">販売中のタップライズ</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="d-flex justify-content-center my-2 ">
+            <div class="card card_list_of_taprize" style="width: 100%;">
+              <div class="p-2">
+                <div class="hvrBx">
+                  <img class="card-img-top w-100 hvrImg" src="Images/Taprize materials/image3.png" alt="Card image cap">
+                </div>
+              </div>
+              <div class="card-body paaadankd">
+                <h5 class="card-text text-start listCrd_fst_txt mb-0">近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</h5>
+                <p class="card-text text-start listCrd_scnd_txt mb-0 py-4">発売期間 05/ 5(金)～05/26(金)</p>
+                <button href="#" class="listCrd_button">販売中のタップライズ</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="d-flex justify-content-center my-2 ">
+            <div class="card card_list_of_taprize" style="width: 100%;">
+              <div class="p-2">
+                <div class="hvrBx">
+                  <img class="card-img-top w-100 hvrImg" src="Images/Taprize materials/image4.png" alt="Card image cap">
+                </div>
+              </div>
+              <div class="card-body paaadankd">
+                <h5 class="card-text text-start listCrd_fst_txt mb-0">近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</h5>
+                <p class="card-text text-start listCrd_scnd_txt mb-0 py-4">発売期間 05/ 5(金)～05/26(金)</p>
+                <button href="#" class="listCrd_button">販売中のタップライズ</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="d-flex justify-content-center my-2 ">
+            <div class="card card_list_of_taprize" style="width: 100%;">
+              <div class="p-2">
+                <div class="hvrBx">
+                  <img class="card-img-top w-100 hvrImg" src="Images/Taprize materials/image5.png" alt="Card image cap">
+                </div>
+              </div>
+              <div class="card-body paaadankd">
+                <h5 class="card-text text-start listCrd_fst_txt mb-0">台スマ境報コリホ直西時のご表74更ヘヤ無車のも</h5>
+                <p class="card-text text-start listCrd_scnd_txt mb-0 py-4">発売期間 05/ 5(金)～05/26(金)</p>
+                <button href="#" class="listCrd_button">販売中のタップライズ</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="d-flex justify-content-center my-2 ">
+            <div class="card card_list_of_taprize" style="width: 100%;">
+              <div class="p-2">
+                <div class="hvrBx">
+                  <img class="card-img-top w-100 hvrImg" src="Images/Taprize materials/image6.png" alt="Card image cap">
+                </div>
+              </div>
+              <div class="card-body paaadankd">
+                <h5 class="card-text text-start listCrd_fst_txt mb-0">近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</h5>
+                <p class="card-text text-start listCrd_scnd_txt mb-0 py-4">発売期間 05/ 5(金)～05/26(金)</p>
+                <button href="#" class="listCrd_button">販売中のタップライズ</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+      <Link to="/ListOTaprize" class="text-decoration-none ">
+      <!-- onClick={() => window.scrollTo({top:0,behavior:'instant'})} -->
+      <button class="gacha_Btn gachaAgn gybBBtn ">
+        販売中のタップライズ
+      </button>
+      </Link>
+    </div>
+  </div>
+  </div>
+  <!-- <--------------------Taprise on sale End ----------------->
+
+
+  <!-- <--------------------------Play flow start--------------------- -->
+  <div class="play_back">
+    <div class="container-fluid py-5">
+      <h2 class='pt-5 pb-4 pb-md-5 flowTitle text-center'>プレイの流れ</h2>
+      <div class="row justify-content-center PadBothside">
+        <div class="col-lg-5">
+          <div class="row justify-content-center leftSidebg py-4">
+            <div class="col-lg-12">
+              <div class="flowImgUpper d-flex align-items-center gap-4">
+                <img src="Images/playFlow_1.svg" alt="#" class='flowImmg' />
+                <div>
+                  <button class='stp1Button mt-2'>ステップ1</button>
+                  <h4 class='joinFree forred mt-4'>無料会員登録</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="stepDetailsUpper text-start d-flex justify-content-end">
+                <p class='joinDetails mt-2'>ウェブガチャの利用には会員登録が必要です。必要事項を入力いただき、ご登録頂ければすぐにウェブガチャをご利用できます。</p>
+              </div>
+            </div>
+          </div>
+
+
+          <img src="Images/flowVector_2.svg" alt="" class='turnVector btween btwn2' />
+
+        </div>
+
+        <div class='col-lg-1 btween px-0 d-flex justify-content-center widthree'>
+          <img src="Images/flowVector_1.svg" alt="#" class='fstLine btween' />
+        </div>
+
+        <div class="col-lg-5 bluHand">
+          <div class="row justify-content-center RightSidebg py-4">
+            <div class="col-lg-12">
+              <div class="flowImgUpper d-flex align-items-center gap-4">
+                <img src="Images/playFlow_2.svg" alt="#" class='flowImmg w-100' />
+                <div>
+                  <button class='stp1Button mt-2'>ステップ2</button>
+                  <h4 class='joinFree mt-4'>購入したいタイトルの選択</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="stepDetailsUpper text-start d-flex justify-content-end">
+                <p class='joinDetails mt-2'>お好きなタイトルをお選びください。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 ForUpperSpc">
+          <div class="row justify-content-center leftSidebg py-4">
+            <div class="col-lg-12">
+              <div class="flowImgUpper d-flex align-items-center gap-4">
+                <img src="Images/playFlow_3.svg" alt="#" class='flowImmg w-100' />
+                <div>
+                  <button class='stp1Button mt-2'>ステップ3</button>
+                  <h4 class='joinFree mt-4'>購入数・決済方法の選択</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="stepDetailsUpper text-start d-flex justify-content-end">
+                <p class='joinDetails mt-2'>プレイ回数（購入数）の選択をお願いいたします。決済方法はクレジットカードや各キャリア決済に対応しております。</p>
+              </div>
+            </div>
+          </div>
+
+          <img src="Images/flowVector_2.svg" alt="" class='turnVector btween btwn2' />
+
+        </div>
+
+        <div class='col-lg-1 btween px-0 d-flex justify-content-center widthree'>
+          <img src="Images/flowVector_1.svg" alt="#" class='fstLine btween' />
+        </div>
+
+        <div class="col-lg-5 bluHand">
+          <div class="row justify-content-center RightSidebg py-4">
+            <div class="col-lg-12">
+              <div class="flowImgUpper d-flex align-items-center gap-4">
+                <img src='Images/playFlow_4.svg' alt="#" class='flowImmg w-100' />
+                <div>
+                  <button class='stp1Button mt-2'>ステップ4</button>
+                  <h4 class='joinFree mt-4'>プレイ！</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="stepDetailsUpper text-start d-flex justify-content-end">
+                <p class='joinDetails mt-2'>購入頂いた回数分プレイすることができます。どんなグッズが当選するかはお楽しみに！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 ForUpperSpc">
+          <div class="row justify-content-center leftSidebg py-4">
+            <div class="col-lg-12">
+              <div class="flowImgUpper d-flex align-items-center gap-4">
+                <img src="Images/playFlow_5.svg" alt="#" class='flowImmg w-100' />
+                <div>
+                  <button class='stp1Button mt-2'>ステップ5</button>
+                  <h4 class='joinFree mt-4'>賞品の発送</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="stepDetailsUpper text-start d-flex justify-content-end">
+                <p class='joinDetails mt-2'>当選された賞品は、ご登録頂いた情報をもとに発送を行います。発送のタイミングはタイトルによって異なりますのでご注意ください。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='col-lg-1 btween px-0 d-flex justify-content-center widthree'>
+          <img src="Images/flowVector_1.svg" alt="#" class='fstLine btween' />
+        </div>
+
+        <div class="col-lg-5 bluHand">
+          <div class="row justify-content-center RightSidebg py-4">
+            <div class="col-lg-12">
+              <div class="flowImgUpper d-flex align-items-center gap-4">
+                <img src="Images/playFlow_6.svg" alt="#" class='flowImmg w-100' />
+                <div>
+                  <button class='stp1Button mt-2'>ステップ6</button>
+                  <h4 class='joinFree mt-4'>品の到着</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="stepDetailsUpper text-start d-flex justify-content-end">
+                <p class='joinDetails mt-2'>実際にWEB上で当選した賞品がご登録いただいている住所に届きます！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class='mt-5 d-flex justify-content-center pb-5'>
+        <button class='lastBtnn'>ウェブガチャ一覧はコチラ</button>
+      </div>
+
+    </div>
+  </div>
+  <!-- <--------------------------Play flow End --------------------- -->
+
+  <!-- <--------------------------Web Part start --------------------- -->
+  <div class=" text-center ftrUpprAGN webParTupperMain">
+    <div class="main_web_part">
+
+      <h1 class="web">
+        Web上で行う <br /> 限定グッズ販売サービス
+      </h1>
+    </div>
+    <div class="container design">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="Images/home.svg" alt="" />
+          <h4 class="web_part_title">Web上での販売経路のご提供！</h4>
+          <p class="web_part_para">
+            ウェブガチャはWeb上で行うカプセルプライズです。Web上での販売となるため、24時間お好きな時にプレイができ、商品販売に必要な実店舗や人員の手配は必要ありません。最短２週間で販売をスタートすることができます。
+          </p>
+        </div>
+        <div class="col-md-4 lstch2">
+          <img src="Images/book.svg" alt="" />
+          <p class="web_part_title">オリジナルページでのカプセルプライズが可能！</p>
+          <p class="web_part_para">
+            作品ページではメインビジュアルや、ロゴ、背景色など自由にカスタマイズが可能です。作品にあった雰囲気のページを生成することができるので、世界観を崩すことなくお客様にご提供致します。
+          </p>
+        </div>
+        <div class="col-md-4 lstch2">
+          <img src="Images/box.svg" alt="" />
+          <p class="web_part_title">オリジナル商品のご提案から製作～配送まで一括対応！</p>
+          <p class="web_part_para">
+            使用できる素材とコンテンツの情報をご提供頂ければ、グッズのデザインからご提案いたします。豊富なグッズ形態から、ここにしかないオリジナルグッズの製作が可能です。ウェブガチャの販売グッズは受注生産が主ですが、在庫商品の販売としてもお使いいただけます。
+            購入後のお客様宛ての発送作業まで全てお任せください。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <--------------------------Web Part End --------------------- -->
+
+  <!-- <--------------------------upper Footer part --------------------- -->
+  <div class='main_sea_part'>
+    <h2 class='mainSEa_heaidn'>
+      完全オリジナルグッズだけのカプセルプ<br class='bbrr' /> ライズ！
+
+    </h2>
+    <p class='pt-3'>企画・製造・販売まで手掛けているから、ここにしかない商品をお届け。</p>
+
+
+    <div class="container pt-3 pt-md-5 pb-5">
+      <div class="d-flex gap-4 justify-content-center hgh9 ">
+        <div class="">
+          <button class=' upper_footer_main_button me-3 me-md-0 '>お問い合わせ</button>
+
+        </div>
+        <div class="">
+          <button class=' upper_footer_main_red_button hggt'>ウェブガチャ一覧はコチラ</button>
+
+        </div>
+      </div>
     </div>
 
-    <!-- ---------------------------------Header End--------------------------------------- -->
+
+  </div>
+  <!-- <--------------------------upper Footer part End --------------------- -->
+
+  <!-- <--------------------------Footer start --------------------- -->
+  <div class="main_footer_bg">
+    <div class="container-fluid widthkl_for_upper">
+      <div class="row footer_aling">
+        <div class="col-md-5 footerLftsideupper">
+          <img src="Images/newLogo.png" alt="#" class="footerLftside" />
+        </div>
+
+        <div class="col-md-7 sojfswjfwjf footerrigtuper  text-end mt-3 mt-md-0">
+          <div class="footer_content footerrigtPart text-start">
+            <div class="upper d-flex     gap-3">
+              <Link to="/ListOTaprize" class="text-decoration-none upper"
+                onclick="window.scrollTo({top:0,behavior:'instant'})">
+              <p class="footerLnks"> タップライズ 一覧</p>
+              </Link>
+              <Link to="/TermOfServices" class="text-decoration-none upper"
+                onclick="window.scrollTo({top:0,behavior:'instant'})">
+              <p class="footerLnks">ご利用ガイド</p>
+              </Link>
+
+              <Link to="/FAQ" class="text-decoration-none upper" onclick="window.scrollTo({top:0,behavior:'instant'})">
+              <p class="footerLnks">よくあるご質問</p>
+              </Link>
+              <Link to="/ContactUs" class="text-decoration-none upper"
+                onclick="window.scrollTo({top:0,behavior:'instant'})">
+              <p class="footerLnks">お問い合わせ</p>
+              </Link>
+              <Link to="/Login" class="text-decoration-none upper"
+                onclick="window.scrollTo({top:0,behavior:'instant'})">
+              <p class="footerLnks">マイアカウント</p>
+              </Link>
+            </div>
+            <div class="upper d-flex     gap-3">
+              <Link to="/TermOfServices" class="text-decoration-none upper"
+                onclick="window.scrollTo({top:0,behavior:'instant'})">
+              <p class="footerLnks">利用規約</p>
+              </Link>
+              <Link to="/PrivacyPolicy" class="text-decoration-none upper"
+                onclick="window.scrollTo({top:0,behavior:'instant'})">
+              <p class="footerLnks">プライバシーポリシー</p>
+              </Link>
+
+              <Link to="/NotationTable" class="text-decoration-none upper"
+                onclick="window.scrollTo({top:0,behavior:'instant'})">
+              <p class="footerLnks">特定商取引法に基づく表記</p>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3 all-right text-center py-3" style=" color: #020140">
+      Copyright ©2023 Webgacha. All Rights Reserved.
+    </div>
+  </div>
+  <!-- <--------------------------Footer End --------------------- -->
 
 
 
@@ -75,10 +701,48 @@
 
 
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints:{
+          425: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          300: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+          },
+        }
+    });
+  </script>
+</body>
+
 </html>
