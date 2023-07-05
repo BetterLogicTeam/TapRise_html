@@ -1,0 +1,188 @@
+.edit_main_page {
+    background: #F2F6FF !important;
+    padding: 30px 20px !important;
+}
+
+.edit_text {
+    font-size: 16px !important;
+    color: #020140 !important;
+    /* font-weight: 600 !important; */
+}
+
+.edit_textt {
+    font-size: 14px !important;
+    color: #020140 !important;
+    font-weight: 400 !important;
+}
+
+.EditPageOne_tab{
+    text-decoration: none;
+    color: #E60058;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.EditPageOne_tab:hover{
+    text-decoration: none;
+    color: #E60058;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.editED_white {
+    border: 1px solid #E60058;
+    border-radius: 45px;
+    background: #FFFFFF;
+    height: 55px;
+    color: #E60058;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 350px;
+}
+
+@media only screen and (max-width:600px) {
+    .editPageLsttBotton {
+        margin-top: 1rem !important;
+    }
+    .notataion_border p{
+        font-size: 11px ;
+    }
+
+    .h6_text {
+        text-transform: uppercase !important;
+        font-weight: 600 !important;
+        font-size: 18px !important;
+
+    }
+
+    .edit_main_page {
+        padding: 30px 10px !important;
+    }
+
+    .veryLsBtn {
+        width: 100% !important;
+    }
+
+
+}
+
+@media screen and (max-width:992px) {
+    .editED_white {
+        width: 100% !important;
+    }
+
+    .editEDE_red {
+        width: 100% !important;
+        margin-top: 1rem;
+    }
+
+    .myPageLastButton_white {
+        width: 100% !important;
+    }
+
+
+    .myPageLastButton_red {
+        width: 100% !important;
+
+    }
+}
+
+.EditPageThree_tab{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.EditPageThree_tab:hover{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.editEDE_red {
+    width: 350px;
+    height: 55px;
+    background: #E60058;
+    /* White */
+
+    border: 1px solid #FFFFFF;
+    border-radius: 45px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+.h3_text {
+    font-size: 36px !important;
+    font-weight: 500 !important;
+    color: #020140 !important;
+}
+
+.main_cont {
+    text-align: center;
+    background-color: white !important;
+    border: 1px solid #D2E9FF;
+    border-radius: 12px !important;
+}
+
+.border_table {
+    border-radius: 12px 0px 0px 0px;
+}
+
+.border_table1 {
+    border-radius: 0px 12px 0px 0px;
+}
+
+.border_table2 {
+    border-radius: 0px 0px 0px 12px;
+}
+
+.border_table3 {
+    border-radius: 0px 0px 12px 0px;
+}
+
+.tableBg {
+    background-color: white;
+}
+
+.notataion_border {
+    border: 1px solid #D2E9FF;
+}
+
+.notataion_border p {
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 140%;
+    color: #020140;
+}
+
+@media only screen and (max-width: 349px){
+.h3_text {
+    font-size: 25px !important;
+}
+}

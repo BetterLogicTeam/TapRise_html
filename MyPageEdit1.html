@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Style/MyPageEdit1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="background-color: #f2f6ff">
+      <div class="container py-5">
+        <h3 class="myEdidTitle text-center">会員情報の変更</h3>
+
+        <div class="row justify-content-center my-5 BothPad">
+          <div
+            class="col-lg-8 Name"
+            style="
+              background-color: #ffffff;
+              border-radius: 12px;
+              padding: 32px 30px;
+            "
+          >
+            <div class="row justify-content-center py-2">
+              <h3 class="nameTitle">
+                お名前（フリガナ）
+                <span style="color: rgba(230, 0, 88, 1)">*</span>
+              </h3>
+              <div class="col-lg-12 mt-3">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <form>
+                      <div class="mb-3">
+                        <label
+                          for="exampleInputEmail1"
+                          class="form-label NameFld"
+                          >姓</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control Fld RegisterPHcolor"
+                          placeholder="山田"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-lg-6">
+                    <form>
+                      <div class="mb-3">
+                        <label
+                          for="exampleInputEmail2"
+                          class="form-label NameFld"
+                          >名</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control Fld RegisterPHcolor"
+                          placeholder="太郎"
+                          id="exampleInputEmail2"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 mt-3">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <form>
+                        <div class="mb-3">
+                          <label
+                            for="exampleInputEmail1"
+                            class="form-label NameFld"
+                            >セイ</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control Fld RegisterPHcolor"
+                            placeholder="ヤマダ"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-lg-6">
+                      <form>
+                        <div class="mb-3">
+                          <label
+                            for="exampleInputEmail2"
+                            class="form-label NameFld"
+                            >メイ</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control Fld RegisterPHcolor"
+                            placeholder="タロウ"
+                            id="exampleInputEmail2"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-8 py-3 addressUpper"
+            style="
+              background-color: #ffffff;
+              border-radius: 12px;
+              padding: 32px 30px;
+            "
+          >
+            <div class="row justify-content-center py-2">
+              <h3 class="nameTitle">
+                住所
+                <span style="color: rgba(230, 0, 88, 1)">*</span>
+              </h3>
+              <div class="col-lg-12 mt-3">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <form>
+                      <div class="mb-3">
+                        <label
+                          for="exampleInputEmail1"
+                          class="form-label NameFld"
+                          >〒</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control Fld RegisterPHcolor"
+                          placeholder="例：141-0022"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                        <a
+                          href="https://www.post.japanpost.jp/zipcode/"
+                          target="_blank"
+                          class="p_pink"
+                        >
+                          郵便番号がわからない方はこちら
+                        </a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 mt-3">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <label htmlFor="sssss" class="NameFld"> 都道府県 </label>
+                      <select
+                        name="state"
+                        class="BDMain dop_mainond form-select shadow-none"
+                      >
+                        <option value="">選択してください</option>
+                        <option value="北海道">北海道</option>
+                        <option value="青森県">青森県</option>
+                        <option value="岩手県">岩手県</option>
+                        <option value="宮城県">宮城県</option>
+                        <option value="秋田県">秋田県</option>
+                        <option value="山形県">山形県</option>
+                        <option value="福島県">福島県</option>
+                        <option value="茨城県">茨城県</option>
+                        <option value="栃木県">栃木県</option>
+                        <option value="群馬県">群馬県</option>
+                        <option value="埼玉県">埼玉県</option>
+                        <option value="千葉県">千葉県</option>
+                        <option value="東京都">東京都</option>
+                        <option value="神奈川県">神奈川県</option>
+                        <option value="新潟県">新潟県</option>
+                        <option value="富山県">富山県</option>
+                        <option value="石川県">石川県</option>
+                        <option value="福井県">福井県</option>
+                        <option value="山梨県">山梨県</option>
+                        <option value="長野県">長野県</option>
+                        <option value="岐阜県">岐阜県</option>
+                        <option value="静岡県">静岡県</option>
+                        <option value="愛知県">愛知県</option>
+                        <option value="三重県">三重県</option>
+                        <option value="滋賀県">滋賀県</option>
+                        <option value="京都府">京都府</option>
+                        <option value="大阪府">大阪府</option>
+                        <option value="兵庫県">兵庫県</option>
+                        <option value="奈良県">奈良県</option>
+                        <option value="和歌山県">和歌山県</option>
+                        <option value="鳥取県">鳥取県</option>
+                        <option value="島根県">島根県</option>
+                        <option value="岡山県">岡山県</option>
+                        <option value="広島県">広島県</option>
+                        <option value="山口県">山口県</option>
+                        <option value="徳島県">徳島県</option>
+                        <option value="香川県">香川県</option>
+                        <option value="愛媛県">愛媛県</option>
+                        <option value="高知県">高知県</option>
+                        <option value="福岡県">福岡県</option>
+                        <option value="佐賀県">佐賀県</option>
+                        <option value="長崎県">長崎県</option>
+                        <option value="熊本県">熊本県</option>
+                        <option value="大分県">大分県</option>
+                        <option value="宮崎県">宮崎県</option>
+                        <option value="鹿児島県">鹿児島県</option>
+                        <option value="沖縄県">沖縄県</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6">
+                      <form class="">
+                        <div class="">
+                          <label
+                            class="NameFld form-label"
+                            for="exampleForm.ControlInput1"
+                            >市区町村</label
+                          ><input
+                            placeholder="品川区"
+                            type="text"
+                            id="exampleForm.ControlInput1"
+                            class="Fld RegisterPHcolor form-control"
+                          />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-lg-6 mt-3">
+                      <form class="">
+                        <div class="">
+                          <label
+                            class="NameFld form-label"
+                            for="exampleForm.ControlInput1"
+                            >番地</label
+                          ><input
+                            placeholder="西五反田 1-1-11"
+                            type="text"
+                            id="exampleForm.ControlInput1"
+                            class="Fld RegisterPHcolor form-control"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                      <form class="">
+                        <div class="">
+                          <label
+                            class="NameFld form-label"
+                            for="exampleForm.ControlInput1"
+                            >建物・マンション・部屋番号</label
+                          ><input
+                            placeholder="五反田マンション　101号室"
+                            type="text"
+                            id="exampleForm.ControlInput1"
+                            class="Fld RegisterPHcolor form-control"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-8 py-3 dateOfBirthUpper mt-5"
+            style="
+              background-color: rgb(255, 255, 255);
+              border-radius: 12px;
+              padding: 32px 30px;
+            "
+          >
+            <div class="row justify-content-start py-2">
+              <h3 class="nameTitle">
+                生年月日 <span style="color: rgb(230, 0, 88)">*</span>
+              </h3>
+              <div class="Register_ant row bdsltmainup">
+                <div class="col-lg-3 bdDateUpper">
+                  <label for="sssss" class="passw">年</label
+                  ><select
+                    class="BDMain dop_mainond form-select shadow-none"
+                    aria-label="Default select example"
+                  >
+                    <option>1990</option>
+                    <option value="1924">1924</option>
+                    <option value="1925">1925</option>
+                    <option value="1926">1926</option>
+                    <option value="1927">1927</option>
+                    <option value="1928">1928</option>
+                    <option value="1929">1929</option>
+                    <option value="1930">1930</option>
+                    <option value="1931">1931</option>
+                    <option value="1932">1932</option>
+                    <option value="1933">1933</option>
+                    <option value="1934">1934</option>
+                    <option value="1935">1935</option>
+                    <option value="1936">1936</option>
+                    <option value="1937">1937</option>
+                    <option value="1938">1938</option>
+                    <option value="1939">1939</option>
+                    <option value="1940">1940</option>
+                    <option value="1941">1941</option>
+                    <option value="1942">1942</option>
+                    <option value="1943">1943</option>
+                    <option value="1944">1944</option>
+                    <option value="1945">1945</option>
+                    <option value="1946">1946</option>
+                    <option value="1947">1947</option>
+                    <option value="1948">1948</option>
+                    <option value="1949">1949</option>
+                    <option value="1950">1950</option>
+                    <option value="1951">1951</option>
+                    <option value="1952">1952</option>
+                    <option value="1953">1953</option>
+                    <option value="1954">1954</option>
+                    <option value="1955">1955</option>
+                    <option value="1956">1956</option>
+                    <option value="1957">1957</option>
+                    <option value="1958">1958</option>
+                    <option value="1959">1959</option>
+                    <option value="1960">1960</option>
+                    <option value="1961">1961</option>
+                    <option value="1962">1962</option>
+                    <option value="1963">1963</option>
+                    <option value="1964">1964</option>
+                    <option value="1965">1965</option>
+                    <option value="1966">1966</option>
+                    <option value="1967">1967</option>
+                    <option value="1968">1968</option>
+                    <option value="1969">1969</option>
+                    <option value="1970">1970</option>
+                    <option value="1971">1971</option>
+                    <option value="1972">1972</option>
+                    <option value="1973">1973</option>
+                    <option value="1974">1974</option>
+                    <option value="1975">1975</option>
+                    <option value="1976">1976</option>
+                    <option value="1977">1977</option>
+                    <option value="1978">1978</option>
+                    <option value="1979">1979</option>
+                    <option value="1980">1980</option>
+                    <option value="1981">1981</option>
+                    <option value="1982">1982</option>
+                    <option value="1983">1983</option>
+                    <option value="1984">1984</option>
+                    <option value="1985">1985</option>
+                    <option value="1986">1986</option>
+                    <option value="1987">1987</option>
+                    <option value="1988">1988</option>
+                    <option value="1989">1989</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 bdDateUpper">
+                  <label for="sssss" class="passw bddateoption">月</label
+                  ><select
+                    name="birthday_month"
+                    class="BDMain dop_mainond form-select shadow-none"
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 bdDateUpper">
+                  <label for="sssss" class="passw bddateoption"> 日</label
+                  ><select
+                    id="sel-birth-day"
+                    name="birthday_day"
+                    class="BDMain dop_mainond form-select shadow-none"
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-8 py-3 mt-5"
+            style="
+              background-color: rgb(255, 255, 255);
+              border-radius: 12px;
+              padding: 32px 30px;
+            "
+          >
+            <h3 class="nameTitle">
+              性別 <span style="color: rgb(230, 0, 88)">*</span>
+            </h3>
+            <div class="Register_ant radio-container">
+              <div class="col-lg-4">
+                <div class="left_in9 left_in1" id="div1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                      value="red"
+                    />
+                    <label
+                      class="clr_chhha"
+                      class="form-check-label"
+                      for="flexRadioDefault1"
+                    >
+                      男性
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="left_in9 left_in1" id="div2">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                      value="green"
+                    />
+                    <label
+                      class="clr_chhha"
+                      class="form-check-label"
+                      for="flexRadioDefault2"
+                    >
+                      女性
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="left_in9 left_in1" id="div3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault3"
+                      value="blue"
+                    />
+                    <label
+                      class="clr_chhha"
+                      class="form-check-label"
+                      for="flexRadioDefault3"
+                    >
+                      その他
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-8 py-3 addressUpper"
+            style="
+              background-color: rgb(255, 255, 255);
+              border-radius: 12px;
+              padding: 32px 30px;
+            "
+          >
+            <div class="row justify-content-center py-2">
+              <h3 class="nameTitle">
+                電話番号 <span style="color: rgb(230, 0, 88)">*</span>
+              </h3>
+              <div class="col-lg-12 mt-3">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <form class="">
+                      <div class="">
+                        <input
+                          placeholder="090 - 1234 - 5678 "
+                          type="text"
+                          id="exampleForm.ControlInput1"
+                          class="Fld RegisterPHcolor2 form-control"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="col-lg-6 text-start d-flex align-items-center fld2Upper"
+                  >
+                    <p class="mb-0 classs_edit_textkadk">
+                      <span class="star_clr2"> * </span
+                      >半角数字で入力してください。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-8 py-3 addressUpper"
+            style="
+              background-color: rgb(255, 255, 255);
+              border-radius: 12px;
+              padding: 32px 30px;
+            "
+          >
+            <div class="row justify-content-center py-2">
+              <h3 class="nameTitle">
+                メールアドレス <span style="color: rgb(230, 0, 88)">*</span>
+              </h3>
+              <div class="col-lg-12 mt-3">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <form class="">
+                      <div class="">
+                        <input
+                          placeholder=""
+                          type="email"
+                          id="exampleForm.ControlInput1"
+                          class="Fld RegisterPHcolor2 form-control"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-lg-6 text-start fld2Upper">
+                    <p class="mb-0 maildetail">
+                      <span class="star_clr2"> * </span>
+                      ドメイン指定受信をご利用の場合は、「@zenco.co.jp」からのメールが受信できるよう設定を行ってください。
+                    </p>
+                    <p class="mb-0 maildetail">
+                      <span class="star_clr2"> * </span>
+                      このメールアドレスがログイン時のIDとなります。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-8 py-3 addressUpper"
+            style="
+              background-color: rgb(255, 255, 255);
+              border-radius: 12px;
+              padding: 32px 30px;
+            "
+          >
+            <div class="row justify-content-center py-2">
+              <h3 class="nameTitle">
+                パスワード <span style="color: rgb(230, 0, 88)">*</span>
+              </h3>
+              <div class="col-lg-12 mt-3">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <form class="">
+                      <div class="">
+                        <input
+                          placeholder="*******"
+                          type="password"
+                          id="exampleForm.ControlInput1"
+                          class="Fld form-control"
+                        />
+                      </div>
+                    </form>
+                    <p class="mb-0 mt-2 passwordDetail">
+                      <span class="star_clr2"> *</span
+                      >半角英数字50文字以内で入力してください。
+                    </p>
+                  </div>
+                  <div class="col-lg-6 text-start fld2Upper">
+                    <form class="">
+                      <div class="">
+                        <input
+                          placeholder="*******"
+                          type="password"
+                          id="exampleForm.ControlInput1"
+                          class="Fld form-control"
+                        />
+                      </div>
+                    </form>
+                    <p class="mb-0 mt-2 passwordDetail">
+                      <span class="star_clr2"> *</span
+                      >確認のためパスワードを再入力してください。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-8 py-3 mt-5"
+            style="
+              background-color: rgb(255, 255, 255);
+              border-radius: 12px;
+              padding: 32px 30px;
+            "
+          >
+            <h3 class="nameTitle">
+              メールマガジン <span style="color: rgb(230, 0, 88)">*</span>
+            </h3>
+            <div class="row justify-content-center py-2 mt-3">
+              <p class="magadetail">
+                メールマガジンにて、新商品やお得な情報などをお送りしています。
+              </p>
+              <div class="Register_ant">
+                <div class="col-lg-6">
+                  <div class="left_in9 left_in1" id="div4">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault4"
+                        value="white"
+                      />
+                      <label
+                        class="clr_chhha"
+                        class="form-check-label"
+                        for="flexRadioDefault4"
+                      >
+                        受け取る
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="left_in9 left_in1" id="div5">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault5"
+                        value="brown"
+                      />
+                      <label
+                        class="clr_chhha"
+                        class="form-check-label"
+                        for="flexRadioDefault5"
+                      >
+                        受け取らない
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-8 py-3 mt-5"
+            style="
+              background-color: rgb(255, 255, 255);
+              border-radius: 12px;
+              padding: 32px 30px;
+            "
+          >
+            <h3 class="nameTitle">配信モードをオンにしますか？</h3>
+            <div class="row justify-content-center py-2 mt-3">
+              <div class="Register_ant">
+                <div class="col-lg-6">
+                  <div class="left_in9 left_in1" id="div6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault6"
+                        value="gray"
+                      />
+                      <label
+                        class="clr_chhha"
+                        class="form-check-label"
+                        for="flexRadioDefault6"
+                      >
+                        はい
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="left_in9 left_in1" id="div7">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault7"
+                        value="orange"
+                      />
+                      <label
+                        class="clr_chhha"
+                        class="form-check-label"
+                        for="flexRadioDefault7"
+                      >
+                        いいえ
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-8 py-3 mt-5"
+            style="
+              background-color: rgb(255, 255, 255);
+              border-radius: 12px;
+              padding: 32px 30px;
+            "
+          >
+            <h3 class="nameTitle">クーポン利用</h3>
+            <div class="row justify-content-center py-2 mt-3">
+              <div class="Register_ant">
+                <div class="col-lg-6">
+                  <div class="left_in9 left_in1" id="div8">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault8"
+                        value="sky"
+                      />
+                      <label
+                        class="clr_chhha"
+                        class="form-check-label"
+                        for="flexRadioDefault8"
+                      >
+                        利用しない
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="left_in9 left_in1" id="div9">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault9"
+                        value="velvet"
+                      />
+                      <label
+                        class="clr_chhha"
+                        class="form-check-label"
+                        for="flexRadioDefault9"
+                      >
+                        利用する
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 mt-5">
+            <div class="row btnnno_vali_row justify-content-center">
+              <div class="col-lg-4 jisko_right col-md-12">
+                <button class="myPageLastButton_white">バック</button>
+              </div>
+              <div class="col-lg-4 col-md-12 mt-3 mt-lg-0 fld2Upper">
+                <button class="myPageLastButton_red"><a class="EditPageTwo_tab" href="./EditPageTwo.html">確認画面へ</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Select the radio inputs
+var radioInputs = document.querySelectorAll('input[name="flexRadioDefault"]');
+
+// Add event listener to each radio input
+radioInputs.forEach(function(input) {
+  input.addEventListener("click", function() {
+    // Get the selected color value
+    var color = this.value;
+
+    // Select the div elements
+    var div1 = document.getElementById("div1");
+    var div2 = document.getElementById("div2");
+    var div3 = document.getElementById("div3");
+    var div4 = document.getElementById("div4");
+    var div5 = document.getElementById("div5");
+    var div6 = document.getElementById("div6");
+    var div7 = document.getElementById("div7");
+    var div8 = document.getElementById("div8");
+    var div9 = document.getElementById("div9");
+
+    // Change the background color based on the selected color
+    if (color === "red") {
+      div1.style.backgroundColor = "#F2F6FF";
+      div2.style.backgroundColor = "";
+      div3.style.backgroundColor = "";
+      div4.style.backgroundColor = "";
+      div5.style.backgroundColor = "";
+      div6.style.backgroundColor = "";
+      div7.style.backgroundColor = "";
+      div8.style.backgroundColor = "";
+      div9.style.backgroundColor = "";
+    } else if (color === "green") {
+      div1.style.backgroundColor = "";
+      div2.style.backgroundColor = "#F2F6FF";
+      div3.style.backgroundColor = "";
+      div4.style.backgroundColor = "";
+      div5.style.backgroundColor = "";
+      div6.style.backgroundColor = "";
+      div7.style.backgroundColor = "";
+      div8.style.backgroundColor = "";
+      div9.style.backgroundColor = "";
+    } else if (color === "blue") {
+      div1.style.backgroundColor = "";
+      div2.style.backgroundColor = "";
+      div3.style.backgroundColor = "#F2F6FF";
+      div4.style.backgroundColor = "";
+      div5.style.backgroundColor = "";
+      div6.style.backgroundColor = "";
+      div7.style.backgroundColor = "";
+      div8.style.backgroundColor = "";
+      div9.style.backgroundColor = "";
+    } else if (color === "white") {
+      div1.style.backgroundColor = "";
+      div2.style.backgroundColor = "";
+      div3.style.backgroundColor = "";
+      div4.style.backgroundColor = "#F2F6FF";
+      div5.style.backgroundColor = "";
+      div6.style.backgroundColor = "";
+      div7.style.backgroundColor = "";
+      div8.style.backgroundColor = "";
+      div9.style.backgroundColor = "";
+    } else if (color === "brown") {
+      div1.style.backgroundColor = "";
+      div2.style.backgroundColor = "";
+      div3.style.backgroundColor = "";
+      div4.style.backgroundColor = "";
+      div5.style.backgroundColor = "#F2F6FF";
+      div6.style.backgroundColor = "";
+      div7.style.backgroundColor = "";
+      div8.style.backgroundColor = "";
+      div9.style.backgroundColor = "";
+    } else if (color === "gray") {
+      div1.style.backgroundColor = "";
+      div2.style.backgroundColor = "";
+      div3.style.backgroundColor = "";
+      div4.style.backgroundColor = "";
+      div5.style.backgroundColor = "";
+      div6.style.backgroundColor = "#F2F6FF";
+      div7.style.backgroundColor = "";
+      div8.style.backgroundColor = "";
+      div9.style.backgroundColor = "";
+    } else if (color === "orange") {
+      div1.style.backgroundColor = "";
+      div2.style.backgroundColor = "";
+      div3.style.backgroundColor = "";
+      div4.style.backgroundColor = "";
+      div5.style.backgroundColor = "";
+      div6.style.backgroundColor = "";
+      div7.style.backgroundColor = "#F2F6FF";
+      div8.style.backgroundColor = "";
+      div9.style.backgroundColor = "";
+    } else if (color === "sky") {
+      div1.style.backgroundColor = "";
+      div2.style.backgroundColor = "";
+      div3.style.backgroundColor = "";
+      div4.style.backgroundColor = "";
+      div5.style.backgroundColor = "";
+      div6.style.backgroundColor = "";
+      div7.style.backgroundColor = "";
+      div8.style.backgroundColor = "#F2F6FF";
+      div9.style.backgroundColor = "";
+    } else if (color === "velvet") {
+      div1.style.backgroundColor = "";
+      div2.style.backgroundColor = "";
+      div3.style.backgroundColor = "";
+      div4.style.backgroundColor = "";
+      div5.style.backgroundColor = "";
+      div6.style.backgroundColor = "";
+      div7.style.backgroundColor = "";
+      div8.style.backgroundColor = "";
+      div9.style.backgroundColor = "#F2F6FF";
+    }
+  });
+});
+
+    </script>
+  </body>
+</html>
