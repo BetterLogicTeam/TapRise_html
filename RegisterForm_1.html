@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Style/Register.css">
+    <title>Register First Form</title>
+</head>
+
+<body>
+
+    <!-- ----------------Header------------------- -->
+    <div class="mmaaaaa">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light Nav_bar_Bg fix">
+            <div class="container">
+                <a class="navbar-brand patImGlogo" href="index.html">
+                    <img src="./Images/newLogo.png" alt="" class="w-100" />
+                </a>
+                <div class="d-flex gap-2">
+                    <button class="man_ttn"><i class="fa-solid fa-user"></i></button>
+                    <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse goi" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item for_smalplay">
+                            <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
+                                href="List_of_Taprize.html">タップライズ 一覧</a>
+                        </li>
+                        <li class="nav-item for_smalplay">
+                            <a class="nav-link text-decoration-none Nav_bar_Link" href="#">ご利用ガイド</a>
+                        </li>
+                        <li class="nav-item for_smalplay">
+                            <a class="nav-link text-decoration-none Nav_bar_Link" href="#">よくあるご質問</a>
+                        </li>
+                        <li class="nav-item for_smalplay">
+                            <a class="nav-link text-decoration-none Nav_bar_Link" href="#">お問い合わせ</a>
+                        </li>
+                        <li class="nav-item mt-2 for_smalplay">
+                            <button class="Navbar_Login_BTN btn_rep  ">
+                                <i class="fa-solid fa-user"></i> ログイン
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- ---------------------------------Header End------------------------------------------- -->
+
+
+
+
+    <!-- ---------------------------------Register Form 1 Start------------------------------------------- -->
+    <div class="Register_main">
+        <h1 class="d-flex justify-content-center pt-5 pb-3 fw-bold">新規会員登録</h1>
+        <Form class="" name="horizontal_login" layout="vertical" labelCol="span: 8," initialValues="remember: true"
+            onFinish={onFinish} onFinishFailed={onFinishFailed} autoComplete="off">
+            <div class="main_form_div">
+                <div class="ajsiji ">
+                    <p>
+                        お名前（フリガナ） <span class="star_clr"> *</span>
+                    </p>
+
+                    <div class="Register_ant rgestopAgain row">
+                        <div class="col-lg-6">
+                            <label for="exampleFormControlInput1" name="姓" class="form-label">姓</label>
+                            <Input type="text" placeholder="例：山田" class="form-control RegisterPHcolor smplestyl" />
+                        </div>
+                        <div class="col-lg-6 upprsmplsmal">
+                            <label for="exampleFormControlInput1" class="form-label">名</label>
+                            <Input type="text" placeholder="例：太郎" class="form-control RegisterPHcolor smplestyl" />
+                        </div>
+                    </div>
+
+                    <div class=" row regisSmp">
+                        <div class="col-lg-6 upprsmplsmal">
+                            <label for="exampleFormControlInput1" class="form-label" name="セイ">セイ</label>
+                            <Input type="text" placeholder="例：ヤマダ" class="form-control RegisterPHcolor smplestyl" />
+                        </div>
+                        <div class="col-lg-6 upprsmplsmal">
+                            <label for="exampleFormControlInput1" class="form-label">メイ</label>
+                            <Input type="text" placeholder="例：タロウ" class="form-control RegisterPHcolor smplestyl" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="ajsiji my-3 my-md-3">
+                    <p>
+                        住所 <span class="star_clr"> * </span>
+                    </p>
+                    <div class="Register_ant row">
+                        <div class="col-lg-6">
+                            <label for="exampleFormControlInput1" name="〒" class="form-label">〒</label>
+                            <Input type="text" placeholder="例：141-0022"
+                                class="form-control RegisterPHcolor smplestyl RegisterPHcolor2" />
+                        </div>
+                    </div>
+
+                    <div class="mt-3"><a href="https://www.post.japanpost.jp/zipcode/" target="_blank"
+                            class="p_pink">郵便番号がわからない方はこちら</a></div>
+
+                    <div class="Register_ant row">
+                        <div class="col-lg-6">
+                            <label for="exampleFormControlInput1" name="都道府県" class="form-label passw">都道府県</label>
+                            <select name="state" class="form-select BDMain dop_mainond shadow-none ">
+                                <option value="">選択してください</option>
+                                <option value="北海道">北海道</option>
+                                <option value="青森県">青森県</option>
+                                <option value="岩手県">岩手県</option>
+                                <option value="宮城県">宮城県</option>
+                                <option value="秋田県">秋田県</option>
+                                <option value="山形県">山形県</option>
+                                <option value="福島県">福島県</option>
+                                <option value="茨城県">茨城県</option>
+                                <option value="栃木県">栃木県</option>
+                                <option value="群馬県">群馬県</option>
+                                <option value="埼玉県">埼玉県</option>
+                                <option value="千葉県">千葉県</option>
+                                <option value="東京都">東京都</option>
+                                <option value="神奈川県">神奈川県</option>
+                                <option value="新潟県">新潟県</option>
+                                <option value="富山県">富山県</option>
+                                <option value="石川県">石川県</option>
+                                <option value="福井県">福井県</option>
+                                <option value="山梨県">山梨県</option>
+                                <option value="長野県">長野県</option>
+                                <option value="岐阜県">岐阜県</option>
+                                <option value="静岡県">静岡県</option>
+                                <option value="愛知県">愛知県</option>
+                                <option value="三重県">三重県</option>
+                                <option value="滋賀県">滋賀県</option>
+                                <option value="京都府">京都府</option>
+                                <option value="大阪府">大阪府</option>
+                                <option value="兵庫県">兵庫県</option>
+                                <option value="奈良県">奈良県</option>
+                                <option value="和歌山県">和歌山県</option>
+                                <option value="鳥取県">鳥取県</option>
+                                <option value="島根県">島根県</option>
+                                <option value="岡山県">岡山県</option>
+                                <option value="広島県">広島県</option>
+                                <option value="山口県">山口県</option>
+                                <option value="徳島県">徳島県</option>
+                                <option value="香川県">香川県</option>
+                                <option value="愛媛県">愛媛県</option>
+                                <option value="高知県">高知県</option>
+                                <option value="福岡県">福岡県</option>
+                                <option value="佐賀県">佐賀県</option>
+                                <option value="長崎県">長崎県</option>
+                                <option value="熊本県">熊本県</option>
+                                <option value="大分県">大分県</option>
+                                <option value="宮崎県">宮崎県</option>
+                                <option value="鹿児島県">鹿児島県</option>
+                                <option value="沖縄県">沖縄県</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 mt-3 mt-md-0">
+                            <label for="exampleFormControlInput1" name="市区町村" class="form-label passw">市区町村</label>
+                            <Input type="text" placeholder="例：品川区"
+                                class="form-control RegisterPHcolor smplestyl RegisterPHcolor2" />
+                        </div>
+                    </div>
+
+                    <div class="Register_ant row">
+                        <div class="col-lg-6 padDnD">
+                            <label for="exampleFormControlInput1" name="番地" class="form-label passw">番地</label>
+                            <Input type="text" placeholder="例：西五反田 1-1-11"
+                                class="form-control RegisterPHcolor smplestyl RegisterPHcolor2" />
+                        </div>
+                        <div class="col-lg-6 ">
+                            <label htmlFor="sssss" class="passw">
+                                建物・マンション・部屋番号
+                            </label>
+                            <input type="text" class="skfhhjjf RegisterPHcolor2" placeholder="例：五反田マンション　101号室" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ajsiji my-3 my-md-3">
+                    <p>
+                        生年月日 <span class="star_clr"> * </span>
+                    </p>
+                    <div class="Register_ant row bdsltmainup">
+                        <div class="row">
+                            <div class="col-lg-3 col-4  bdDateUpper">
+                                <label htmlFor="sssss" class="passw datesmpl">
+                                    年
+                                </label>
+                                <select name="birthday_month" class="BDMain dop_mainond form-select shadow-none">
+                                    <option selected value={1990}>
+                                        1990
+                                    </option>
+                                    <option value={1991}>1991</option>
+                                    <option value={1993}>1993</option>
+                                    <option value={1994}>1994</option>
+                                    <option value={1995}>1995</option>
+                                    <option value={1996}>1996</option>
+                                    <option value={1997}>1997</option>
+                                    <option value={1998}>1998</option>
+                                    <option value={1999}>1999</option>
+                                    <option value={2000}>2000</option>
+                                    <option value={2001}>2001</option>
+                                    <option value={2002}>2002</option>
+
+                                </select>
+                                <!-- <select class="form-select" class="BDMain dop_mainond form-select shadow-none"
+                                    aria-label="Default select example">
+                                    <option selected>1990</option>
+
+                                    {SelectYear.map((option) => (
+                                    // <Select.Option key={option} value={option.year}>
+                                        // {option.year}
+                                        // </Select.Option>
+                                    <option value={option.year}>{option.year}</option>
+                                    ))}
+                                </select> -->
+                            </div>
+                            <div class="col-lg-2 col-4 bdDateUpper">
+                                <label htmlFor="sssss" class="passw bddateoption datesmpl">
+                                    月
+                                </label>
+                                <select name="birthday_month" class="BDMain dop_mainond form-select shadow-none">
+                                    <option selected value={1}>
+                                        1
+                                    </option>
+                                    <option value={2}>2</option>
+                                    <option value={3}>3</option>
+                                    <option value={4}>4</option>
+                                    <option value={5}>5</option>
+                                    <option value={6}>6</option>
+                                    <option value={7}>7</option>
+                                    <option value={8}>8</option>
+                                    <option value={9}>9</option>
+                                    <option value={10}>10</option>
+                                    <option value={11}>11</option>
+                                    <option value={12}>12</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-2 col-4 bdDateUpper">
+                                <label htmlFor="sssss" class="passw bddateoption datesmpl">
+                                    日
+                                </label>
+                                <select id="sel-birth-day" name="birthday_day"
+                                    class="BDMain dop_mainond form-select shadow-none">
+                                    <option selected value={1}>
+                                        1
+                                    </option>
+                                    <option value={2}>2</option>
+                                    <option value={3}>3</option>
+                                    <option value={4}>4</option>
+                                    <option value={5}>5</option>
+                                    <option value={6}>6</option>
+                                    <option value={7}>7</option>
+                                    <option value={8}>8</option>
+                                    <option value={9}>9</option>
+                                    <option value={10}>10</option>
+                                    <option value={11}>11</option>
+                                    <option value={12}>12</option>
+                                    <option value={13}>13</option>
+                                    <option value={14}>14</option>
+                                    <option value={15}>15</option>
+                                    <option value={16}>16</option>
+                                    <option value={17}>17</option>
+                                    <option value={18}>18</option>
+                                    <option value={19}>19</option>
+                                    <option value={20}>20</option>
+                                    <option value={21}>21</option>
+                                    <option value={22}>22</option>
+                                    <option value={23}>23</option>
+                                    <option value={24}>24</option>
+                                    <option value={25}>25</option>
+                                    <option value={26}>26</option>
+                                    <option value={27}>27</option>
+                                    <option value={28}>28</option>
+                                    <option value={29}>29</option>
+                                    <option value={30}>30</option>
+                                    <option value={31}>31</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ajsiji my-3 my-md-3">
+                    <p>
+                        お名前（フリガナ） <span class="star_clr"> * </span>
+                    </p>
+                    <div class="Register_ant row">
+                        <div class="col-lg-3 ">
+                            <div class="gdruPpr">
+                                <div class="d-flex align-items-center gap-3 form-check ">
+                                    <input class="form-check-input rdoochk" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">男性</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 ">
+                            <div class="gdruPpr">
+                                <div class="d-flex  align-items-center gap-3 form-check">
+                                    <input class="form-check-input rdoochk" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        女性
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="gdruPpr">
+                                <div class="d-flex align-items-center gap-2 form-check">
+                                    <input class="form-check-input rdoochk" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3">
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        その他
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ajsiji my-3 my-md-3">
+                    <p>
+                        電話番号 <span class="star_clr"> * </span>
+                    </p>
+                    <div class="Register_ant row">
+                        <div class="col-lg-6">
+                            <Input type="text" placeholder="例：090 - 1234 - 5678"
+                                class="form-control RegisterPHcolor smplestyl RegisterPHcolor2" />
+                        </div>
+                        <div class="col-lg-6 text-start">
+                            <p class="Register_ant_ka_p text-start text-md-center">
+                                <span class="star_clr2 "> * </span>{" "}
+                                半角数字で入力してください。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ajsiji my-3 my-md-3">
+                    <p>
+                        メールアドレス <span class="star_clr"> * </span>
+                    </p>
+
+                    <div class="Register_ant row">
+                        <div class="col-lg-6">
+                            <Input type="text" placeholder="" class="form-control RegisterPHcolor smplestyl" />
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="Register_ant_ka_scnd_p">
+                                <span class="star_clr2"> * </span>
+                                ドメイン指定受信をご利用の場合は、「@zenco.co.jp」からのメールが受信できるよう設定を行ってください。
+                                <br /> <span class="star_clr2"> * </span>
+                                このメールアドレスがログイン時のIDとなります。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ajsiji my-3 my-md-3">
+                    <p>
+                        パスワード <span class="star_clr"> * </span>
+                    </p>
+                    <div class="Register_ant row">
+                        <div class="col-lg-6">
+                            <Input type="password" placeholder="例：ヤマダ" class="form-control RegisterPHcolor smplestyl" />
+                            <p class="Register_ant_ka_thrd_p fnkwmkwmkk resfsjfnwkfkj">
+                                <span class="star_clr2 "> *</span>
+                                半角英数字50文字以内で入力してください。
+                            </p>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <Input type="password" placeholder="例：ヤマダ" class="form-control RegisterPHcolor smplestyl" />
+                            <p class="Register_ant_ka_thrd_p fnkwmkwmkk ps-md-3">
+                                <span class="star_clr2 "> *</span>
+                                確認のためパスワードを再入力してください。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ajsiji my-3 my-md-3">
+                    <p>
+                        メールマガジン <span class="star_clr"> * </span>
+                    </p>
+                    <p class="Register_ka_last_p">
+                        メールマガジンにて、新商品やお得な情報などをお送りしています。
+                    </p>
+                    <div class="Register_ant row">
+                        <div class="col-lg-5">
+                            <div class="gdruPpr">
+                                <div class="d-flex align-items-center gap-3 form-check ">
+                                    <input class="form-check-input rdoochk" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault4" checked>
+                                    <label class="form-check-label" for="flexRadioDefault4">受け取る</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="gdruPpr">
+                                <div class="d-flex align-items-center gap-3 form-check ">
+                                    <input class="form-check-input rdoochk" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault5" checked>
+                                    <label class="form-check-label" for="flexRadioDefault5">受け取らない</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ajsiji my-3 my-md-3">
+                    <p>
+                        配信モードをオンにしますか？
+                    </p>
+                    <div class="Register_ant row">
+                        <div class="col-lg-5">
+                            <div class="gdruPpr">
+                                <div class="d-flex align-items-center gap-3 form-check ">
+                                    <input class="form-check-input rdoochk" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">はい</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="gdruPpr">
+                                <div class="d-flex align-items-center gap-3 form-check ">
+                                    <input class="form-check-input rdoochk" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">いいえ</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </Form>
+
+    <div class="container-fluid" style="background: rgb(242, 246, 255)">
+    <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 ">
+                    <div class="scroll_text">
+                        <p>「ウェブガチャ」ご利用規約</p>
+                        <p>第1条 (会員)</p>
+                        <p>
+                            1.
+                            「会員」とは、当社が定める手続に従い本規約に同意の上、入会の申し込みを行う個人をいいます。2.
+                            「会員情報」とは、会員が当社に開示した会員の属性に関する情報および会員の取引に関する履歴等の情報をいいます。3.
+                            本規約はすべての会員に適用され、登録手続時および登録後にお守りいただく規約です。
+                        </p>
+                        <p>第2条 (登録)</p>
+                        <p>
+                            1.
+                            会員資格本規約に同意の上、所定の入会申込みをされたお客様は所定の登録手続完了後に会員としての資格を有します。会員登録手続は、会員となるご本人が行ってください。代理による登録は一切認められません。なお、過去に会員資格が取り消された方やその他当社が相応しくないと判断した方からの会員申込はお断りする場合があります。
+                        </p>
+                        <p>
+                            2.
+                            会員情報の入力会員登録手続の際には入力上の注意をよく読み、所定の入力フォームに必要事項を正確に入力してください。会員情報の登録において特殊記号・旧漢字・ローマ数字などはご使用になれません。これらの文字が登録された場合は当社にて変更致します。
+                        </p>
+                        <p>
+                            3. パスワードの管理(1)
+                            パスワードは会員本人のみが利用できるものとし、第三者に譲渡・貸与できないものとします。(2)
+                            パスワードは他人に知られることがないよう定期的に変更する等、会員本人が責任をもって管理してください。(3)
+                            パスワードを用いて当社に対して行われた意思表示は会員本人の意思表示とみなし、そのために生じる支払等はすべて会員の責任となります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="d-flex justify-content-center align-items-center w-100">
+            <Checkbox class="last_vala_main_chkbox d-flex justify-content-center align-items-center"
+                onChange={onChange}>
+                <span class="mttt_ressspo" style={{ color: "#110F24" , fontWeight: "500" }}>
+                    利用規約を読み、同意します。
+                    {/* <span class="" style={{ color: "#E60058" }} // onClick={()=> (
+                        // history("/TermOfServices"), window.scrollTo({top:0,behavior:'instant'})
+                        // )}
+                        >
+                        利用規約に同意します。
+                    </span> */}
+                </span>
+            </Checkbox>
+        </div> -->
+    </div>
+    <!-- ---------------------------------Register Form 1 End------------------------------------------- -->
+
+
+
+
+
+
+    <!-- <-----------------------------------Footer start ------------------------------->
+    <div class="main_footer_bg">
+        <div class="container-fluid widthkl_for_upper">
+            <div class="row footer_aling">
+                <div class="col-md-5 footerLftsideupper">
+                    <img src="Images/newLogo.png" alt="#" class="footerLftside" />
+                </div>
+
+                <div class="col-md-7 sojfswjfwjf footerrigtuper  text-end mt-3 mt-md-0">
+                    <div class="footer_content footerrigtPart text-start">
+                        <div class="upper d-flex     gap-3">
+                            <Link to="/ListOTaprize" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks"> タップライズ 一覧</p>
+                            </Link>
+                            <Link to="/TermOfServices" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">ご利用ガイド</p>
+                            </Link>
+
+                            <Link to="/FAQ" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">よくあるご質問</p>
+                            </Link>
+                            <Link to="/ContactUs" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">お問い合わせ</p>
+                            </Link>
+                            <Link to="/Login" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">マイアカウント</p>
+                            </Link>
+                        </div>
+                        <div class="upper d-flex     gap-3">
+                            <Link to="/TermOfServices" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">利用規約</p>
+                            </Link>
+                            <Link to="/PrivacyPolicy" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">プライバシーポリシー</p>
+                            </Link>
+
+                            <Link to="/NotationTable" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">特定商取引法に基づく表記</p>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-3 all-right text-center py-3" style=" color: #020140">
+            Copyright ©2023 Webgacha. All Rights Reserved.
+        </div>
+    </div>
+    <!-- <--------------------------------------Footer End -------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
