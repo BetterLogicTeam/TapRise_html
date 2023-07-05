@@ -28,12 +28,14 @@
           <img src="./Images/newLogo.png" alt="" class="w-100" />
         </a>
         <div class="d-flex gap-2">
-          <button class="man_ttn"><i class="fa-solid fa-user"></i></button>
+         
+       <button class="man_ttn"> <a href="Login_page.html" style="color: black; text-decoration: none;"><i class="fa-solid fa-user"></i></a></button>
           <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+       
         </div>
         <div class="collapse navbar-collapse goi" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
@@ -47,18 +49,63 @@
               <a class="nav-link text-decoration-none Nav_bar_Link" href="#">よくあるご質問</a>
             </li>
             <li class="nav-item for_smalplay">
-              <a class="nav-link text-decoration-none Nav_bar_Link" href="#">お問い合わせ</a>
+              <a class="nav-link text-decoration-none Nav_bar_Link" href="ContactUs.html">お問い合わせ </a>
             </li>
             <li class="nav-item mt-2 for_smalplay">
+              <a href="Login_page.html" class=" text-decoration-none ">
               <button class="Navbar_Login_BTN btn_rep  ">
                 <i class="fa-solid fa-user"></i> ログイン
               </button>
+            </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
+
+
+  <!-- ----------------Header------------------- -->
+  <!-- <div class="mmaaaaa">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light Nav_bar_Bg fix">
+        <div class="container">
+            <a class="navbar-brand patImGlogo" href="index.html">
+                <img src="./Images/newLogo.png" alt="" class="w-100" />
+            </a>
+            <div class="d-flex gap-2">
+                <button class="man_ttn"><i class="fa-solid fa-user"></i></button>
+                <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse goi" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item for_smalplay">
+                        <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
+                            href="List_of_Taprize.html">タップライズ 一覧</a>
+                    </li>
+                    <li class="nav-item for_smalplay">
+                        <a class="nav-link text-decoration-none Nav_bar_Link" href="#">ご利用ガイド</a>
+                    </li>
+                    <li class="nav-item for_smalplay">
+                        <a class="nav-link text-decoration-none Nav_bar_Link" href="#">よくあるご質問</a>
+                    </li>
+                    <li class="nav-item for_smalplay">
+                        <a class="nav-link text-decoration-none Nav_bar_Link" href="#">お問い合わせ</a>
+                    </li>
+                    <li class="nav-item mt-2 for_smalplay">
+                        <button class="Navbar_Login_BTN btn_rep  ">
+                            <i class="fa-solid fa-user"></i> ログイン
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div> -->
+<!-- ---------------------------------Header End------------------------------------------- -->
   <!-- ---------------------------------Header End--------------------------------------- -->
 
   <!-- ----------Landing Page-------------- -->
@@ -648,37 +695,37 @@
                 onclick="window.scrollTo({top:0,behavior:'instant'})">
               <p class="footerLnks"> タップライズ 一覧</p>
               </Link>
-              <Link to="/TermOfServices" class="text-decoration-none upper"
+              <a href="Term_of_services.html" class="text-decoration-none upper"
                 onclick="window.scrollTo({top:0,behavior:'instant'})">
               <p class="footerLnks">ご利用ガイド</p>
-              </Link>
+              </a>
 
               <Link to="/FAQ" class="text-decoration-none upper" onclick="window.scrollTo({top:0,behavior:'instant'})">
               <p class="footerLnks">よくあるご質問</p>
               </Link>
-              <Link to="/ContactUs" class="text-decoration-none upper"
+              <a href="ContactUs.html" class="text-decoration-none upper"
                 onclick="window.scrollTo({top:0,behavior:'instant'})">
               <p class="footerLnks">お問い合わせ</p>
-              </Link>
-              <Link to="/Login" class="text-decoration-none upper"
+              </a>
+              <a href="Login_page.html" class="text-decoration-none upper"
                 onclick="window.scrollTo({top:0,behavior:'instant'})">
               <p class="footerLnks">マイアカウント</p>
-              </Link>
+              </a>
             </div>
             <div class="upper d-flex     gap-3">
-              <Link to="/TermOfServices" class="text-decoration-none upper"
+              <a href="Term_of_services.html" class="text-decoration-none upper"
                 onclick="window.scrollTo({top:0,behavior:'instant'})">
               <p class="footerLnks">利用規約</p>
-              </Link>
-              <Link to="/PrivacyPolicy" class="text-decoration-none upper"
+              </a>
+              <a href="Privacy_policy.html" class="text-decoration-none upper"
                 onclick="window.scrollTo({top:0,behavior:'instant'})">
               <p class="footerLnks">プライバシーポリシー</p>
-              </Link>
+              </a>
 
-              <Link to="/NotationTable" class="text-decoration-none upper"
+              <a href="Notation_table.html" class="text-decoration-none upper"
                 onclick="window.scrollTo({top:0,behavior:'instant'})">
               <p class="footerLnks">特定商取引法に基づく表記</p>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -743,6 +790,9 @@
         }
     });
   </script>
+
+
+
 </body>
 
 </html>

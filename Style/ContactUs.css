@@ -1,0 +1,189 @@
+
+.main_faq_img {
+    /* background-image: url(../Assets/faq.svg); */
+    background-image: url(../Images/FAQ\ hero\ 2x.png);
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    height: 254px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center !important;
+    border-radius: 24px;
+  }
+
+.Contact_h {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.Contact_input {
+    border-radius: 12px;
+    padding: 15px 10px;
+    outline: none ;
+    border: none ;
+    height: 55px !important;
+    border: 1px solid #8AC7FF !important;
+}
+
+.tex_Aaa{
+    border-radius: 12px;
+    padding: 15px 10px;
+    outline: none ;
+    border: none ;
+
+    border: 1px solid #8AC7FF !important; 
+}
+
+.Contact_P {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #020140;
+    padding: 1rem 0rem !important;
+    margin-bottom: 0px !important;
+}
+
+.Contact_input:focus{
+    box-shadow: none !important;
+
+}
+
+
+
+
+.contact_us_red_button {
+    background: #E60058;
+    border: 1px solid #FFFFFF;
+    height: 55px !important;
+    border-radius: 45px;
+    font-weight: 600 ;
+    padding: 10px 15px !important;
+    color: white !important;
+    width: 100% !important;
+}
+
+.Contact_us_bg {
+    padding: 30px 20px;
+    background: #F2F6FF !important;
+}
+
+.RdRpS{
+    padding: 13px 15px !important;
+}
+
+.forGraycllr::placeholder{
+    color: #020140;
+    opacity: 0.48;
+}
+
+
+@media only screen and (max-width:700px){
+    .Contact_us_bg{
+        padding: 30px 15px !important;
+    }
+
+    .PDngEnd{
+        padding: 0px !important;    
+    }
+    .Contact_h {
+        font-size: 20px !important;
+        font-weight: 700 !important;
+    }
+    .Contact_P {
+
+        font-weight: 600 !important;
+}
+}
+
+
+@media only screen and (max-width:350px){
+    .Contact_P{
+        font-size: 10px;
+    }
+  }
+  
+  
+  @media only screen and (min-width:351px) and (max-width:410px) {
+    .Contact_P{
+        font-size: 12px;
+    }
+  }
+  
+  @media only screen and (min-width:411px) and (max-width:699px) {
+    .passtpTwo_h3{
+      font-size: 29px ;
+    }
+  
+  
+  }
+  
+  
+  
+  
+  @media only screen and (min-width:700px) and (max-width:999px){
+    .Contact_P{
+        font-size: 13px;
+    }
+  }
+
+
+  @media only screen and (max-width:600px){
+    .rehsgfhsghwdg{
+        padding: 25px 0px !important;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 700px) {
+    .main_faq_img {
+      /* background-image: url(../Assets/FAQ\ hero\ 2x.png); */
+      background-image: url(../Images/FAQ\ hero\ 2x.png);
+      background-position: center !important;
+      background-repeat: no-repeat;
+      background-size: cover !important;
+      padding: 76px 0px;
+      height: auto !important;
+      border-radius: 12px;
+    }
+    .main_heading {
+      font-size: 39px;
+    }
+  
+    .veryLsBtn {
+      width: 100% !important;
+    }
+  
+    .faq_ul {
+      list-style-type: none !important;
+      text-align: center !important;
+    }
+    .faq_heading {
+      font-weight: 700 !important;
+      font-size: 23px !important;
+      padding-top: 20px !important
+      ;
+    }
+  
+    .acc_header button {
+      text-transform: uppercase !important;
+      font-weight: 600 !important;
+      font-size: 18px !important;
+    }
+  
+    .acc_text {
+      font-size: 16px !important;
+      font-weight: 500 !important;
+  }
+  .link_text {
+    color: #020140;
+    text-decoration: none !important;
+  }
+  
+    
+ 
+  }
