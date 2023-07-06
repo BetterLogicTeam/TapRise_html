@@ -62,12 +62,10 @@
 }
 
 .Nav_collps {
-  /* padding: 0px 1rem; */
   padding: 10px 16px !important;
   width: 56px;
   height: 44px;
   font-size: 1.25rem;
-  /* line-height: 1; */
   background-color: transparent;
   border: 1px solid #e60058 !important;
   border-radius: 3rem;
@@ -124,10 +122,8 @@
 @media (min-width: 831px) and (max-width: 1200px) {
   .Nav_bar_Link {
     margin-top: 0.7rem;
-    /* font-style: normal; */
     font-weight: 800 !important;
     font-size: 16px;
-    /* line-height: 140%; */
     margin-left: 0rem !important;
     color: #010124 !important;
     font-family: "Barlow", sans-serif;
@@ -264,7 +260,7 @@
 }
 
 
-/* <------------------------------------------------Header style --------------------------------------> */
+/* <------------------------------------------------Header style end --------------------------------------> */
 
 .smplestyl{
   height: 55px;
@@ -290,6 +286,10 @@
 
 .star_clr {
   color: #e60058 !important;
+}
+
+.pdbottom{
+  padding-bottom: 110px;
 }
 
 :where(.css-dev-only-do-not-override-k7429z).ant-steps

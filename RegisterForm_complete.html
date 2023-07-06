@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Style/RegisterForm_complete.css">
+    <title>Register Form complete</title>
+</head>
+
+<body>
+
+    <!-- ----------------Header------------------- -->
+    <div class="mmaaaaa">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light Nav_bar_Bg fix">
+            <div class="container">
+                <a class="navbar-brand patImGlogo" href="index.html">
+                    <img src="./Images/newLogo.png" alt="" class="w-100" />
+                </a>
+                <div class="d-flex gap-2">
+                    <button class="man_ttn"><i class="fa-solid fa-user"></i></button>
+                    <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse goi" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item for_smalplay">
+                            <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
+                                href="List_of_Taprize.html">タップライズ 一覧</a>
+                        </li>
+                        <li class="nav-item for_smalplay">
+                            <a class="nav-link text-decoration-none Nav_bar_Link" href="#">ご利用ガイド</a>
+                        </li>
+                        <li class="nav-item for_smalplay">
+                            <a class="nav-link text-decoration-none Nav_bar_Link" href="#">よくあるご質問</a>
+                        </li>
+                        <li class="nav-item for_smalplay">
+                            <a class="nav-link text-decoration-none Nav_bar_Link" href="#">お問い合わせ</a>
+                        </li>
+                        <li class="nav-item mt-2 for_smalplay">
+                            <button class="Navbar_Login_BTN btn_rep  ">
+                                <i class="fa-solid fa-user"></i> ログイン
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- ---------------------------------Header End------------------------------------------- -->
+
+
+
+
+
+
+
+
+    <!-- ---------------------------------Form Complete Start------------------------------------------- -->
+    <div class='register_main_bg main_Register_page_4 py-5'>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="complete_content text-center">
+                        <h3 class='h3_text'>登録完了</h3>
+                        <p class='ptext'>会員登録が完了いたしました。ウェブガチャをお楽しみください。</p>
+                        <p class='ptext'>登録内容を変更したい場合は下記マイページからお願いいたします</p>
+                        <button class='two_p_btn mt-4'>
+                            <!-- onClick={()=>(history('/MyPageEdit1'),window.scrollTo({top:0,behavior:'instant'}))} -->
+                            マイページへ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------Form complete End------------------------------------------- -->
+
+
+
+
+
+    <!-- <-----------------------------------Footer start ------------------------------->
+    <div class="main_footer_bg">
+        <div class="container-fluid widthkl_for_upper">
+            <div class="row footer_aling">
+                <div class="col-md-5 footerLftsideupper">
+                    <img src="Images/newLogo.png" alt="#" class="footerLftside" />
+                </div>
+
+                <div class="col-md-7 sojfswjfwjf footerrigtuper  text-end mt-3 mt-md-0">
+                    <div class="footer_content footerrigtPart text-start">
+                        <div class="upper d-flex     gap-3">
+                            <Link to="/ListOTaprize" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks"> タップライズ 一覧</p>
+                            </Link>
+                            <Link to="/TermOfServices" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">ご利用ガイド</p>
+                            </Link>
+
+                            <Link to="/FAQ" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">よくあるご質問</p>
+                            </Link>
+                            <Link to="/ContactUs" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">お問い合わせ</p>
+                            </Link>
+                            <Link to="/Login" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">マイアカウント</p>
+                            </Link>
+                        </div>
+                        <div class="upper d-flex     gap-3">
+                            <Link to="/TermOfServices" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">利用規約</p>
+                            </Link>
+                            <Link to="/PrivacyPolicy" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">プライバシーポリシー</p>
+                            </Link>
+
+                            <Link to="/NotationTable" class="text-decoration-none upper"
+                                onclick="window.scrollTo({top:0,behavior:'instant'})">
+                            <p class="footerLnks">特定商取引法に基づく表記</p>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-3 all-right text-center py-3" style=" color: #020140">
+            Copyright ©2023 Webgacha. All Rights Reserved.
+        </div>
+    </div>
+    <!-- <--------------------------------------Footer End -------------------------------------------------->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
