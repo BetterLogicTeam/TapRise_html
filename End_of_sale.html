@@ -1,0 +1,1453 @@
+<html lang="ja-jp">
+<script src="chrome-extension://pgapfmffencbcimgokjghhlkolckkomb/libs/extend-native-history-api.js"></script>
+<link rel="stylesheet" href="chrome-extension://pgapfmffencbcimgokjghhlkolckkomb/fonts/outfit/font-outfit.css">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="logo192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2f6ff">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Style//Header_style.css">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="./Style/ListOTaprize_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>TaPrize</title>
+    <script defer="" src="https://taprize.netlify.app/static/js/bundle.js"></script>
+    <meta name="theme-color" content="#f2f6ff">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="App">
+            <div class="mmaaaaa">
+                <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
+                    <div class="container">
+                        <a class="navbar-brand patImGlogo" href="./index.html"><img src="./Images/newLogo.png"
+                                class="w-100" alt="" /></a>
+                        <div class="d-flex gap-2">
+                            <button class="man_ttn">
+                                <a href="./Login.html" style="color: black; text-decoration: none"><i
+                                        class="fa-solid fa-user"></i></a>
+                            </button>
+
+                            <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item for_smalplay">
+                                    <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
+                                        href="ListOTaprize.html">タップライズ 一覧</a>
+                                </li>
+                                <li class="nav-item for_smalplay">
+                                    <a class="nav-link text-decoration-none Nav_bar_Link"
+                                        href="./TermOfServices.html">ご利用ガイド</a>
+                                </li>
+                                <li class="nav-item for_smalplay">
+                                    <a class="nav-link text-decoration-none Nav_bar_Link" href="./FAQ.html">よくあるご質問</a>
+                                </li>
+                                <li class="nav-item for_smalplay">
+                                    <a class="nav-link text-decoration-none Nav_bar_Link"
+                                        href="./ContactUs.html">お問い合わせ</a>
+                                </li>
+                                <li class="nav-item mt-2 for_smalplay">
+                                    <a href="./Login.html" class="text-decoration-none">
+                                        <button class="Navbar_Login_BTN btn_rep">
+                                            <i class="fa-solid fa-user"></i> ログイン
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="px-3 px-md-3" style="background-color: rgb(242, 246, 255);">
+                <div class="container-fluid innerpadlstriz">
+                    <div class="webGachaList_title">
+                        <h1 class="page_header mb-0">タップライズ 一覧</h1>
+                    </div>
+                </div>
+                <div class="container aGNPad">
+                    <div class="taBs pt-2 pb-3">
+                        <div class="MuiBox-root css-8atqhb">
+                            <div class="MuiBox-root css-0">
+                                <div class="MuiTabs-root tbUper css-1ujnqem-MuiTabs-root">
+                                    <div class="MuiTabs-scroller MuiTabs-fixed css-jpln7h-MuiTabs-scroller"
+                                        style="overflow: hidden; margin-bottom: 0px;">
+                                        <div class="MuiTabs-flexContainer MuiTabs-centered css-1wf8b0h-MuiTabs-flexContainer"
+                                            role="tablist">
+                                            <a href="./ListOTaprize.html" style="display: contents;">
+                                                <button
+                                                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tabcor allTabs css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                                                    tabindex="-1" type="button" role="tab" aria-selected="false"
+                                                    id="simple-tab-0" aria-controls="simple-tabpanel-0">全て<span
+                                                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
+                                            </a>
+                                            <a href="./Now_on _ale.html" style="display: contents;">
+                                                <button
+                                            class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tabcor tabNowSale css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                                            tabindex="-1" type="button" role="tab" aria-selected="false"
+                                            id="simple-tab-1" aria-controls="simple-tabpanel-1">発売中<span
+                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
+                                            </a>
+                                            <a href="./Coming_soon.html" style="display: contents;">
+                                                <button
+                                            class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tabcor tabSoon css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                                            tabindex="-1" type="button" role="tab" aria-selected="false"
+                                            id="simple-tab-2" aria-controls="simple-tabpanel-2">近日発売<span
+                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
+                                            </a>
+                                            
+                                                    
+                                                    
+                                                    
+                                                    <a href="./End_of_sale.html" style="display: contents;">
+                                                        <button
+                                                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected tabcor tabEndsale css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                                                    tabindex="0" type="button" role="tab" aria-selected="true"
+                                                    id="simple-tab-3" aria-controls="simple-tabpanel-3">販売終了<span
+                                                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
+                                                    </a>
+
+
+                                        </div><span class="MuiTabs-indicator css-lafep3-MuiTabs-indicator"
+                                            style="left: 701.75px; width: 209.75px;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" id="simple-tabpanel-0" aria-labelledby="simple-tab-0" hidden=""></div>
+                            <div role="tabpanel" id="simple-tabpanel-1" aria-labelledby="simple-tab-1" hidden=""></div>
+                            <div role="tabpanel" id="simple-tabpanel-2" aria-labelledby="simple-tab-2" hidden=""></div>
+                            <div role="tabpanel" id="simple-tabpanel-3" aria-labelledby="simple-tab-3">
+                                <div class="MuiBox-root css-19kzrtu">
+                                    <p class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root">
+                                    <div>
+                                        <div class="container">
+                                            <div class="row" id="paginated-list" data-current-page="1"
+                                            aria-live="polite">
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(216, 216, 216);">販売終了</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    近化ホキ店開い史集ヒ技写ちだリ回9和アヨエサ遊極レ</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                    <button
+                                                                        class="listCrd_button  ">販売中のタップライズ</button><button
+                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row justify-content-center py-5">
+                                                <div class="col-lg-10 d-flex justify-content-center">
+                                                    <nav
+                                                        class="pagination-container MuiPagination-root MuiPagination-outlined paginationBgC css-1oj2twp-MuiPagination-root">
+                                                        <button class="pagination-button" id="prev-button"
+                                                            aria-label="Previous page" title="Previous page">
+                                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                                                                focusable="false" aria-hidden="true"
+                                                                viewBox="0 0 24 24"
+                                                                data-testid="NavigateBeforeIcon">
+                                                                <path
+                                                                    d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+
+                                                        <div id="pagination-numbers">
+
+                                                        </div>
+
+                                                        <button class="pagination-button" id="next-button"
+                                                            aria-label="Next page" title="Next page">
+                                                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                                                                focusable="false" aria-hidden="true"
+                                                                viewBox="0 0 24 24" data-testid="NavigateNextIcon">
+                                                                <path
+                                                                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="row justify-content-center py-5">
+                                                <div class="col-lg-10 d-flex justify-content-center">
+                                                    <div class="MuiStack-root css-1p5q5e5-MuiStack-root">
+                                                        <nav aria-label="pagination navigation"
+                                                            class="MuiPagination-root MuiPagination-outlined paginationBgC css-1oj2twp-MuiPagination-root">
+                                                            <ul class="MuiPagination-ul css-wjh20t-MuiPagination-ul">
+                                                                <li><button
+                                                                        class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-disabled MuiPaginationItem-previousNext css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root"
+                                                                        tabindex="-1" type="button" disabled=""
+                                                                        aria-label="Go to previous page"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="NavigateBeforeIcon">
+                                                                            <path
+                                                                                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z">
+                                                                            </path>
+                                                                        </svg></button></li>
+                                                                <li><button
+                                                                        class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-selected MuiPaginationItem-page css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root"
+                                                                        tabindex="0" type="button" aria-current="true"
+                                                                        aria-label="page 1">1<span
+                                                                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
+                                                                </li>
+                                                                <li><button
+                                                                        class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-rounded MuiPaginationItem-page css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root"
+                                                                        tabindex="0" type="button"
+                                                                        aria-label="Go to page 2">2<span
+                                                                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
+                                                                </li>
+                                                                <li><button
+                                                                        class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-rounded MuiPaginationItem-previousNext css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root"
+                                                                        tabindex="0" type="button"
+                                                                        aria-label="Go to next page"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="NavigateNextIcon">
+                                                                            <path
+                                                                                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z">
+                                                                            </path>
+                                                                        </svg><span
+                                                                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_footer_bg">
+                <div class="container-fluid widthkl_for_upper">
+                    <div class="row footer_aling">
+                        <div class="col-md-5 footerLftsideupper"><img
+                                src="data:image/png;base64,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"
+                                alt="" class="footerLftside"></div>
+                        <div class="col-md-7 sojfswjfwjf footerrigtuper  text-end mt-3 mt-md-0">
+                            <div class="footer_content footerrigtPart text-start">
+                                <div class="upper d-flex     gap-3"><a class="text-decoration-none upper"
+                                        href="/ListOTaprize">
+                                        <p class="footerLnks"> タップライズ 一覧</p>
+                                    </a><a class="text-decoration-none upper" href="/TermOfServices">
+                                        <p class="footerLnks">ご利用ガイド</p>
+                                    </a><a class="text-decoration-none upper" href="/FAQ">
+                                        <p class="footerLnks">よくあるご質問</p>
+                                    </a><a class="text-decoration-none upper" href="/ContactUs">
+                                        <p class="footerLnks">お問い合わせ</p>
+                                    </a><a class="text-decoration-none upper" href="/Login">
+                                        <p class="footerLnks">マイアカウント</p>
+                                    </a></div>
+                                <div class="upper d-flex     gap-3"><a class="text-decoration-none upper"
+                                        href="/TermOfServices">
+                                        <p class="footerLnks">利用規約</p>
+                                    </a><a class="text-decoration-none upper" href="/PrivacyPolicy">
+                                        <p class="footerLnks">プライバシーポリシー</p>
+                                    </a><a class="text-decoration-none upper" href="/NotationTable">
+                                        <p class="footerLnks">特定商取引法に基づく表記</p>
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-3 all-right text-center py-3" style="color: rgb(2, 1, 64);">Copyright ©2023
+                    Webgacha. All Rights Reserved. </div>
+            </div>
+        </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+        const meta = document.createElement('meta');
+        meta.name = "theme-color";
+        meta.content = "#f2f6ff";
+        document.getElementsByTagName('head')[0].appendChild(meta);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <script>
+            const paginationNumbers = document.getElementById("pagination-numbers");
+            const paginatedList = document.getElementById("paginated-list");
+            const listItems = paginatedList.querySelectorAll(".gok");
+            const nextButton = document.getElementById("next-button");
+            const prevButton = document.getElementById("prev-button");
+    
+            const paginationLimit = 10;
+            const pageCount = Math.ceil(listItems.length / paginationLimit);
+            let currentPage = 1;
+    
+            const disableButton = (button) => {
+                button.classList.add("disabled");
+                button.setAttribute("disabled", true);
+            };
+    
+            const enableButton = (button) => {
+                button.classList.remove("disabled");
+                button.removeAttribute("disabled");
+            };
+    
+            const handlePageButtonsStatus = () => {
+                if (currentPage === 1) {
+                    disableButton(prevButton);
+                } else {
+                    enableButton(prevButton);
+                }
+    
+                if (pageCount === currentPage) {
+                    disableButton(nextButton);
+                } else {
+                    enableButton(nextButton);
+                }
+            };
+    
+            const handleActivePageNumber = () => {
+                document.querySelectorAll(".pagination-number").forEach((button) => {
+                    button.classList.remove("active");
+                    const pageIndex = Number(button.getAttribute("page-index"));
+                    if (pageIndex == currentPage) {
+                        button.classList.add("active");
+                    }
+                });
+            };
+    
+            const appendPageNumber = (index) => {
+                const pageNumber = document.createElement("button");
+                pageNumber.className = "pagination-number";
+                pageNumber.innerHTML = index;
+                pageNumber.setAttribute("page-index", index);
+                pageNumber.setAttribute("aria-label", "Page " + index);
+    
+                paginationNumbers.appendChild(pageNumber);
+            };
+    
+            const getPaginationNumbers = () => {
+                for (let i = 1; i <= pageCount; i++) {
+                    appendPageNumber(i);
+                }
+            };
+    
+            const setCurrentPage = (pageNum) => {
+                currentPage = pageNum;
+    
+                handleActivePageNumber();
+                handlePageButtonsStatus();
+    
+                const prevRange = (pageNum - 1) * paginationLimit;
+                const currRange = pageNum * paginationLimit;
+    
+                listItems.forEach((item, index) => {
+                    item.classList.add("hidden");
+                    if (index >= prevRange && index < currRange) {
+                        item.classList.remove("hidden");
+                    }
+                });
+            };
+    
+            window.addEventListener("load", () => {
+                getPaginationNumbers();
+                setCurrentPage(1);
+    
+                prevButton.addEventListener("click", () => {
+                    setCurrentPage(currentPage - 1);
+                });
+    
+                nextButton.addEventListener("click", () => {
+                    setCurrentPage(currentPage + 1);
+                });
+    
+                document.querySelectorAll(".pagination-number").forEach((button) => {
+                    const pageIndex = Number(button.getAttribute("page-index"));
+    
+                    if (pageIndex) {
+                        button.addEventListener("click", () => {
+                            setCurrentPage(pageIndex);
+                        });
+                    }
+                });
+            });
+        </script>
+
+
+</body>
+
+</html>
