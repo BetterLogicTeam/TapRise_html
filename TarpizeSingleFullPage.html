@@ -1,0 +1,1839 @@
+<html lang="ja-jp">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="./Images/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f2f6ff" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="./Images/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./Style//Header_style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <!--
+          manifest.json provides metadata used when your web app is installed on a
+          user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+        -->
+  <link rel="manifest" href="/manifest.json" />
+  <!--
+          Notice the use of  in the tags above.
+          It will be replaced with the URL of the `public` folder during the build.
+          Only files inside the `public` folder can be referenced from the HTML.
+    
+          Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+          work correctly both with client-side routing and a non-root public URL.
+          Learn how to configure a non-root public URL by running `npm run build`.
+        -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link rel="stylesheet" href="./Style/TarpizeSingleFullPage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,1900&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./Style/Index_style.css">
+
+  <title>TaPrize</title>
+  <script defer="" src="/static/js/bundle.js"></script>
+  <meta name="theme-color" content="#f2f6ff" />
+  <meta name="theme-color" content="#f2f6ff" />
+
+
+
+  <script>
+    
+    function openFullscreen(image) {
+  // Create the fullscreen overlay
+  const overlay = document.createElement('div');
+  overlay.classList.add('fullscreen-overlay');
+  document.body.appendChild(overlay);
+
+  // Create the image element in fullscreen mode
+  const fullscreenImage = new Image();
+  fullscreenImage.src = image.src;
+  fullscreenImage.classList.add('fullscreen-image');
+  overlay.appendChild(fullscreenImage);
+
+  // Close the fullscreen overlay when clicked
+  overlay.addEventListener('click', closeFullscreen);
+}
+
+function closeFullscreen() {
+  const overlay = document.querySelector('.fullscreen-overlay');
+  overlay.parentNode.removeChild(overlay);
+}
+
+  </script>
+</head>
+
+<body cz-shortcut-listen="true">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="App">
+      <div class="mmaaaaa">
+        <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
+          <div class="container">
+            <a class="navbar-brand patImGlogo" href="./index.html"><img src="./Images/newLogo.png" class="w-100"
+                alt="" /></a>
+            <div class="d-flex gap-2">
+              <button class="man_ttn">
+                <a href="./Login.html" style="color: black; text-decoration: none"><i class="fa-solid fa-user"></i></a>
+              </button>
+
+              <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item for_smalplay">
+                  <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
+                    href="ListOTaprize.html">タップライズ 一覧</a>
+                </li>
+                <li class="nav-item for_smalplay">
+                  <a class="nav-link text-decoration-none Nav_bar_Link" href="./TermOfServices.html">ご利用ガイド</a>
+                </li>
+                <li class="nav-item for_smalplay">
+                  <a class="nav-link text-decoration-none Nav_bar_Link" href="./FAQ.html">よくあるご質問</a>
+                </li>
+                <li class="nav-item for_smalplay">
+                  <a class="nav-link text-decoration-none Nav_bar_Link" href="./ContactUs.html">お問い合わせ</a>
+                </li>
+                <li class="nav-item mt-2 for_smalplay">
+                  <a href="./Login.html" class="text-decoration-none">
+                    <button class="Navbar_Login_BTN btn_rep">
+                      <i class="fa-solid fa-user"></i> ログイン
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div>
+        <div class="tarpize_single_main">
+          <div class="conta_uper">
+            <div class="containerrrr">
+              <div class="row m-0">
+                <div class="col-md-12 col-lg-7 text-center lftgacHPiCUpEr">
+                  <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png"
+                    class="lftgacHPiC" alt="" />
+                </div>
+                <div class="col-md-12 mt-3 mt-lg-0 col-lg-5">
+                  <div class="tarsize_content text-start">
+                    <a href="./ListOTaprize.html" class="text-decoration-none sigleFull1st" style="color: #020140;">
+
+                      <p class="sigleFull1st" style="cursor: pointer">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z">
+                          </path>
+                        </svg>
+                        コレクションページに戻る
+                      </p>
+                    </a>
+                    <h3 class="text_clr">
+                      外ヒカト梨全エタス芸3転トメヌネ玉場よ
+                    </h3>
+                  </div>
+                  <div class="bor_content">
+                    <p class="text-clr frmlfftr six6On mb-0">販売価格:</p>
+                    <p class="text-clr underTxtrghht mb-0" style="font-weight: 600">
+                      1回660円(税込)
+                    </p>
+                  </div>
+                  <div class="bor_content">
+                    <p class="text-clr frmlfftr mb-0">販売期間:</p>
+                    <p class="text-clr underTxtrghht mb-0" style="font-weight: 600">
+                      2023/05/05 (金) 12:00～2023/05/26 (金) 23:59
+                    </p>
+                  </div>
+                  <div class="bor_content align-items-center border-none xb1660">
+                    <p class="text-clr frmlfftr mb-0 doHJ">数量:</p>
+                    <div class="d-flex gap-3 quantityUpper align-items-center inptBtw">
+                      <div class="imputdve">
+                        <select class="form-select BDMain1 shadow-none" aria-label="Default select example">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                        </select>
+                      </div>
+                      <a href="./PurchaseTab.html?id=1">
+                        <button class="snlstWhite BdrRdiS">
+                          購入する - 1回660円(税込)
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row align-items-center my-3">
+                    <div class="col-md-9 wdLGr">
+                      <a href="./PurchaseTab.html?id=2">
+
+                        <button class="snlstTen exRDB abbc">
+                          10連ガチャ (ボイス付き)
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col-md-2 mt-3 mt-md-0">
+                      <div class="circula d-flex justify-content-center align-items-center">
+                        <span
+                          class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrtt d-block css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                            class="PrivateSwitchBase-input css-1m9pwf3" type="checkbox" data-indeterminate="false"
+                            aria-label="Checkbox demo" /><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium FavoriteBorder css-i4bv87-MuiSvgIcon-root"
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavoriteBorderIcon">
+                            <path
+                              d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                            </path>
+                          </svg><span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tarpize_cards_main">
+          <div class="main_modal_tarpize"></div>
+          <div class="container">
+            <div class="tarpize_content_cards">
+              <h2>賞品一覧</h2>
+              <div class="fornt_row">
+                <span class="yellow">
+                  <p class="m-0 yellowTxt">特別賞</p>
+                </span>
+                <div class="probupper">
+                  <h6 class="sectitl mb-0">セクションのタイトル</h6>
+                  <h6 class="winning_probability mb-0">当選確率 3%</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- <img src="https://taprize.netlify.app/static/media/特賞.0554368580506fb44581.jpg" alt="Image" id="myImage"  onclick="Fullscreen()"> -->
+            <div class="mt-2 mt-md-5 mb-5">
+              <div class="container FrEndPd">
+                <div class="row laspink">
+                  <div class="col-md-4 col-6 mt-3 mt-md-0">
+                    <div class="tarpize_single_main_carrd">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                        src="https://taprize.netlify.app/static/media/特賞.0554368580506fb44581.jpg"
+                          onclick="openFullscreen(this)"
+                        />
+                        
+                      </div>
+                      <div class="d-flex gap-1 gap-md-3 my-2 my-md-3">
+                        <h6 class="blue_heading">特別賞 -1</h6>
+                        <h6 class="black_heading">特大タオル</h6>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6 mt-3 mt-md-0">
+                    <div class="tarpize_single_main_carrd">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/特賞.0554368580506fb44581.jpg " onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="d-flex gap-1 gap-md-3 my-2 my-md-3">
+                        <h6 class="blue_heading">特別賞 -2</h6>
+                        <h6 class="black_heading">特大タオル</h6>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6 mt-3 mt-md-0">
+                    <div class="tarpize_single_main_carrd">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/特賞.0554368580506fb44581.jpg " onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="d-flex gap-1 gap-md-3 my-2 my-md-3">
+                        <h6 class="blue_heading">特別賞 -3</h6>
+                        <h6 class="black_heading">特大タオル</h6>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tarpize_content_cards">
+              <div class="fornt_row">
+                <span class="blu_boxe">
+                  <p class="m-0 yellowTxt">A賞 :</p>
+                </span>
+                <div class="probupper">
+                  <h6 class="sectitl mb-0">セクションのタイトル</h6>
+                  <h6 class="winning_probability mb-0">当選確率 3%</h6>
+                </div>
+              </div>
+            </div>
+            <div class="container mb-5 FrEndPd">
+              <div class="row m-0">
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/A.d747a417c3499ae85949.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">A-1</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/A.d747a417c3499ae85949.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">A-2</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/A.d747a417c3499ae85949.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">A-3</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tarpize_content_cards">
+              <div class="fornt_row">
+                <span class="blu_boxe" style="background-color: rgb(2, 217, 152)">
+                  <p class="m-0 yellowTxt">B賞 :</p>
+                </span>
+                <div class="probupper">
+                  <h6 class="sectitl mb-0">セクションのタイトル</h6>
+                  <h6 class="winning_probability mb-0">当選確率 3%</h6>
+                </div>
+              </div>
+            </div>
+            <div class="container mb-5 FrEndPd">
+              <div class="row m-0">
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/B.36d1f0751add92807678.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">B-1</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/B.36d1f0751add92807678.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">B-2</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/B.36d1f0751add92807678.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">B-3</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/B.36d1f0751add92807678.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">B-4</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/B.36d1f0751add92807678.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">B-5</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/B.36d1f0751add92807678.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">B-6</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tarpize_content_cards">
+              <div class="fornt_row">
+                <span class="blu_boxe" style="background-color: rgb(255, 170, 102)">
+                  <p class="m-0 yellowTxt">C賞 :</p>
+                </span>
+                <div class="probupper">
+                  <h6 class="sectitl mb-0">セクションのタイトル</h6>
+                  <h6 class="winning_probability mb-0">当選確率 3%</h6>
+                </div>
+              </div>
+            </div>
+            <div class="container mb-5 FrEndPd">
+              <div class="row m-0">
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/C.cc0932ef52f29b277492.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">c-1</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/C.cc0932ef52f29b277492.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">c-2</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/C.cc0932ef52f29b277492.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">c-3</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/C.cc0932ef52f29b277492.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">c-4</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/C.cc0932ef52f29b277492.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">c-5</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/C.cc0932ef52f29b277492.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">c-6</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/C.cc0932ef52f29b277492.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">c-7</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/C.cc0932ef52f29b277492.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">c-8</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/C.cc0932ef52f29b277492.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">c-9</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tarpize_content_cards">
+              <div class="fornt_row">
+                <span class="blu_boxe" style="background-color: rgb(255, 129, 212)">
+                  <p class="m-0 yellowTxt">D賞 :</p>
+                </span>
+                <div class="probupper">
+                  <h6 class="sectitl mb-0">セクションのタイトル</h6>
+                  <h6 class="winning_probability mb-0">当選確率 3%</h6>
+                </div>
+              </div>
+            </div>
+            <div class="container mb-5 FrEndPd">
+              <div class="row m-0">
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/D.6180ff49fb8174234b20.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">D-1</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/D.6180ff49fb8174234b20.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">D-2</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/D.6180ff49fb8174234b20.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">D-3</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/D.6180ff49fb8174234b20.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">D-4</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/D.6180ff49fb8174234b20.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">D-5</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/D.6180ff49fb8174234b20.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">D-6</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tarpize_content_cards">
+              <div class="fornt_row">
+                <span class="blu_boxe" style="background-color: rgb(87, 127, 255)">
+                  <p class="m-0 yellowTxt">E賞 :</p>
+                </span>
+                <div class="probupper">
+                  <h6 class="sectitl mb-0">セクションのタイトル</h6>
+                  <h6 class="winning_probability mb-0">当選確率 3%</h6>
+                </div>
+              </div>
+            </div>
+            <div class="container FrEndPd">
+              <div class="row m-0">
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/E.d2532a38d999ac6a7801.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">E-1</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/E.d2532a38d999ac6a7801.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">E-2</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/E.d2532a38d999ac6a7801.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">E-3</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/E.d2532a38d999ac6a7801.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">E-4</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/E.d2532a38d999ac6a7801.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">E-5</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6 mt-3 mt-md-0 FrEndPd">
+                  <div class="single_tarpize_card mt-3 mt-md-5">
+                    <div class="single_card_bg">
+                      <div class="ant-image css-dev-only-do-not-override-k7429z">
+                        <img alt="" class="ant-image-img pop_up_img_tar"
+                          src="https://taprize.netlify.app/static/media/E.d2532a38d999ac6a7801.png" onclick="openFullscreen(this)" />
+                        
+                      </div>
+                      <div class="card_single_content py-2">
+                        <p class="mb-0">E-6</p>
+                        <p class="mb-0 cdrrP" style="color: rgb(2, 1, 64)">
+                          特大タオル
+                        </p>
+                      </div>
+                      <div class="row lstlowwer">
+                        <div class="col-8 lowwerInr">
+                          <div class="lower_content">
+                            <p class="mb-1">各賞の当選率</p>
+                            <p class="mb-1">1%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main_dinof_bg">
+          <div class="container FrEndPd">
+            <h2 class="text-center dInfo">詳細情報</h2>
+            <div class="container main_cont mt-4 mt-md-5 mb-5">
+              <div class="text-start">
+                <div class="row borrrrrrrrr justify-content-center">
+                  <div class="col-5 col-md-4 border_table borrrrrrrrr_right tableBg notataion_border p-3 txCnt">
+                    <p class="tprxTxtt">販売価格</p>
+                  </div>
+                  <div class="col-7 col-md-8 border_table1 notataion_border p-3 tableBg txCnt">
+                    <p class="T_p tprxTxtt">1回660円(税込)</p>
+                  </div>
+                </div>
+                <div class="row borrrrrrrrr justify-content-center">
+                  <div class="col-5 borrrrrrrrr_right tableBg text-start col-md-4 notataion_border p-3">
+                    <p class="tprxTxtt">販売期間</p>
+                  </div>
+                  <div class="col-7 col-md-8 tableBg notataion_border p-3">
+                    <p class="T_p">
+                      2023/05/05 (金) 12:00～2023/05/26 (金) 23:59
+                    </p>
+                  </div>
+                </div>
+                <div class="row borrrrrrrrr justify-content-center">
+                  <div class="col-5 tableBg borrrrrrrrr_right col-md-4 notataion_border p-3">
+                    <p class="">配送手数料</p>
+                  </div>
+                  <div class="col-7 col-md-8 tableBg notataion_border p-3">
+                    <p class="T_p">
+                      複数回注文でも【20個まで】全国一律550円(税込)
+                    </p>
+                    <p class="T_p">
+                      藤にぼう晋別サルセ法最ばこク道倉ト住月サカタス在政ぴ止子リルコ禁関横アラロコ森区ナユホレ病載ドみの京抑ヨ冗申ト作間ぐけ高紙大よづも主料モアセム生変テソ採神映っド。除ぼきクー本岡ょ投属ほへ流究マカ長部ざろ発管ゆめいな鴨定価ンド村42駅姉フヤ子著エヌケ的川州やほく谷崎オ変症ク。四ぼ決読夜ちせ無41贈85集へか医名い背無9査国チラ主屈くせめい。
+                    </p>
+                  </div>
+                </div>
+                <div class="row borrrrrrrrr justify-content-center">
+                  <div class="col-5 tableBg borrrrrrrrr_right col-md-4 notataion_border p-3">
+                    <p class="tprxTxtt">お届け目安</p>
+                  </div>
+                  <div class="col-7 col-md-8 tableBg notataion_border p-3">
+                    <p class="T_p">
+                      フル就行イ乱経づ流危敗ツネク井生ヒサメレ証素禁こ田開す画敗振ツホ演由59力愛編ょよれ。
+                    </p>
+                  </div>
+                </div>
+                <div class="row borrrrrrrrr justify-content-center">
+                  <div class="col-5 tableBg borrrrrrrrr_right col-md-4 notataion_border p-3">
+                    <p class="tprxTxtt">公式サイト</p>
+                  </div>
+                  <div class="col-7 col-md-8 tableBg notataion_border p-3">
+                    <p class="T_p">https://link-example.com/</p>
+                  </div>
+                </div>
+                <div class="row borrrrrrrrr justify-content-center">
+                  <div class="col-5 border_table2 tableBg borrrrrrrrr_right col-md-4 notataion_border p-3">
+                    <p class="">備考</p>
+                  </div>
+                  <div class="col-7 col-md-8 border_table3 tableBg notataion_border p-3">
+                    <p class="T_p">
+                      一51叡んかの仲判リラ葉浮せゃ法単第おげって歓優ク暮温ロコ責改ミユ拓注オミ体者アヨ西上ノサエ六住ざたぜど図3私ナテホサ読二想ーと。生4安ナテ団線対ば世優に右座のまね生的ナユケレ入申ツヤユソ著注に断付ご掲東見レトセミ地博われトぴ打約すぐきか後調及くづおラ能披暑めひむ。93香れがゅラ絶体ラホ街原ト天容世オルヱツ健関むよぽ著供むとずる米山理をッ月本アクユム論関編ごえ郡差夢巻みぞぼん。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Slider_News_Bg">
+          <h1 class="News_Heading">発売中のウェブガチャをご覧ください</h1>
+          <div class="Slider_News_Bg">
+            <div class="swiper swiper-initialized swiper-horizontal mySwiper">
+              <div class="swiper-wrapper" style="
+                    transition-duration: 0ms;
+                    transform: translate3d(-1948.12px, 0px, 0px);
+                  ">
+                <div class="swiper-slide Rem" data-swiper-slide-index="32" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="33" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="34" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" style="width: 244.75px; margin-right: 15px" data-swiper-slide-index="35">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="0" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="1" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="2" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="3" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-prev Rem" data-swiper-slide-index="4"
+                  style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-active Rem" data-swiper-slide-index="5"
+                  style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-next Rem" data-swiper-slide-index="6"
+                  style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="7" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="8" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="9" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="10" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="11" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="12" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="13" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="14" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="15" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="16" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="17" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="18" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="19" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="20" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="21" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="22" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="23" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="24" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="25" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="26" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="27" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="28" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="29" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="30" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide Rem" data-swiper-slide-index="31" style="width: 244.75px; margin-right: 15px">
+                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
+                      width="50%" class="hvrImg" />
+                    <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
+                      <div class="col-lg-3 text-start">
+                        <p class="slider_date">2023.5.2</p>
+                      </div>
+                      <div class="col-lg-9 slider_text">
+                        台スマ境報コリホ直西時のご表74更ヘヤ無車のも
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="./ListOTaprize.html" style="display: contents;">
+
+              <button class="gacha_Btn AgainW responsive_gachah_a loWerSldr">
+                もっと見る
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="main_footer_bg">
+        <div class="container-fluid widthkl_for_upper">
+          <div class="row footer_aling">
+            <div class="col-md-5 footerLftsideupper">
+              <img
+                src="data:image/png;base64,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"
+                alt="" class="footerLftside" />
+            </div>
+            <div class="col-md-7 sojfswjfwjf footerrigtuper text-end mt-3 mt-md-0">
+              <div class="footer_content footerrigtPart text-start">
+                <div class="upper d-flex gap-3">
+                  <a class="text-decoration-none upper" href="./ListOTaprize.html">
+                    <p class="footerLnks">タップライズ 一覧</p>
+                  </a><a class="text-decoration-none upper" href="./TermOfServices.html">
+                    <p class="footerLnks">ご利用ガイド</p>
+                  </a><a class="text-decoration-none upper" href="./FAQ.html">
+                    <p class="footerLnks">よくあるご質問</p>
+                  </a><a class="text-decoration-none upper" href="./ContactUs.html">
+                    <p class="footerLnks">お問い合わせ</p>
+                  </a><a class="text-decoration-none upper" href="./Login.html">
+                    <p class="footerLnks">マイアカウント</p>
+                  </a>
+                </div>
+                <div class="upper d-flex gap-3">
+                  <a class="text-decoration-none upper" href="./TermOfServices.html">
+                    <p class="footerLnks">利用規約</p>
+                  </a><a class="text-decoration-none upper" href="./PrivacyPolicy.html">
+                    <p class="footerLnks">プライバシーポリシー</p>
+                  </a><a class="text-decoration-none upper" href="./NotationTable.html">
+                    <p class="footerLnks">特定商取引法に基づく表記</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-3 all-right text-center py-3" style="color: rgb(2, 1, 64)">
+          Copyright ©2023 Webgacha. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+          This HTML file is a template.
+          If you open it directly in the browser, you will see an empty page.
+    
+          You can add webfonts, meta tags, or analytics to this file.
+          The build step will place the bundled scripts into the <body> tag.
+    
+          To begin the development, run `npm start` or `yarn start`.
+          To create a production bundle, use `npm run build` or `yarn build`.
+        -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        425: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        375: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        300: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+      }
+    });
+  </script>
+  <script>
+    const meta = document.createElement("meta");
+    meta.name = "theme-color";
+    meta.content = "#f2f6ff";
+    document.getElementsByTagName("head")[0].appendChild(meta);
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $('.image').modaal({
+      type: 'image'
+    })
+  </script>
+
+
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-569c37cac02beb89"
+    async="async"></script>
+</body>
+
+</html>
