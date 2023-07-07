@@ -22604,3 +22604,29 @@ html {
     scroll-behavior: smooth !important;
       scroll-margin-top: 120px !important;
   }
+
+
+  .fstbg :focus{
+    background: #2eb3ff !important;
+    border-radius: 12px !important;
+    color: white !important;
+    cursor: pointer;
+    padding: 15px 10px !important;
+    text-decoration: none;
+     margin-top: 10px !important;
+  }
+  
+  .fstbg :hover{
+    background: #2eb3ff !important;
+    border-radius: 12px !important;
+    color: white !important;
+    cursor: pointer;
+    padding: 15px 10px !important;
+    text-decoration: none;
+     margin-top: 10px !important;
+  }
+
+  .link_text_fst{
+    text-decoration: none;
+    color: #020140;
+  }
