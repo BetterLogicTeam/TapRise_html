@@ -13590,7 +13590,7 @@ li {
 
     .News_Heading {
         font-weight: 500;
-        font-size: 23px;
+        font-size: 29px;
         padding-top: 29px !important;
         padding-bottom: 0px !important;
     }
@@ -22039,7 +22039,7 @@ td {
     line-height: 1.25;
     letter-spacing: 0.02857em;
     text-transform: uppercase;
-    /* max-width: 360px; */
+    max-width: 360px;
     min-width: 90px;
     position: relative;
     min-height: 48px;
@@ -22580,3 +22580,27 @@ td {
     font-size: 1.25rem;
     margin: 0 -8px;
 }
+
+.mrgnTop{
+  margin-top: 35px ;
+}
+
+html {
+  scroll-behavior: smooth !important;
+  /* scroll-margin-block: 10rem; */
+}
+
+.sec1st{
+  scroll-behavior: smooth !important;
+    scroll-margin-top: 200px !important;
+}
+
+.sec2nd{
+    scroll-behavior: smooth !important;
+      scroll-margin-top: 120px !important;
+  }
+
+.sec3nd{
+    scroll-behavior: smooth !important;
+      scroll-margin-top: 120px !important;
+  }
