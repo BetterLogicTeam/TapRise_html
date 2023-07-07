@@ -13592,7 +13592,7 @@
 
             .News_Heading {
                 font-weight: 500;
-                font-size: 29px;
+                font-size: 23px !important;
                 padding-top: 29px !important;
                 padding-bottom: 0px !important;
             }
