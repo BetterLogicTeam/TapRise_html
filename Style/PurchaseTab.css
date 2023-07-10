@@ -17153,7 +17153,7 @@ input[type="checkbox"] {
     font-size: 16px !important;
     font-weight: 700 !important;
     line-height: 19px;
-    background-color: #ffffff !important;
+    /* background-color: #ffffff !important; */
     border-radius: 50px !important;
     width: 100% !important;
     transition: 1s;
@@ -20711,7 +20711,7 @@ background-image: url(../Images/d_info.png);  background-position: center;
   .bdsltmainup {
     display: flex !important;
     flex-direction: row !important;
-    gap: 10px !important;
+    /* gap: 10px !important; */
   }
 
   .bdDateUpper {

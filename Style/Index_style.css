@@ -10947,7 +10947,7 @@ height: auto !important;
 } */
 
   .News_Heading {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 23px;
     padding-top: 29px !important;
     padding-bottom: 0px !important;
@@ -10968,6 +10968,9 @@ height: auto !important;
     height: 75px !important;
     padding: 13px 24px !important;
     border: none;
+  }
+  .ndxBtnn{
+    display: contents;
   }
   .brack {
     display: block !important;
@@ -19282,5 +19285,10 @@ min-height: 58px;
   max-height: 100%;
   cursor: pointer;
 }
+
+.a {
+  text-decoration: none !important;
+}
+
 
 
