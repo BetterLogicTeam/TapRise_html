@@ -1,7 +1,7 @@
 <html lang="ja-jp">
     <head>
     
-        <meta charset="utf-8" />
+        <meta charset="utf-8" />  <link rel="icon" href="./Images/favicon.ico" />
        <link rel="icon" href="./Images/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#f2f6ff" />
@@ -24,6 +24,39 @@
               user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
             -->
         <link rel="manifest" href="/manifest.json" />
+        <script>
+            function toggleIcon() {
+             var buttonIcon = document.getElementById("buttonIcon");
+             buttonIcon.style.color="#e60058"
+       
+             if (buttonIcon.classList.contains("fa-bars")) {
+               buttonIcon.classList.remove("fa-bars");
+               buttonIcon.classList.add("fa-xmark");
+             } else {
+               buttonIcon.classList.remove("fa-xmark");
+               buttonIcon.classList.add("fa-bars");
+             }
+           }
+          
+         </script>
+         <script>
+            function openNewPage(id) {
+              //   var image = document.getElementById("myImage");
+        
+              // Get the metadata of the image
+              var metadata = {
+                src: id,
+        
+              };
+              console.log("metadata", metadata);
+              // Encode the metadata as a URL parameter
+              var urlParams = new URLSearchParams(metadata).toString();
+        
+              //   // Open the new page with the image metadata in the URL
+              //   window.open("TarpizeSingleFullPage.html?" + urlParams);
+              window.location.replace("TarpizeSingleFullPage.html?" + urlParams)
+            }
+          </script>
         <!--
               Notice the use of  in the tags above.
               It will be replaced with the URL of the `public` folder during the build.
@@ -58,20 +91,23 @@
             <div class="mmaaaaa">
                 <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
                   <div class="container">
-                    <a class="navbar-brand patImGlogo" href="./index.html"><img src="./Images/newLogo.png" class="w-100" alt="" /></a>
+                    <a class="navbar-brand patImGlogo nav_Responsive " href="./index.html">
+                      <img src="./Images/newLogo.png" class="w-100"
+                        alt=""  /></a>
                     <div class="d-flex gap-2">
                       <button class="man_ttn">
                         <a href="./Login.html" style="color: black; text-decoration: none"><i class="fa-solid fa-user"></i></a>
                       </button>
         
-                      <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+                      <button id="toggleButton" class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        aria-label="Toggle navigation"  onclick="toggleIcon()">
+                        <i id="buttonIcon" class="fas fa-bars"></i>
+                      
                       </button>
                     </div>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <ul class="navbar-nav ms-auto pb-2">
                         <li class="nav-item for_smalplay">
                           <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
                             href="ListOTaprize.html">タップライズ 一覧</a>
@@ -86,7 +122,7 @@
                           <a class="nav-link text-decoration-none Nav_bar_Link" href="./ContactUs.html">お問い合わせ</a>
                         </li>
                         <li class="nav-item mt-2 for_smalplay">
-                          <a href="./Login.html" class="text-decoration-none">  
+                          <a href="./Login.html" class="text-decoration-none">
                             <button class="Navbar_Login_BTN btn_rep">
                               <i class="fa-solid fa-user"></i> ログイン
                             </button>
@@ -104,9 +140,10 @@
                             <div>
                                 <h1 class="Notation_h1 text-white">マイページ </h1>
                             </div><br>
-                            <div class="border-0  "><button class="btn_coupon p-2 "><img
-                                        src="https://taprize.netlify.app/static/media/power.54640c622b8879239e03a1d7e374b34e.svg" class="px-2"
-                                        alt=""><span class="fs-5"> グアウト </span> </button></div>
+                            <div class="border-0  "><button class="btn_coupon p-2 ">
+                                <img
+                                src="./Images/power.svg" class="px-2"
+                                alt=""><span class="fs-5"> グアウト </span> </button></div>
                         </div>
                     </div>
                 </div>
@@ -190,11 +227,12 @@
                                                     style="width: 100%; cursor: pointer;">
                                                     <div class="p-2">
                                                         <div class="hvrBx">
-                                                            <a href="./TarpizeSingleFullPage.html">
+                                                           
 
                                                                 <img class="card-img-top w-100 hvrImg "
-                                                                    src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png">
-                                                            </a>
+                                                                 onclick="openNewPage('./Images/image 1.png')"
+                                                                    src="./Images/image 1.png">
+                                                           
 
                                                         </div>
                                                     </div><button class="endSale"
@@ -205,10 +243,10 @@
                                                         <p class="text-start listCrd_scnd_txt mb-0 py-4 card-text">発売期間
                                                             05/ 5(金)～05/26(金)</p>
                                                         <div class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                            <a href="./ListOTaprize.html" style="display: contents;">
+                                                           
 
-                                                                <button class="listCrd_button  ">販売中のタップライズ</button>
-                                                            </a>
+                                                                <button  onclick="openNewPage('./Images/image 1.png')" class="listCrd_button  ">販売中のタップライズ</button>
+                                                          
 
                                                             
                                                             <button
@@ -247,10 +285,11 @@
                                                     style="width: 100%; cursor: pointer;">
                                                     <div class="p-2">
                                                         <div class="hvrBx">
-                                                            <a href="./TarpizeSingleFullPage.html">
+                                                           
                                                             <img class="card-img-top w-100 hvrImg "
-                                                                src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png">
-                                                                </a>
+                                                             onclick="openNewPage('./Images/image 4.png')"
+                                                                src="./Images/image 4.png">
+                                                               
                                                         </div>
                                                     </div><button class="endSale"
                                                         style="background-color: rgb(216, 216, 216);">販売終了</button>
@@ -260,9 +299,9 @@
                                                         <p class="text-start listCrd_scnd_txt mb-0 py-4 card-text">発売期間
                                                             05/ 5(金)～05/26(金)</p>
                                                         <div class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                            <a href="./ListOTaprize.html" style="display: contents;">
-                                                            <button class="listCrd_button  ">販売中のタップライズ</button>
-                                                            </a>
+                                                           
+                                                            <button  onclick="openNewPage('./Images/image 4.png')" class="listCrd_button  ">販売中のタップライズ</button>
+                                                    
 
                                                             <button
                                                                 class="fazol d-block d-md-none rdhtgb"><svg
@@ -301,10 +340,11 @@
                                                     <div class="p-2">
                                                         <div class="hvrBx">
                                                             
-                                                            <a href="./TarpizeSingleFullPage.html">
+                                                           
                                                                 <img class="card-img-top w-100 hvrImg "
-                                                                src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png">
-                                                                </a>
+                                                                 onclick="openNewPage('./Images/image 6.png')"
+                                                                src="./Images/image 6.png">
+                                                             
                                                         </div>
                                                     </div><button class="endSale"
                                                         style="background-color: rgb(216, 216, 216);">販売終了</button>
@@ -314,9 +354,9 @@
                                                         <p class="text-start listCrd_scnd_txt mb-0 py-4 card-text">発売期間
                                                             05/ 5(金)～05/26(金)</p>
                                                         <div class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                            <a href="./ListOTaprize.html" style="display: contents;">
-                                                            <button class="listCrd_button  ">販売中のタップライズ</button>
-                                                            </a>
+                                                           
+                                                            <button  onclick="openNewPage('./Images/image 6.png')" class="listCrd_button  ">販売中のタップライズ</button>
+                                                           
                                                             <button
                                                                 class="fazol d-block d-md-none rdhtgb"><svg
                                                                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
@@ -353,10 +393,11 @@
                                                     style="width: 100%; cursor: pointer;">
                                                     <div class="p-2">
                                                         <div class="hvrBx">
-                                                            <a href="./TarpizeSingleFullPage.html">
+                                                           
                                                             <img class="card-img-top w-100 hvrImg "
-                                                                src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png">
-                                                                </a>
+                                                             onclick="openNewPage('./Images/image 1.png')"
+                                                                src="./Images/image 1.png">
+                                                              
 
                                                         </div>
                                                     </div><button class="endSale"
@@ -367,9 +408,9 @@
                                                         <p class="text-start listCrd_scnd_txt mb-0 py-4 card-text">発売期間
                                                             05/ 5(金)～05/26(金)</p>
                                                         <div class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                            <a href="./ListOTaprize.html" style="display: contents;">
-                                                            <button class="listCrd_button  ">販売中のタップライズ</button>
-                                                            </a>
+                                                           
+                                                            <button  onclick="openNewPage('./Images/image 1.png')" class="listCrd_button  ">販売中のタップライズ</button>
+                                                           
                                                             <button
                                                                 class="fazol d-block d-md-none rdhtgb"><svg
                                                                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"

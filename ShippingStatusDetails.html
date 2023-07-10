@@ -3,7 +3,7 @@
 
 <head>
     
-    <meta charset="utf-8" />
+    <meta charset="utf-8" />  <link rel="icon" href="./Images/favicon.ico" />
    <link rel="icon" href="./Images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f2f6ff" />
@@ -38,6 +38,8 @@
           work correctly both with client-side routing and a non-root public URL.
           Learn how to configure a non-root public URL by running `npm run build`.
         -->
+  <link rel="stylesheet" href="./Style/Index_style.css">
+
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
@@ -48,6 +50,45 @@
     <!-- <link rel="stylesheet" href="./Style/PurchaseTab_3.css"> -->
     
     <title>TaPrize</title>
+    <script>
+        function toggleIcon() {
+         var buttonIcon = document.getElementById("buttonIcon");
+         buttonIcon.style.color="#e60058"
+   
+         if (buttonIcon.classList.contains("fa-bars")) {
+           buttonIcon.classList.remove("fa-bars");
+           buttonIcon.classList.add("fa-xmark");
+         } else {
+           buttonIcon.classList.remove("fa-xmark");
+           buttonIcon.classList.add("fa-bars");
+         }
+       }
+      
+     </script>
+  <script>
+    
+    function openFullscreen(image) {
+  // Create the fullscreen overlay
+  const overlay = document.createElement('div');
+  overlay.classList.add('fullscreen-overlay');
+  document.body.appendChild(overlay);
+
+  // Create the image element in fullscreen mode
+  const fullscreenImage = new Image();
+  fullscreenImage.src = image.src;
+  fullscreenImage.classList.add('fullscreen-image');
+  overlay.appendChild(fullscreenImage);
+
+  // Close the fullscreen overlay when clicked
+  overlay.addEventListener('click', closeFullscreen);
+}
+
+function closeFullscreen() {
+  const overlay = document.querySelector('.fullscreen-overlay');
+  overlay.parentNode.removeChild(overlay);
+}
+
+  </script>
   
    
     <meta name="theme-color" content="#f2f6ff" />
@@ -59,20 +100,23 @@
             <div class="mmaaaaa">
                 <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
                   <div class="container">
-                    <a class="navbar-brand patImGlogo" href="./index.html"><img src="./Images/newLogo.png" class="w-100" alt="" /></a>
+                    <a class="navbar-brand patImGlogo nav_Responsive " href="./index.html">
+                      <img src="./Images/newLogo.png" class="w-100"
+                        alt=""  /></a>
                     <div class="d-flex gap-2">
                       <button class="man_ttn">
                         <a href="./Login.html" style="color: black; text-decoration: none"><i class="fa-solid fa-user"></i></a>
                       </button>
         
-                      <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+                      <button id="toggleButton" class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        aria-label="Toggle navigation"  onclick="toggleIcon()">
+                        <i id="buttonIcon" class="fas fa-bars"></i>
+                      
                       </button>
                     </div>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <ul class="navbar-nav ms-auto pb-2">
                         <li class="nav-item for_smalplay">
                           <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
                             href="ListOTaprize.html">タップライズ 一覧</a>
@@ -87,7 +131,7 @@
                           <a class="nav-link text-decoration-none Nav_bar_Link" href="./ContactUs.html">お問い合わせ</a>
                         </li>
                         <li class="nav-item mt-2 for_smalplay">
-                          <a href="./Login.html" class="text-decoration-none">  
+                          <a href="./Login.html" class="text-decoration-none">
                             <button class="Navbar_Login_BTN btn_rep">
                               <i class="fa-solid fa-user"></i> ログイン
                             </button>
@@ -179,23 +223,35 @@
                                             <div class="MuiTabs-scroller MuiTabs-fixed css-jpln7h-MuiTabs-scroller"
                                                 style="overflow: hidden; margin-bottom: 0px;">
                                                 <div class="MuiTabs-flexContainer MuiTabs-centered css-1wf8b0h-MuiTabs-flexContainer"
-                                                    role="tablist"><button
-                                                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected tabcor_achsg Coupon_list145 css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                                                    role="tablist">
+    
+                                                    <button
+                                                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected  tabcor_achsg Coupon_list145 css-1h9z7r5-MuiButtonBase-root-MuiTab-root "
                                                         tabindex="0" type="button" role="tab" aria-selected="true"
-                                                        id="simple-tab-0" aria-controls="simple-tabpanel-0">クーポン一覧<span
-                                                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button><button
-                                                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tabcor_achsg Coupon_list245 css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                                                        id="simple-tab-0" aria-controls="simple-tabpanel-0"
+                                                        onclick="showHeading('simple-tab-0')">クーポン一覧<span
+                                                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span>
+                                                    </button>
+                                                    <button
+                                                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary  tabcor_achsg Coupon_list245 css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
                                                         tabindex="-1" type="button" role="tab" aria-selected="false"
-                                                        id="simple-tab-1" aria-controls="simple-tabpanel-1">購入履歴<span
-                                                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
+                                                        id="simple-tab-1" aria-controls="simple-tabpanel-1"
+                                                        onclick="showParagraph('simple-tab-1')">購入履歴<span
+                                                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span>
+                                                    </button>
+    
                                                 </div><span class="MuiTabs-indicator css-lafep3-MuiTabs-indicator"
-                                                    style="left: 9.60938px; width: 194.391px;"></span>
+                                                    style="left: 20.6094px; width: 302.391px;"></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" ">
+    
+    
+                            <!-- red part yaha sy start huta hai  -->
+    
+                            <div class=" " id="code" style="display: block;">
                                 <div class=" tabcor_achsg_ka_container">
                                     <div class="MuiBox-root css-1v2sggx">
                                         <div class="container">
@@ -212,12 +268,12 @@
                                                                 </div>
                                                                 <div
                                                                     class="col-3 d-flex justify-content-center tableBg align-items-center  bgtableicon notataion_border p-3">
-                                                                    <img src="./Images/mpb.svg"
-                                                                        class="mobile_main_img"></div>
+                                                                    <img src="./Images/mpb.svg" class="mobile_main_img">
+                                                                </div>
                                                                 <div
                                                                     class="col-3 border_table1 d-flex justify-content-center align-items-center tableBg notataion_border p-3">
-                                                                    <img src="./Images/Mb.svg"
-                                                                        class="mobile_main_img"></div>
+                                                                    <img src="./Images/Mb.svg" class="mobile_main_img">
+                                                                </div>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-6  tableBg   notataion_border p-3">
@@ -225,12 +281,12 @@
                                                                 </div>
                                                                 <div
                                                                     class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border p-3">
-                                                                    <img src="./Images/stb.svg"
-                                                                        class="mobile_main_img"></div>
+                                                                    <img src="/Images/stb.svg" class="mobile_main_img">
+                                                                </div>
                                                                 <div
                                                                     class="col-3  d-flex justify-content-center align-items-center tableBg notataion_border p-3">
-                                                                    <img src="./Images/Mb.svg"
-                                                                        class="mobile_main_img"></div>
+                                                                    <img src="./Images/Mb.svg" class="mobile_main_img">
+                                                                </div>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-6  tableBg   notataion_border p-3">
@@ -238,12 +294,12 @@
                                                                 </div>
                                                                 <div
                                                                     class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border py-3">
-                                                                    <img src="./Images/mpb.svg"
-                                                                        class="mobile_main_img"></div>
+                                                                    <img src="./Images/mpb.svg" class="mobile_main_img">
+                                                                </div>
                                                                 <div
                                                                     class="col-3  d-flex justify-content-center align-items-center tableBg notataion_border py-3">
-                                                                    <img src="./Images/Mb.svg"
-                                                                        class="mobile_main_img"></div>
+                                                                    <img src="./Images/Mb.svg" class="mobile_main_img">
+                                                                </div>
                                                             </div>
                                                             <div class="row">
                                                                 <div
@@ -252,14 +308,21 @@
                                                                 </div>
                                                                 <div
                                                                     class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border py-3">
-                                                                    <img src="./Images/mpb.svg"
-                                                                        class="mobile_main_img"></div>
+                                                                    <img src="./Images/mpb.svg" class="mobile_main_img">
+                                                                </div>
                                                                 <div
                                                                     class="col-3 border_table3 d-flex justify-content-center align-items-center tableBg notataion_border py-3">
-                                                                    <img src="./Images/Mb.svg"
-                                                                        class="mobile_main_img"></div>
+                                                                    <img src="./Images/Mb.svg" class="mobile_main_img">
+                                                                </div>
                                                             </div>
                                                         </div>
+    
+    
+    
+    
+    
+    
+    
                                                         <div class="container desktop_vala_stauts">
                                                             <div class="row justify-content-center ">
                                                                 <div
@@ -268,8 +331,7 @@
                                                                 </div>
                                                                 <div
                                                                     class="col-2 d-flex justify-content-center tableBg  bgtableicon notataion_border p-3">
-                                                                    <img
-                                                                        src="./Images/ply_blk.svg">
+                                                                    <img src="./Images/ply_blk.svg">
                                                                 </div>
                                                                 <div
                                                                     class="col-4 border_table1 d-flex justify-content-center tableBg notataion_border p-3">
@@ -277,14 +339,12 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row">
-                                                                <div
-                                                                    class="col-6  tableBg new_fntt  notataion_border p-3">
+                                                                <div class="col-6  tableBg new_fntt  notataion_border p-3">
                                                                     <p> No.3 </p>
                                                                 </div>
                                                                 <div
                                                                     class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
-                                                                    <img
-                                                                        src="./Images/stb.svg">
+                                                                    <img src="./Images/stb.svg">
                                                                 </div>
                                                                 <div
                                                                     class="col-4  d-flex justify-content-center tableBg notataion_border p-3">
@@ -292,14 +352,12 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row">
-                                                                <div
-                                                                    class="col-6  tableBg new_fntt  notataion_border p-3">
+                                                                <div class="col-6  tableBg new_fntt  notataion_border p-3">
                                                                     <p> No.3 </p>
                                                                 </div>
                                                                 <div
                                                                     class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
-                                                                    <img
-                                                                        src="./Images/ply_blk.svg">
+                                                                    <img src="./Images/ply_blk.svg">
                                                                 </div>
                                                                 <div
                                                                     class="col-4  d-flex justify-content-center tableBg notataion_border p-3">
@@ -313,8 +371,7 @@
                                                                 </div>
                                                                 <div
                                                                     class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
-                                                                    <img
-                                                                        src="./Images/ply_blk.svg">
+                                                                    <img src="./Images/ply_blk.svg">
                                                                 </div>
                                                                 <div
                                                                     class="col-4 border_table3 d-flex justify-content-center tableBg notataion_border p-3">
@@ -340,6 +397,141 @@
                                     </div>
                                 </div>
                             </div>
+    
+    
+    
+                            <!-- red part yaha py khtm hujata hai  -->
+    
+    
+                            <!-- black waala hai ya sb  -->
+                            <div style="display: none;" id="code1">
+                                <div class="container mobile_vala_stauts">
+                                    <div class="row justify-content-center ">
+                                        <div class="col-6 tableBg  border_table notataion_border p-3">
+                                            <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                        </div>
+                                        <div
+                                            class="col-3 d-flex justify-content-center tableBg align-items-center  bgtableicon notataion_border p-3">
+                                            <img src="./Images/blackm.svg" class="mobile_main_img"></img>
+                                        </div>
+                                        <div
+                                            class="col-3 border_table1 d-flex justify-content-center align-items-center tableBg notataion_border p-3">
+                                            <img src="./Images/icon_bl.svg" class="mobile_main_img" />
+                                        </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-6  tableBg   notataion_border p-3">
+                                            <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                        </div>
+                                        <div
+                                            class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border p-3">
+                                            <img src="./Images/blackm.svg" class="mobile_main_img"></img>
+                                        </div>
+                                        <div
+                                            class="col-3  d-flex justify-content-center align-items-center tableBg notataion_border p-3">
+                                            <img src="./Images/icon_bl.svg" class="mobile_main_img" />
+                                        </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-6  tableBg   notataion_border p-3">
+                                            <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                        </div>
+                                        <div
+                                            class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border py-3">
+                                            <img src="./Images/blackm.svg" class="mobile_main_img"></img>
+                                        </div>
+                                        <div
+                                            class="col-3  d-flex justify-content-center align-items-center tableBg notataion_border py-3">
+                                            <img src="./Images/icon_bl.svg" class="mobile_main_img" />
+                                        </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-6 border_table2 tableBg   notataion_border p-3">
+                                            <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                        </div>
+                                        <div
+                                            class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border py-3">
+                                            <img src="./Images/blackm.svg" class="mobile_main_img"></img>
+                                        </div>
+                                        <div
+                                            class="col-3 border_table3 d-flex justify-content-center align-items-center tableBg notataion_border py-3">
+                                            <img src="./Images/icon_bl.svg" class="mobile_main_img" />
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="container desktop_vala_stauts">
+                                    <div class="row justify-content-center ">
+                                        <div class="col-6 tableBg new_fntt border_table notataion_border p-3">
+                                            <p> No.1 </p>
+                                        </div>
+                                        <div
+                                            class="col-2 d-flex justify-content-center tableBg  bgtableicon notataion_border p-3">
+                                            <img src="./Images/bll.svg"></img>
+                                        </div>
+                                        <div
+                                            class="col-4 border_table1 d-flex justify-content-center tableBg notataion_border p-3">
+                                            <button class="Shipping_ka_new_btn blck_tblsk">ダウンロード</button>
+                                        </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-6  tableBg new_fntt  notataion_border p-3">
+                                            <p> No.3 </p>
+                                        </div>
+                                        <div
+                                            class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
+                                            <img src="./Images/bll.svg"></img>
+                                        </div>
+                                        <div class="col-4  d-flex justify-content-center tableBg notataion_border p-3">
+                                            <button class="Shipping_ka_new_btn blck_tblsk ">ダウンロード</button>
+                                        </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-6  tableBg new_fntt  notataion_border p-3">
+                                            <p> No.3 </p>
+                                        </div>
+                                        <div
+                                            class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
+                                            <img src="./Images/bll.svg"></img>
+                                        </div>
+                                        <div class="col-4  d-flex justify-content-center tableBg notataion_border p-3">
+                                            <button class="Shipping_ka_new_btn blck_tblsk">ダウンロード</button>
+                                        </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-6 border_table2 tableBg new_fntt  notataion_border p-3">
+                                            <p> No.4 </p>
+                                        </div>
+                                        <div
+                                            class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
+                                            <img src="./Images/bll.svg"></img>
+                                        </div>
+                                        <div
+                                            class="col-4 border_table3 d-flex justify-content-center tableBg notataion_border p-3">
+                                            <button class="Shipping_ka_new_btn blck_tblsk">ダウンロード</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+    
+    
+    
+                            <!-- black part yaha par end hu rha hai  -->
+    
+    
+    
+    
+    
+    
+    
                         </div>
                     </div>
                 </div>
@@ -353,17 +545,8 @@
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z"><img alt="..."
                                             class="ant-image-img card-img-top p-2"
-                                            src="https://taprize.netlify.app/static/media/image_8.a090baa702c551ba1eef.png">
-                                        <div class="ant-image-mask">
-                                            <div class="ant-image-mask-info"><span role="img" aria-label="eye"
-                                                    class="anticon anticon-eye"><svg viewBox="64 64 896 896"
-                                                        focusable="false" data-icon="eye" width="1em" height="1em"
-                                                        fill="currentColor" aria-hidden="true">
-                                                        <path
-                                                            d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
-                                                        </path>
-                                                    </svg></span>Preview</div>
-                                        </div>
+                                            src="https://taprize.netlify.app/static/media/image_8.a090baa702c551ba1eef.png"  onclick="openFullscreen(this)">
+                                       
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -379,17 +562,8 @@
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z"><img alt="..."
                                             class="ant-image-img card-img-top p-2"
-                                            src="https://taprize.netlify.app/static/media/image_2.93a3760464c6641137b0.png">
-                                        <div class="ant-image-mask">
-                                            <div class="ant-image-mask-info"><span role="img" aria-label="eye"
-                                                    class="anticon anticon-eye"><svg viewBox="64 64 896 896"
-                                                        focusable="false" data-icon="eye" width="1em" height="1em"
-                                                        fill="currentColor" aria-hidden="true">
-                                                        <path
-                                                            d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
-                                                        </path>
-                                                    </svg></span>Preview</div>
-                                        </div>
+                                            src="https://taprize.netlify.app/static/media/image_2.93a3760464c6641137b0.png"  onclick="openFullscreen(this)">
+                                       
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -405,17 +579,8 @@
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z"><img alt="..."
                                             class="ant-image-img card-img-top p-2"
-                                            src="https://taprize.netlify.app/static/media/image_3.65b21549b52e2392873d.png">
-                                        <div class="ant-image-mask">
-                                            <div class="ant-image-mask-info"><span role="img" aria-label="eye"
-                                                    class="anticon anticon-eye"><svg viewBox="64 64 896 896"
-                                                        focusable="false" data-icon="eye" width="1em" height="1em"
-                                                        fill="currentColor" aria-hidden="true">
-                                                        <path
-                                                            d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
-                                                        </path>
-                                                    </svg></span>Preview</div>
-                                        </div>
+                                            src="https://taprize.netlify.app/static/media/image_3.65b21549b52e2392873d.png"  onclick="openFullscreen(this)">
+                                       
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -431,17 +596,8 @@
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z"><img alt="..."
                                             class="ant-image-img card-img-top p-2"
-                                            src="https://taprize.netlify.app/static/media/image_4.b45b5fff8dc50fcdb89d.png">
-                                        <div class="ant-image-mask">
-                                            <div class="ant-image-mask-info"><span role="img" aria-label="eye"
-                                                    class="anticon anticon-eye"><svg viewBox="64 64 896 896"
-                                                        focusable="false" data-icon="eye" width="1em" height="1em"
-                                                        fill="currentColor" aria-hidden="true">
-                                                        <path
-                                                            d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
-                                                        </path>
-                                                    </svg></span>Preview</div>
-                                        </div>
+                                            src="https://taprize.netlify.app/static/media/image_4.b45b5fff8dc50fcdb89d.png"  onclick="openFullscreen(this)">
+                                       
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -457,17 +613,8 @@
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z"><img alt="..."
                                             class="ant-image-img card-img-top p-2"
-                                            src="https://taprize.netlify.app/static/media/image_5.60995299348fd8bf2871.png">
-                                        <div class="ant-image-mask">
-                                            <div class="ant-image-mask-info"><span role="img" aria-label="eye"
-                                                    class="anticon anticon-eye"><svg viewBox="64 64 896 896"
-                                                        focusable="false" data-icon="eye" width="1em" height="1em"
-                                                        fill="currentColor" aria-hidden="true">
-                                                        <path
-                                                            d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
-                                                        </path>
-                                                    </svg></span>Preview</div>
-                                        </div>
+                                            src="https://taprize.netlify.app/static/media/image_5.60995299348fd8bf2871.png"  onclick="openFullscreen(this)">
+                                       
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -483,17 +630,8 @@
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z"><img alt="..."
                                             class="ant-image-img card-img-top p-2"
-                                            src="https://taprize.netlify.app/static/media/image_10.04fdbad987ab59d59b48.png">
-                                        <div class="ant-image-mask">
-                                            <div class="ant-image-mask-info"><span role="img" aria-label="eye"
-                                                    class="anticon anticon-eye"><svg viewBox="64 64 896 896"
-                                                        focusable="false" data-icon="eye" width="1em" height="1em"
-                                                        fill="currentColor" aria-hidden="true">
-                                                        <path
-                                                            d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
-                                                        </path>
-                                                    </svg></span>Preview</div>
-                                        </div>
+                                            src="https://taprize.netlify.app/static/media/image_10.04fdbad987ab59d59b48.png"  onclick="openFullscreen(this)">
+                                       
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -509,17 +647,8 @@
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z"><img alt="..."
                                             class="ant-image-img card-img-top p-2"
-                                            src="https://taprize.netlify.app/static/media/image_7.d8b96e86e2abcc68d8bf.png">
-                                        <div class="ant-image-mask">
-                                            <div class="ant-image-mask-info"><span role="img" aria-label="eye"
-                                                    class="anticon anticon-eye"><svg viewBox="64 64 896 896"
-                                                        focusable="false" data-icon="eye" width="1em" height="1em"
-                                                        fill="currentColor" aria-hidden="true">
-                                                        <path
-                                                            d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
-                                                        </path>
-                                                    </svg></span>Preview</div>
-                                        </div>
+                                            src="https://taprize.netlify.app/static/media/image_7.d8b96e86e2abcc68d8bf.png"  onclick="openFullscreen(this)">
+                                       
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -535,17 +664,8 @@
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z"><img alt="..."
                                             class="ant-image-img card-img-top p-2"
-                                            src="https://taprize.netlify.app/static/media/image_88.1ea37be74065b03afed0.png">
-                                        <div class="ant-image-mask">
-                                            <div class="ant-image-mask-info"><span role="img" aria-label="eye"
-                                                    class="anticon anticon-eye"><svg viewBox="64 64 896 896"
-                                                        focusable="false" data-icon="eye" width="1em" height="1em"
-                                                        fill="currentColor" aria-hidden="true">
-                                                        <path
-                                                            d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
-                                                        </path>
-                                                    </svg></span>Preview</div>
-                                        </div>
+                                            src="https://taprize.netlify.app/static/media/image_88.1ea37be74065b03afed0.png"  onclick="openFullscreen(this)">
+                                       
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -561,17 +681,8 @@
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z"><img alt="..."
                                             class="ant-image-img card-img-top p-2"
-                                            src="https://taprize.netlify.app/static/media/image_9.66a8d6bbce07baef6fbb.png">
-                                        <div class="ant-image-mask">
-                                            <div class="ant-image-mask-info"><span role="img" aria-label="eye"
-                                                    class="anticon anticon-eye"><svg viewBox="64 64 896 896"
-                                                        focusable="false" data-icon="eye" width="1em" height="1em"
-                                                        fill="currentColor" aria-hidden="true">
-                                                        <path
-                                                            d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
-                                                        </path>
-                                                    </svg></span>Preview</div>
-                                        </div>
+                                            src="https://taprize.netlify.app/static/media/image_9.66a8d6bbce07baef6fbb.png"  onclick="openFullscreen(this)">
+                                       
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -587,17 +698,8 @@
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z"><img alt="..."
                                             class="ant-image-img card-img-top p-2"
-                                            src="https://taprize.netlify.app/static/media/image_8.a090baa702c551ba1eef.png">
-                                        <div class="ant-image-mask">
-                                            <div class="ant-image-mask-info"><span role="img" aria-label="eye"
-                                                    class="anticon anticon-eye"><svg viewBox="64 64 896 896"
-                                                        focusable="false" data-icon="eye" width="1em" height="1em"
-                                                        fill="currentColor" aria-hidden="true">
-                                                        <path
-                                                            d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
-                                                        </path>
-                                                    </svg></span>Preview</div>
-                                        </div>
+                                            src="https://taprize.netlify.app/static/media/image_8.a090baa702c551ba1eef.png"  onclick="openFullscreen(this)">
+                                       
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -664,6 +766,44 @@
           To begin the development, run `npm start` or `yarn start`.
           To create a production bundle, use `npm run build` or `yarn build`.
         -->
+
+        <script>
+            function showHeading(id) {
+                var heading = document.getElementById("code");
+                var paragraph = document.getElementById("code1");
+                var buttonBg = document.getElementById(id);
+                if (buttonBg.classList.contains("Mui-selected")) {
+                   
+                } else {
+                    // text.classList.remove("red");
+                    var buttonBg1 = document.getElementById("simple-tab-1");
+                    buttonBg1.classList.remove("Mui-selected");
+                    buttonBg.classList.add("Mui-selected");
+                }
+    
+    
+                heading.style.display = "block";
+                paragraph.style.display = "none";
+            }
+    
+            function showParagraph(id) {
+    
+                var heading = document.getElementById("code");
+                var paragraph = document.getElementById("code1");
+                var buttonBg = document.getElementById(id);
+                if (buttonBg.classList.contains("Mui-selected")) {
+                    
+                } else {
+                    var buttonBg1 = document.getElementById("simple-tab-0");
+                    buttonBg1.classList.remove("Mui-selected");
+                    buttonBg.classList.add("Mui-selected");
+                }
+                heading.style.display = "none";
+                paragraph.style.display = "block";
+            }
+    
+    
+        </script>
     <script>
         const meta = document.createElement('meta');
         meta.name = "theme-color";

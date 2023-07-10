@@ -17168,6 +17168,12 @@ input[type="checkbox"] {
   }
 }
 
+@media (min-width:768px) and (max-width:992px) {
+  .tabcor{
+    width: 22% !important;
+  }
+}
+
 @media only screen and (min-width: 605px) and (max-width: 768px) {
   .css-1wf8b0h-MuiTabs-flexContainer {
     display: flex !important;
@@ -20524,6 +20530,10 @@ background-image: url(../Images/d_info.png);  background-position: center;
   padding: 40px 40px 20px 40px !important;
 }
 
+.newhere_com_on{
+  width: 67% !important;
+}
+
 .ajsiji p {
   font-family: "Noto Sans JP", sans-serif;
   font-style: normal;
@@ -20639,6 +20649,10 @@ background-image: url(../Images/d_info.png);  background-position: center;
   .ajsiji {
     width: 100%;
     padding: 20px !important;
+  }
+
+  .newhere_com_on{
+    width: 100% !important;
   }
 }
 
@@ -23599,4 +23613,11 @@ td {
     /* margin-left: 1rem; */
 }
 
+}
+
+
+@media only screen and (max-width:999px){
+   .newhere_com_on{
+    width: 100% !important;
+  }
 }

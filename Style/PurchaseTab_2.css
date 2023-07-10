@@ -1645,7 +1645,7 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.2;
 }
 
@@ -14512,7 +14512,7 @@ li {
 .landing_Bg button {
     font-family: "Noto Sans JP", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -14528,7 +14528,7 @@ li {
 
 .News_Heading {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 40px;
     line-height: 48px;
     text-align: center;
@@ -14552,7 +14552,7 @@ li {
   } */
 
     .News_Heading {
-        font-weight: 500;
+        font-weight: 700;
         font-size: 29px;
         padding-top: 29px !important;
         padding-bottom: 0px !important;
@@ -15467,7 +15467,7 @@ button.swiper-pagination-bullet {
 }
 
 .mainSEa_heaidn {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 40px;
     padding: 1rem 0rem !important;
     line-height: 41px;
@@ -15590,7 +15590,7 @@ button.swiper-pagination-bullet {
 .main_web_part h1 {
     font-family: "Noto Sans JP", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 60px;
     line-height: 72px;
     text-align: center;
@@ -15636,7 +15636,7 @@ button.swiper-pagination-bullet {
     .main_web_part h1 {
         font-family: "Noto Sans JP", sans-serif;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 28px;
         line-height: 52px;
         text-align: center;
@@ -15664,7 +15664,7 @@ button.swiper-pagination-bullet {
 .Taprise_on_sale_bg h1 {
     font-family: "Noto Sans JP", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 40px;
     line-height: 48px;
     text-align: center;
@@ -15678,7 +15678,7 @@ button.swiper-pagination-bullet {
     border-radius: 45px;
     font-family: "Noto Sans JP", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -15712,7 +15712,7 @@ button.swiper-pagination-bullet {
     .Taprise_on_sale_bg h1 {
         font-family: "Noto Sans JP", sans-serif;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 26px;
         line-height: 48px;
         /* identical to box height */
@@ -15753,7 +15753,7 @@ button.swiper-pagination-bullet {
 .listCrd_scnd_txt {
     color: #000e31;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     transition: all 0.5s !important;
 }
 
@@ -15839,7 +15839,7 @@ button.swiper-pagination-bullet {
 .page_header {
     color: #ffffff;
     font-size: 60px !important;
-    font-weight: 500;
+    font-weight: 700;
     text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
         2px 2px 0 black !important;
     /* text-shadow: 3px 4px 3px black !important; */
@@ -16006,7 +16006,7 @@ button.swiper-pagination-bullet {
     .page_header {
         color: #ffffff;
         font-size: 29px !important;
-        font-weight: 500;
+        font-weight: 700;
         display: flex !important;
         text-align: center !important;
         padding: 28px 46px !important;
@@ -16103,7 +16103,7 @@ button.swiper-pagination-bullet {
 .flowTitle {
     color: #020140;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .stp1Button {
@@ -16134,7 +16134,7 @@ button.swiper-pagination-bullet {
     color: #020140;
     font-size: 28px;
     line-height: 39px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .forred {
@@ -16147,7 +16147,7 @@ button.swiper-pagination-bullet {
 
 .joinDetails {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 22.4px;
     color: #020140;
     width: 71%;
@@ -16172,7 +16172,7 @@ button.swiper-pagination-bullet {
     border: none;
     border-radius: 30px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     padding: 14px 0px;
     width: 392px !important;
     height: 55px !important;
@@ -16191,12 +16191,12 @@ button.swiper-pagination-bullet {
         color: #020140;
         font-size: 22px;
         line-height: 24px;
-        font-weight: 500;
+        font-weight: 700;
     }
 
     .flowTitle {
         font-size: 27px;
-        font-weight: 500;
+        font-weight: 700;
     }
 
     .btween {
@@ -16209,7 +16209,7 @@ button.swiper-pagination-bullet {
 
     .joinDetails {
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 22.4px;
         color: #020140;
         width: 100%;
@@ -16230,7 +16230,7 @@ button.swiper-pagination-bullet {
         border: none;
         border-radius: 30px;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 700;
         padding: 14px 0px;
         width: 100% !important;
         height: 57px !important;
@@ -16264,7 +16264,7 @@ button.swiper-pagination-bullet {
         border: none;
         border-radius: 30px;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 700;
         padding: 14px 0px;
         width: 100% !;
     }
@@ -16360,7 +16360,7 @@ button.swiper-pagination-bullet {
 }
 
 .classs_edit_textkadk {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 12px;
 }
 
@@ -16412,7 +16412,7 @@ button.swiper-pagination-bullet {
     background-color: #ffffff;
     color: #e60058;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     border-radius: 20px;
     width: 100%;
     padding: 7px 0px;
@@ -16430,12 +16430,12 @@ button.swiper-pagination-bullet {
 
 .maildetail {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .passwordDetail {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .magadetail {
@@ -16610,7 +16610,7 @@ input[type="checkbox"] {
 
 .left_side_p {
     color: #e60058;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     text-align: center;
     margin: 20px 0px !important;
@@ -16655,7 +16655,7 @@ input[type="checkbox"] {
     color: #e60058;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     padding: 13px 15px !important;
     width: 100% !important;
@@ -16860,7 +16860,7 @@ input[type="checkbox"] {
 
 .privacyTitleMainaga {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 60px;
     line-height: 72px;
     text-align: center;
@@ -16968,7 +16968,7 @@ input[type="checkbox"] {
 .ppp_heading {
     font-size: 60px !important;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .main_heading {
@@ -17505,7 +17505,7 @@ input[type="checkbox"] {
 
 .Contact_P {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
     line-height: 140%;
     color: #020140;
@@ -17796,7 +17796,7 @@ input[type="checkbox"] {
 
 .password_p {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 140%;
 
@@ -17887,7 +17887,7 @@ input[type="checkbox"] {
     color: #e60058;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px !important;
     padding: 10px 15px !important;
     background-color: #ffffff !important;
@@ -17911,7 +17911,7 @@ input[type="checkbox"] {
 
 .passwordstepTwo_p {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 17px;
     line-height: 140%;
 
@@ -17935,7 +17935,7 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 600px) {
     .passwordstepTwo_p {
-        font-weight: 500;
+        font-weight: 700;
     }
 }
 
@@ -18003,7 +18003,7 @@ input[type="checkbox"] {
 
 .ptext {
     font-size: 16px !important;
-    font-weight: 500;
+    font-weight: 700;
     color: #020140 !important;
 }
 
@@ -18098,7 +18098,7 @@ input[type="checkbox"] {
     color: #e60058;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     padding: 13px 15px !important;
     width: 100% !important;
@@ -18116,7 +18116,7 @@ input[type="checkbox"] {
     color: #e60058;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     padding: 13px 15px !important;
     width: 100% !important;
@@ -18365,7 +18365,7 @@ input[type="checkbox"] {
     }
 
     .snlstWhite {
-        font-weight: 500;
+        font-weight: 700;
         padding: 13px 15px !important;
         width: 100% !important;
         border-radius: 45px;
@@ -18671,7 +18671,7 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 768px) and (max-width: 992px) {
     .snlstWhite {
-        font-weight: 500;
+        font-weight: 700;
         padding: 13px 25px !important;
         width: 63% !important;
         border-radius: 45px;
@@ -18809,7 +18809,7 @@ input::-webkit-inner-spin-button {
 
 .yellowTxt {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .blu_boxe {
@@ -18829,14 +18829,14 @@ input::-webkit-inner-spin-button {
 .fornt_row>h6 {
     text-transform: uppercase;
     color: #020140 !important;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 24px;
 }
 
 .sectitl {
     text-transform: uppercase;
     color: #020140 !important;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 24px;
 }
 
@@ -18844,7 +18844,7 @@ input::-webkit-inner-spin-button {
     color: #595e6a;
     font-size: 20px;
     font-family: Noto Sans JP;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 140%;
     text-transform: uppercase;
 }
@@ -18896,7 +18896,7 @@ input::-webkit-inner-spin-button {
 
     .winning_probability {
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 700;
     }
 
     .fade .modal .show {
@@ -18936,11 +18936,11 @@ input::-webkit-inner-spin-button {
     color: #2eb3ff;
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .black_heading {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
     color: #020140;
@@ -18955,7 +18955,7 @@ input::-webkit-inner-spin-button {
     color: #2eb3ff;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .FrEndPd {
@@ -18980,17 +18980,17 @@ input::-webkit-inner-spin-button {
 @media only screen and (max-width: 320px) {
     .blue_heading {
         font-size: 12px !important;
-        font-weight: 500;
+        font-weight: 700;
     }
 
     .black_heading {
-        font-weight: 500;
+        font-weight: 700;
         font-size: 12px !important;
     }
 
     .lower_content>p {
         font-size: 12px !important;
-        font-weight: 500;
+        font-weight: 700;
     }
 }
 
@@ -19002,11 +19002,11 @@ input::-webkit-inner-spin-button {
 
     .blue_heading {
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 700;
     }
 
     .black_heading {
-        font-weight: 500;
+        font-weight: 700;
         font-size: 15px;
     }
 
@@ -19022,7 +19022,7 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 705px) and (max-width: 768px) {
     .black_heading {
-        font-weight: 500;
+        font-weight: 700;
         font-size: 16px;
     }
 
@@ -19251,7 +19251,7 @@ input::-webkit-inner-spin-button {
 }
 
 .pusrchase_list_sele {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 140%;
     /* or 22px */
@@ -19316,7 +19316,7 @@ input::-webkit-inner-spin-button {
 
 .purchase_footer {
     color: #e60058;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 140%;
 }
@@ -19370,7 +19370,7 @@ input::-webkit-inner-spin-button {
 
 .copnCrdDetal {
     margin-top: 17px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 12px;
     line-height: 140%;
     color: #020140;
@@ -19389,7 +19389,7 @@ input::-webkit-inner-spin-button {
 .purchaseAmount {
     color: #020140;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 140%;
 }
@@ -19422,7 +19422,7 @@ input::-webkit-inner-spin-button {
 
 .orderDetails {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     color: #000e31;
@@ -19566,7 +19566,7 @@ input::-webkit-inner-spin-button {
     }
 
     .purchaseAmount {
-        font-weight: 500;
+        font-weight: 700;
         font-size: 13px;
     }
 }
@@ -19606,7 +19606,7 @@ input::-webkit-inner-spin-button {
 }
 
 .pusrchae_text {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     line-height: 140%;
 
@@ -19696,7 +19696,7 @@ input::-webkit-inner-spin-button {
 
     .pusrchae_text {
         font-size: 19px !important;
-        font-weight: 500;
+        font-weight: 700;
     }
 
     .pad_side {
@@ -19721,7 +19721,7 @@ input::-webkit-inner-spin-button {
     border-radius: 45px;
     color: #e60058;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .tab_two_red_btn {
@@ -19791,7 +19791,7 @@ input::-webkit-inner-spin-button {
     padding: 0px !important;
 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 
     color: #e60058;
 
@@ -19808,7 +19808,7 @@ input::-webkit-inner-spin-button {
     padding: 0px !important;
 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 
     color: #ffffff;
 
@@ -19882,7 +19882,7 @@ input::-webkit-inner-spin-button {
 
 .card_caridt>p {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
     line-height: 140%;
     padding: 1rem 0rem !important;
@@ -20119,7 +20119,7 @@ input::-webkit-inner-spin-button {
     align-items: center;
     border-radius: 12px;
     color: #e60058 !important;
-    font-weight: 500;
+    font-weight: 700;
     border: 1px solid #e60058 !important;
     background-color: #fff;
 }
@@ -20146,7 +20146,7 @@ input::-webkit-inner-spin-button {
 }
 
 .pass_4_tst {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 17px;
     line-height: 140%;
 
@@ -20406,7 +20406,7 @@ input::-webkit-inner-spin-button {
 }
 
 .complete_content h2 {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     text-align: center;
@@ -20423,7 +20423,7 @@ input::-webkit-inner-spin-button {
 }
 
 .complete_content p {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 140%;
     margin-top: 2rem;
@@ -20475,7 +20475,7 @@ input::-webkit-inner-spin-button {
 @media only screen and (max-width: 600px) {
     .complete_content h2 {
         font-size: 36px !important;
-        font-weight: 500;
+        font-weight: 700;
     }
 
     .ReRng {
@@ -20916,7 +20916,7 @@ input::-webkit-inner-spin-button {
 }
 
 .Register_Step_Three_scnd_para {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 140%;
     line-break: auto;
@@ -21387,7 +21387,7 @@ input::-webkit-inner-spin-button {
 
 .editPage_p {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 140%;
     /* or 22px */
@@ -21577,7 +21577,7 @@ input::-webkit-inner-spin-button {
     background-color: #e60058 !important;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     padding: 13px 15px !important;
     width: 100% !important;
@@ -21590,7 +21590,7 @@ input::-webkit-inner-spin-button {
     background-color: #ffffff !important;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     padding: 13px 15px !important;
     width: 100% !important;
@@ -21623,7 +21623,7 @@ input::-webkit-inner-spin-button {
 
 .MyPageCoupon_p1 {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: -2px;
@@ -21634,7 +21634,7 @@ input::-webkit-inner-spin-button {
 
 .MyPageCoupon_p {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: -2px;
@@ -21964,7 +21964,7 @@ input::-webkit-inner-spin-button {
     height: 28px;
     font-family: "Noto Sans JP", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     text-transform: uppercase;
@@ -21976,7 +21976,7 @@ input::-webkit-inner-spin-button {
     width: 216px;
     font-family: "Noto Sans JP", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     order: 1;
     height: 28px;
@@ -22266,7 +22266,7 @@ td {
 
     font-family: "Noto Sans JP", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 17px;
     line-height: 19px;
     text-align: center;
@@ -22286,7 +22286,7 @@ td {
 .new_red_btn {
     font-family: "Noto Sans JP", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -22672,7 +22672,7 @@ td {
 
 .css-1tv0c3k-MuiTab-root {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 0.875rem;
     line-height: 1.25;
     letter-spacing: 0.02857em;
@@ -22739,7 +22739,7 @@ td {
     text-decoration: none;
     color: inherit;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 0.875rem;
     line-height: 1.25;
     letter-spacing: 0.02857em;

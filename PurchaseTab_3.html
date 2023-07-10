@@ -3,6 +3,7 @@
 <head>
 
   <meta charset="utf-8" />
+  <link rel="icon" href="./Images/favicon.ico" />
   <link rel="icon" href="logo192.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f2f6ff" />
@@ -47,8 +48,23 @@
 
     }, 3000);
   </script> -->
+  <script>
+    function toggleIcon() {
+     var buttonIcon = document.getElementById("buttonIcon");
+     buttonIcon.style.color="#e60058"
 
+     if (buttonIcon.classList.contains("fa-bars")) {
+       buttonIcon.classList.remove("fa-bars");
+       buttonIcon.classList.add("fa-xmark");
+     } else {
+       buttonIcon.classList.remove("fa-xmark");
+       buttonIcon.classList.add("fa-bars");
+     }
+   }
   
+ </script>
+
+
   <meta name="theme-color" content="#f2f6ff" />
 </head>
 
@@ -59,21 +75,23 @@
       <div class="mmaaaaa">
         <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
           <div class="container">
-            <a class="navbar-brand patImGlogo" href="./index.html"><img src="./Images/newLogo.png" class="w-100"
-                alt="" /></a>
+            <a class="navbar-brand patImGlogo nav_Responsive " href="./index.html">
+              <img src="./Images/newLogo.png" class="w-100"
+                alt=""  /></a>
             <div class="d-flex gap-2">
               <button class="man_ttn">
                 <a href="./Login.html" style="color: black; text-decoration: none"><i class="fa-solid fa-user"></i></a>
               </button>
 
-              <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+              <button id="toggleButton" class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                aria-label="Toggle navigation"  onclick="toggleIcon()">
+                <i id="buttonIcon" class="fas fa-bars"></i>
+              
               </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav ms-auto pb-2">
                 <li class="nav-item for_smalplay">
                   <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
                     href="ListOTaprize.html">タップライズ 一覧</a>
@@ -121,7 +139,7 @@
                     <div class="ant-steps-item-content">
                       <div class="ant-steps-item-title">購入手続き</div>
                     </div>
-                  
+
                   </div>
                 </div>
                 <div class="ant-steps-item ant-steps-item-finish">
@@ -157,7 +175,8 @@
             </div>
             <div class="Purchase_complete_main">
               <div class="container">
-                <div class="row justify-content-center">
+                <!-- <button type="button" class="btn btn-primary" id="openModalButton">Open Modal</button> -->
+                <div class="row justify-content-center" id="Purchase_complete_main">
                   <div class="col-md-5">
                     <div class="complete_content">
                       <h2>購入完了</h2>
@@ -217,30 +236,59 @@
   <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        
+
         <div class="modal-body">
-          <a href="./ListOfResults.html">
+          <a href="./ListOfResults.html" style="display: contents;">
 
             <div class="video_close">
-  
+
               <i type="button" class="fa-solid fa-xmark clonebtn close" data-dismiss="modal" aria-label="Close"></i>
               <!-- <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
           </a>
-       
-          <video width="100%"  autoplay muted onended="myCallback()">
+
+          <video id="myVideo" width="100%" autoplay muted onended="myCallback()" playsinline
+            src="./Images/Video_Web.mp4" type="video/mp4">
             <source src="./Images/Video_Web.mp4" type="video/mp4">
             <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-            Your browser does not support HTML video.
+            <!-- Your browser does not support HTML video. -->
           </video>
 
         </div>
-        
+
       </div>
     </div>
 
-    
+
   </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <a href="./ListOfResults.html" style="display: contents;">
+
+            <div class="video_close">
+
+              <i type="button" class="fa-solid fa-xmark clonebtn close" data-dismiss="modal" aria-label="Close"></i>
+              <!-- <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+          </a>
+
+          <video id="myVideo" width="100%" autoplay muted onended="myCallback()" playsinline
+            src="./Images/Video_Web.mp4" type="video/mp4">
+            <source src="./Images/Video_Web.mp4" type="video/mp4">
+            <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+            <!-- Your browser does not support HTML video. -->
+          </video>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <!--
           This HTML file is a template.
           If you open it directly in the browser, you will see an empty page.
@@ -261,59 +309,80 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-    <script>
-        const searchParams = new URLSearchParams(window.location.search);
-      const id = searchParams.get('id');
-      if(id==1){
-        let newURL = './ListOfResults.html'
-    setTimeout(() => {
+  <script>
+    const searchParams = new URLSearchParams(window.location.search);
+    const id = searchParams.get('id');
+    if (id == 1) {
+      let newURL = './ListOfResults.html'
+      setTimeout(() => {
 
-      window.location.replace(newURL);
+        window.location.replace(newURL);
 
-    }, 3000);
+      }, 3000);
 
-      }else{
-    // Get the modal element
-    const modal = document.getElementById('exampleModal');
-   
-   // Get the modal trigger button
-   const modalTriggerBtn = document.getElementById('modalTriggerBtn');
-   
-   // Function to open the modal
-   function openModal() {
-     modal.classList.add('show');
-     modal.style.display = 'block';
-     modal.setAttribute('aria-hidden', 'false');
-     document.body.classList.add('modal-open');
-
-     const closeButton = modal.querySelector('.close');
-  closeButton.addEventListener('click', closeModal);
-   }
-
-   function closeModal() {
-  modal.classList.remove('show');
-  modal.style.display = 'none';
-  modal.setAttribute('aria-hidden', 'true');
-  document.body.classList.remove('modal-open');
-}
-   
-   // Delay in milliseconds before opening the modal
-   const delayInMilliseconds = 1000; // 3 seconds
-   
-   // Set timeout to open the modal after the specified delay
-   setTimeout(openModal, delayInMilliseconds);
-   
-   const myCallback = () =>{
-    console.log('Video has ended')
-    let newURL = './ListOfResults.html'
-    window.location.replace(newURL);
-  } 
-      }
-
-
+    } else if (id == 2) {
+      // Get the modal element
+      const text = document.getElementById('Purchase_complete_main');
+      text.style.display = "none"
+       
+        setTimeout(function () {
+          var modal = document.getElementById("myModal");
+          var myModal = new bootstrap.Modal(modal);
+          myModal.show();
+        }, 1000); // Delay in milliseconds (3 seconds in this example)
   
-   
-     </script>
+
+  // const modal = document.getElementById('exampleModal');
+
+
+  // Get the modal trigger button
+  // const modalTriggerBtn = document.getElementById('modalTriggerBtn');
+
+  // Function to open the modal
+  // function openModal() {
+  // alert("Open")
+  // modal.classList.add('show');
+  // modal.style.display = 'block';
+  // modal.setAttribute('aria-hidden', 'false');
+  // document.body.classList.add('modal-open');
+
+  // const closeButton = modal.querySelector('.close');
+  // closeButton.addEventListener('click', closeModal);
+  // }
+
+  // function closeModal() {
+  // modal.classList.remove('show');
+  // modal.style.display = 'none';
+  // modal.setAttribute('aria-hidden', 'true');
+  // document.body.classList.remove('modal-open');
+  // }
+
+  // Delay in milliseconds before opening the modal
+  // const delayInMilliseconds = 1000; // 3 seconds
+
+  // Set timeout to open the modal after the specified delay
+  // setTimeout(() => {
+  // openModal()
+  // }, 1000);
+  // setTimeout(openModal, delayInMilliseconds);
+
+  }
+  const myCallback = () => {
+
+  console.log('Video has ended')
+  let newURL = './ListOfResults.html'
+  window.location.replace(newURL);
+  }
+
+  // var video = document.getElementById("myVideo");
+
+  // video.addEventListener("ended", function() {
+  // alert("Video ended!");
+  // });
+
+
+
+  </script>
 </body>
 
 </html>

@@ -2,7 +2,8 @@
 
 <head>
 
-    <meta charset="utf-8">
+    <meta charset="utf-8"><link rel="icon" href="./Images/favicon.ico" />
+    <link rel="icon" href="./Images/favicon.ico" />
     <link rel="icon" href="logo192.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f2f6ff">
@@ -41,6 +42,19 @@
     <title>TaPrize</title>
     <script defer="" src="/static/js/bundle.js"></script>
     <meta name="theme-color" content="#f2f6ff">
+
+    <script>
+        const searchhash = window.location.hash;
+        const searchParams = window.location.pathname;
+
+        // const id = searchParams.get('id');
+        console.log("searchParams",searchParams);
+        // const NextPage=()=>{
+        //   let path=`PurchaseTab_2.html?id=${id}`
+        //   window.location.replace(path);
+        // }
+  
+        </script>
 </head>
 
 
@@ -50,50 +64,49 @@
         <div class="App">
             <div class="mmaaaaa">
                 <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
-                    <div class="container">
-                        <a class="navbar-brand patImGlogo" href="./index.html"><img src="./Images/newLogo.png"
-                                class="w-100" alt="" /></a>
-                        <div class="d-flex gap-2">
-                            <button class="man_ttn">
-                                <a href="./Login.html" style="color: black; text-decoration: none"><i
-                                        class="fa-solid fa-user"></i></a>
-                            </button>
-
-                            <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item for_smalplay">
-                                    <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
-                                        href="ListOTaprize.html">タップライズ 一覧</a>
-                                </li>
-                                <li class="nav-item for_smalplay">
-                                    <a class="nav-link text-decoration-none Nav_bar_Link"
-                                        href="./TermOfServices.html">ご利用ガイド</a>
-                                </li>
-                                <li class="nav-item for_smalplay">
-                                    <a class="nav-link text-decoration-none Nav_bar_Link" href="./FAQ.html">よくあるご質問</a>
-                                </li>
-                                <li class="nav-item for_smalplay">
-                                    <a class="nav-link text-decoration-none Nav_bar_Link"
-                                        href="./ContactUs.html">お問い合わせ</a>
-                                </li>
-                                <li class="nav-item mt-2 for_smalplay">
-                                    <a href="./Login.html" class="text-decoration-none">
-                                        <button class="Navbar_Login_BTN btn_rep">
-                                            <i class="fa-solid fa-user"></i> ログイン
-                                        </button>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                  <div class="container">
+                    <a class="navbar-brand patImGlogo nav_Responsive " href="./index.html">
+                      <img src="./Images/newLogo.png" class="w-100"
+                        alt=""  /></a>
+                    <div class="d-flex gap-2">
+                      <button class="man_ttn">
+                        <a href="./Login.html" style="color: black; text-decoration: none"><i class="fa-solid fa-user"></i></a>
+                      </button>
+        
+                      <button id="toggleButton" class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation"  onclick="toggleIcon()">
+                        <i id="buttonIcon" class="fas fa-bars"></i>
+                      
+                      </button>
                     </div>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                      <ul class="navbar-nav ms-auto pb-2">
+                        <li class="nav-item for_smalplay">
+                          <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
+                            href="ListOTaprize.html">タップライズ 一覧</a>
+                        </li>
+                        <li class="nav-item for_smalplay">
+                          <a class="nav-link text-decoration-none Nav_bar_Link" href="./TermOfServices.html">ご利用ガイド</a>
+                        </li>
+                        <li class="nav-item for_smalplay">
+                          <a class="nav-link text-decoration-none Nav_bar_Link" href="./FAQ.html">よくあるご質問</a>
+                        </li>
+                        <li class="nav-item for_smalplay">
+                          <a class="nav-link text-decoration-none Nav_bar_Link" href="./ContactUs.html">お問い合わせ</a>
+                        </li>
+                        <li class="nav-item mt-2 for_smalplay">
+                          <a href="./Login.html" class="text-decoration-none">
+                            <button class="Navbar_Login_BTN btn_rep">
+                              <i class="fa-solid fa-user"></i> ログイン
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </nav>
-            </div>
+              </div>
 
             <!-- <---------------------------------------------Header End-------------------------------------------------- -->
 
@@ -107,19 +120,19 @@
                     <div class="row">
                         <div class="col-md-4 col-lg-3 side_bar ">
                             <ul class="ps-0 faq_ul">
-                                <li class=" fstbg" style="cursor: pointer;" id="fstbg">
-                                    <a class="link_text_fst" href="#First" onclick="backColor()" > 会員登録・ログインについて </a>
+                                <li class=" fstbg" style="cursor: pointer;" id="Tag1" onclick="changeColor('Tag1')" >
+                                    <a class="link_text_fst" href="#First" > 会員登録・ログインについて </a>
                                 </li>
-                                <li class="fstbg" style="cursor: pointer;"><a class="link_text" href="#section2">
+                                <li class="fstbg" style="cursor: pointer;" id="Tag2" onclick="changeColor('Tag2')" ><a class="link_text"  href="#section2">
                                         <!-- first_li -->
                                         商品について</a></li>
-                                <li class="fstbg" style="cursor: pointer;"><a class="link_text"
+                                <li class="fstbg" style="cursor: pointer;" id="Tag3" onclick="changeColor('Tag3')" ><a class="link_text"
                                         href="#section3">ウェブガチャのプレイについて</a></li>
-                                <li class="fstbg" style="cursor: pointer;"><a class="link_text"
+                                <li class="fstbg" style="cursor: pointer;" id="Tag4" onclick="changeColor('Tag4')"><a class="link_text"
                                         href="#section4">メールの受信について</a></li>
-                                <li class="fstbg" style="cursor: pointer;"><a class="  link_text" href="#section5">
+                                <li class="fstbg" style="cursor: pointer;" id="Tag5" onclick="changeColor('Tag5')"><a class="  link_text" href="#section5">
                                         商品のお届けについて</a></li>
-                                <li class="fstbg" style="cursor: pointer;"><a class="link_text"
+                                <li class="fstbg" style="cursor: pointer;" id="Tag6" onclick="changeColor('Tag6')"><a class="link_text"
                                         href="#section6">お支払い方法について</a></li>
                             </ul>
                         </div>
@@ -660,6 +673,27 @@
           To begin the development, run `npm start` or `yarn start`.
           To create a production bundle, use `npm run build` or `yarn build`.
         -->
+
+        <script>
+            var selectedDiv = 'Tag1';
+    changeColor(selectedDiv); // Apply default color
+
+    function changeColor(id) {
+      // Reset the previous selected div color
+      var prevDiv = document.getElementById(selectedDiv);
+      prevDiv.style.backgroundColor = "";
+
+      // Change the current selected div color
+      var div = document.getElementById(id);
+      div.style.color = "#fffff ";
+      div.style.backgroundColor = "#2eb3ff";
+      div.style.borderRadius = "15px";
+
+
+      selectedDiv = id; // Update the selected div
+    }
+
+          </script>
     <script>
         const meta = document.createElement('meta');
         meta.name = "theme-color";

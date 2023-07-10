@@ -684,7 +684,7 @@
         h6 {
             margin-top: 0;
             margin-bottom: .5rem;
-            font-weight: 500;
+            font-weight: 700;
             line-height: 1.2
         }
 
@@ -13545,7 +13545,7 @@
         .landing_Bg button {
             font-family: "Noto Sans JP", sans-serif;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 19px;
             text-align: center;
@@ -13561,7 +13561,7 @@
 
         .News_Heading {
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 40px;
             line-height: 48px;
             text-align: center;
@@ -13585,7 +13585,7 @@
       } */
 
             .News_Heading {
-                font-weight: 500;
+                font-weight: 700;
                 font-size: 29px;
                 padding-top: 29px !important;
                 padding-bottom: 0px !important;
@@ -14499,7 +14499,7 @@
         }
 
         .mainSEa_heaidn {
-            font-weight: 500;
+            font-weight: 700;
             font-size: 40px;
             padding: 1rem 0rem !important;
             line-height: 41px;
@@ -14630,7 +14630,7 @@
         .main_web_part h1 {
             font-family: 'Noto Sans JP', sans-serif;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 60px;
             line-height: 72px;
             text-align: center;
@@ -14679,7 +14679,7 @@
             .main_web_part h1 {
                 font-family: 'Noto Sans JP', sans-serif;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 700;
                 font-size: 28px;
                 line-height: 52px;
                 text-align: center;
@@ -14705,7 +14705,7 @@
         .Taprise_on_sale_bg h1 {
             font-family: 'Noto Sans JP', sans-serif;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 40px;
             line-height: 48px;
             text-align: center;
@@ -14719,7 +14719,7 @@
             border-radius: 45px;
             font-family: 'Noto Sans JP', sans-serif;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 19px;
             text-align: center;
@@ -14756,7 +14756,7 @@
             .Taprise_on_sale_bg h1 {
                 font-family: 'Noto Sans JP', sans-serif;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 700;
                 font-size: 26px;
                 line-height: 48px;
                 /* identical to box height */
@@ -14797,7 +14797,7 @@
         .listCrd_scnd_txt {
             color: #000E31;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 700;
             transition: all 0.5s !important;
         }
 
@@ -14884,7 +14884,7 @@
         .page_header {
             color: #ffffff;
             font-size: 60px !important;
-            font-weight: 500;
+            font-weight: 700;
             text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black !important;
             /* text-shadow: 3px 4px 3px black !important; */
         }
@@ -15059,7 +15059,7 @@
             .page_header {
                 color: #ffffff;
                 font-size: 29px !important;
-                font-weight: 500;
+                font-weight: 700;
                 display: flex !important;
                 text-align: center !important;
                 padding: 28px 46px !important;
@@ -15162,7 +15162,7 @@
         .flowTitle {
             color: #020140;
             font-size: 40px;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         .stp1Button {
@@ -15193,7 +15193,7 @@
             color: #020140;
             font-size: 28px;
             line-height: 39px;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         .forred {
@@ -15207,7 +15207,7 @@
 
         .joinDetails {
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 700;
             line-height: 22.4px;
             color: #020140;
             width: 71%;
@@ -15232,7 +15232,7 @@
             border: none;
             border-radius: 30px;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 700;
             padding: 14px 0px;
             width: 392px !important;
             height: 55px !important;
@@ -15252,12 +15252,12 @@
                 color: #020140;
                 font-size: 22px;
                 line-height: 24px;
-                font-weight: 500;
+                font-weight: 700;
             }
 
             .flowTitle {
                 font-size: 27px;
-                font-weight: 500;
+                font-weight: 700;
             }
 
             .btween {
@@ -15270,7 +15270,7 @@
 
             .joinDetails {
                 font-size: 16px;
-                font-weight: 500;
+                font-weight: 700;
                 line-height: 22.4px;
                 color: #020140;
                 width: 100%;
@@ -15291,7 +15291,7 @@
                 border: none;
                 border-radius: 30px;
                 font-size: 16px;
-                font-weight: 500;
+                font-weight: 700;
                 padding: 14px 0px;
                 width: 100% !important;
                 height: 57px !important;
@@ -15327,7 +15327,7 @@
                 border: none;
                 border-radius: 30px;
                 font-size: 16px;
-                font-weight: 500;
+                font-weight: 700;
                 padding: 14px 0px;
                 width: 100% !;
             }
@@ -15428,7 +15428,7 @@
 
 
         .classs_edit_textkadk {
-            font-weight: 500;
+            font-weight: 700;
             font-size: 12px;
         }
 
@@ -15480,7 +15480,7 @@
             background-color: #ffffff;
             color: #E60058;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 700;
             border-radius: 20px;
             width: 100%;
             padding: 7px 0px;
@@ -15498,12 +15498,12 @@
 
         .maildetail {
             font-size: 12px;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         .passwordDetail {
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         .magadetail {
@@ -15685,7 +15685,7 @@
 
         .left_side_p {
             color: #e60058;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             text-align: center;
             margin: 20px 0px !important;
@@ -15730,7 +15730,7 @@
             color: #e60058;
             text-align: center;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             padding: 13px 15px !important;
             width: 100% !important;
@@ -15946,7 +15946,7 @@
 
         .privacyTitleMainaga {
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 60px;
             line-height: 72px;
             text-align: center;
@@ -16071,7 +16071,7 @@
         .ppp_heading {
             font-size: 60px !important;
             color: #ffffff;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         .main_heading {
@@ -16647,7 +16647,7 @@
 
         .Contact_P {
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 14px;
             line-height: 140%;
             color: #020140;
@@ -16973,7 +16973,7 @@
 
         .password_p {
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 140%;
 
@@ -17077,7 +17077,7 @@
             color: #e60058;
             text-align: center;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px !important;
             padding: 10px 15px !important;
             background-color: #ffffff !important;
@@ -17101,7 +17101,7 @@
 
         .passwordstepTwo_p {
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 17px;
             line-height: 140%;
 
@@ -17126,7 +17126,7 @@
         @media only screen and (max-width: 600px) {
 
             .passwordstepTwo_p {
-                font-weight: 500;
+                font-weight: 700;
             }
         }
 
@@ -17207,7 +17207,7 @@
 
         .ptext {
             font-size: 16px !important;
-            font-weight: 500;
+            font-weight: 700;
             color: #020140 !important;
         }
 
@@ -17310,7 +17310,7 @@
             color: #e60058;
             text-align: center;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             padding: 13px 15px !important;
             width: 100% !important;
@@ -17328,7 +17328,7 @@
             color: #e60058;
             text-align: center;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             padding: 13px 15px !important;
             width: 100% !important;
@@ -17587,7 +17587,7 @@
             }
 
             .snlstWhite {
-                font-weight: 500;
+                font-weight: 700;
                 padding: 13px 15px !important;
                 width: 100% !important;
                 border-radius: 45px;
@@ -17912,7 +17912,7 @@
 
         @media (min-width: 768px) and (max-width: 992px) {
             .snlstWhite {
-                font-weight: 500;
+                font-weight: 700;
                 padding: 13px 25px !important;
                 width: 63% !important;
                 border-radius: 45px;
@@ -18055,7 +18055,7 @@
 
         .yellowTxt {
             font-size: 24px;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         .blu_boxe {
@@ -18075,14 +18075,14 @@
         .fornt_row>h6 {
             text-transform: uppercase;
             color: #020140 !important;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 24px;
         }
 
         .sectitl {
             text-transform: uppercase;
             color: #020140 !important;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 24px;
         }
 
@@ -18090,7 +18090,7 @@
             color: #595E6A;
             font-size: 20px;
             font-family: Noto Sans JP;
-            font-weight: 500;
+            font-weight: 700;
             line-height: 140%;
             text-transform: uppercase;
         }
@@ -18143,7 +18143,7 @@
 
             .winning_probability {
                 font-size: 16px;
-                font-weight: 500;
+                font-weight: 700;
             }
 
             .fade .modal .show {
@@ -18182,11 +18182,11 @@
             color: #2eb3ff;
             text-transform: uppercase;
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         .black_heading {
-            font-weight: 500;
+            font-weight: 700;
             font-size: 20px;
             text-transform: uppercase;
             color: #020140;
@@ -18201,7 +18201,7 @@
             color: #2eb3ff;
             text-transform: uppercase;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         .FrEndPd {
@@ -18226,17 +18226,17 @@
         @media only screen and (max-width:320px) {
             .blue_heading {
                 font-size: 12px !important;
-                font-weight: 500;
+                font-weight: 700;
             }
 
             .black_heading {
-                font-weight: 500;
+                font-weight: 700;
                 font-size: 12px !important;
             }
 
             .lower_content>p {
                 font-size: 12px !important;
-                font-weight: 500;
+                font-weight: 700;
             }
 
         }
@@ -18249,11 +18249,11 @@
 
             .blue_heading {
                 font-size: 15px;
-                font-weight: 500;
+                font-weight: 700;
             }
 
             .black_heading {
-                font-weight: 500;
+                font-weight: 700;
                 font-size: 15px;
             }
 
@@ -18271,7 +18271,7 @@
 
 
             .black_heading {
-                font-weight: 500;
+                font-weight: 700;
                 font-size: 16px;
             }
 
@@ -18513,7 +18513,7 @@
         }
 
         .pusrchase_list_sele {
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 140%;
             /* or 22px */
@@ -18584,7 +18584,7 @@
 
         .purchase_footer {
             color: #E60058;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 140%;
         }
@@ -18639,7 +18639,7 @@
 
         .copnCrdDetal {
             margin-top: 17px;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 12px;
             line-height: 140%;
             color: #020140;
@@ -18658,7 +18658,7 @@
         .purchaseAmount {
             color: #020140;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 140%;
         }
@@ -18691,7 +18691,7 @@
 
         .orderDetails {
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 20px;
             line-height: 140%;
             color: #000e31;
@@ -18838,7 +18838,7 @@
             }
 
             .purchaseAmount {
-                font-weight: 500;
+                font-weight: 700;
                 font-size: 13px;
             }
         }
@@ -18882,7 +18882,7 @@
         }
 
         .pusrchae_text {
-            font-weight: 500;
+            font-weight: 700;
             font-size: 20px;
             line-height: 140%;
 
@@ -18980,7 +18980,7 @@
 
             .pusrchae_text {
                 font-size: 19px !important;
-                font-weight: 500;
+                font-weight: 700;
             }
 
             .pad_side {
@@ -19006,7 +19006,7 @@
             border-radius: 45px;
             color: #E60058;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         .tab_two_red_btn {
@@ -19080,7 +19080,7 @@
             padding: 0px !important;
 
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 700;
 
             color: #E60058;
 
@@ -19097,7 +19097,7 @@
             padding: 0px !important;
 
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 700;
 
             color: #FFFFFF;
 
@@ -19174,7 +19174,7 @@
 
         .card_caridt>p {
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 14px;
             line-height: 140%;
             padding: 1rem 0rem !important;
@@ -19432,7 +19432,7 @@
             align-items: center;
             border-radius: 12px;
             color: #E60058 !important;
-            font-weight: 500;
+            font-weight: 700;
             border: 1px solid #E60058 !important;
             background-color: #fff;
         }
@@ -19463,7 +19463,7 @@
 
 
         .pass_4_tst {
-            font-weight: 500;
+            font-weight: 700;
             font-size: 17px;
             line-height: 140%;
 
@@ -19751,7 +19751,7 @@
 
 
         .complete_content h2 {
-            font-weight: 500;
+            font-weight: 700;
             font-size: 36px;
             line-height: 43px;
             text-align: center;
@@ -19770,7 +19770,7 @@
         }
 
         .complete_content p {
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 140%;
             margin-top: 2rem;
@@ -19828,7 +19828,7 @@
         @media only screen and (max-width:600px) {
             .complete_content h2 {
                 font-size: 36px !important;
-                font-weight: 500;
+                font-weight: 700;
             }
 
             .ReRng {
@@ -20273,7 +20273,7 @@
         }
 
         .Register_Step_Three_scnd_para {
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 140%;
             line-break: auto;
@@ -20779,7 +20779,7 @@
 
         .editPage_p {
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 140%;
             /* or 22px */
@@ -20977,7 +20977,7 @@
             background-color: #e60058 !important;
             text-align: center;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             padding: 13px 15px !important;
             width: 100% !important;
@@ -20990,7 +20990,7 @@
             background-color: #ffffff !important;
             text-align: center;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             padding: 13px 15px !important;
             width: 100% !important;
@@ -21025,7 +21025,7 @@
 
         .MyPageCoupon_p1 {
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 140%;
             letter-spacing: -2px;
@@ -21036,7 +21036,7 @@
 
         .MyPageCoupon_p {
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 140%;
             letter-spacing: -2px;
@@ -21393,7 +21393,7 @@
             height: 28px;
             font-family: 'Noto Sans JP', sans-serif;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 20px;
             line-height: 140%;
             text-transform: uppercase;
@@ -21405,7 +21405,7 @@
             width: 216px;
             font-family: 'Noto Sans JP', sans-serif;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 20px;
             order: 1;
             height: 28px;
@@ -21720,7 +21720,7 @@
 
             font-family: 'Noto Sans JP', sans-serif;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 17px;
             line-height: 19px;
             text-align: center;
@@ -21743,7 +21743,7 @@
 
             font-family: 'Noto Sans JP', sans-serif;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 19px;
             text-align: center;
@@ -21963,7 +21963,7 @@
    
         .css-1tv0c3k-MuiTab-root {
             font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 0.875rem;
             line-height: 1.25;
             letter-spacing: 0.02857em;
@@ -22030,7 +22030,7 @@
             text-decoration: none;
             color: inherit;
             font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 0.875rem;
             line-height: 1.25;
             letter-spacing: 0.02857em;

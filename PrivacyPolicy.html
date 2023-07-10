@@ -2,7 +2,7 @@
 
 <head>
     
-    <meta charset="utf-8" />
+    <meta charset="utf-8" />  <link rel="icon" href="./Images/favicon.ico" />
    <link rel="icon" href="./Images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f2f6ff" />
@@ -16,7 +16,7 @@
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
          crossorigin="anonymous" referrerpolicy="no-referrer" />
-         <link rel="stylesheet" href="./Style//Header_style.css">
+         <link rel="stylesheet" href="./Style/Header_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -37,7 +37,21 @@
           work correctly both with client-side routing and a non-root public URL.
           Learn how to configure a non-root public URL by running `npm run build`.
         -->
-    
+        <script>
+          function toggleIcon() {
+           var buttonIcon = document.getElementById("buttonIcon");
+           buttonIcon.style.color="#e60058"
+     
+           if (buttonIcon.classList.contains("fa-bars")) {
+             buttonIcon.classList.remove("fa-bars");
+             buttonIcon.classList.add("fa-xmark");
+           } else {
+             buttonIcon.classList.remove("fa-xmark");
+             buttonIcon.classList.add("fa-bars");
+           }
+         }
+        
+       </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
@@ -56,48 +70,51 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
         <div class="App">
-            <div class="mmaaaaa">
-                <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
-                  <div class="container">
-                    <a class="navbar-brand patImGlogo" href="./index.html"><img src="./Images/newLogo.png" class="w-100" alt="" /></a>
-                    <div class="d-flex gap-2">
-                      <button class="man_ttn">
-                        <a href="./Login.html" style="color: black; text-decoration: none"><i class="fa-solid fa-user"></i></a>
-                      </button>
-        
-                      <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item for_smalplay">
-                          <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
-                            href="ListOTaprize.html">タップライズ 一覧</a>
-                        </li>
-                        <li class="nav-item for_smalplay">
-                          <a class="nav-link text-decoration-none Nav_bar_Link" href="./TermOfServices.html">ご利用ガイド</a>
-                        </li>
-                        <li class="nav-item for_smalplay">
-                          <a class="nav-link text-decoration-none Nav_bar_Link" href="./FAQ.html">よくあるご質問</a>
-                        </li>
-                        <li class="nav-item for_smalplay">
-                          <a class="nav-link text-decoration-none Nav_bar_Link" href="./ContactUs.html">お問い合わせ</a>
-                        </li>
-                        <li class="nav-item mt-2 for_smalplay">
-                          <a href="./Login.html" class="text-decoration-none">  
-                            <button class="Navbar_Login_BTN btn_rep">
-                              <i class="fa-solid fa-user"></i> ログイン
-                            </button>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
+          <div class="mmaaaaa">
+            <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
+              <div class="container">
+                <a class="navbar-brand patImGlogo nav_Responsive " href="./index.html">
+                  <img src="./Images/newLogo.png" class="w-100"
+                    alt=""  /></a>
+                <div class="d-flex gap-2">
+                  <button class="man_ttn">
+                    <a href="./Login.html" style="color: black; text-decoration: none"><i class="fa-solid fa-user"></i></a>
+                  </button>
+    
+                  <button id="toggleButton" class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation"  onclick="toggleIcon()">
+                    <i id="buttonIcon" class="fas fa-bars"></i>
+                  
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav ms-auto pb-2">
+                    <li class="nav-item for_smalplay">
+                      <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
+                        href="ListOTaprize.html">タップライズ 一覧</a>
+                    </li>
+                    <li class="nav-item for_smalplay">
+                      <a class="nav-link text-decoration-none Nav_bar_Link" href="./TermOfServices.html">ご利用ガイド</a>
+                    </li>
+                    <li class="nav-item for_smalplay">
+                      <a class="nav-link text-decoration-none Nav_bar_Link" href="./FAQ.html">よくあるご質問</a>
+                    </li>
+                    <li class="nav-item for_smalplay">
+                      <a class="nav-link text-decoration-none Nav_bar_Link" href="./ContactUs.html">お問い合わせ</a>
+                    </li>
+                    <li class="nav-item mt-2 for_smalplay">
+                      <a href="./Login.html" class="text-decoration-none">
+                        <button class="Navbar_Login_BTN btn_rep">
+                          <i class="fa-solid fa-user"></i> ログイン
+                        </button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </nav>
+          </div>
             <div class="Privacy_policy">
                 <div class="main_privacy_img">
                     <h1 class="main_heading ressss_hhhhhea mnhDd">会員規約・ <br class="d-block d-lg-none">プライバシーポリシー</h1>

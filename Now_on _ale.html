@@ -1,7 +1,8 @@
 <html lang="ja-jp">
-    
+
 <head>
     <meta charset="utf-8">
+    <link rel="icon" href="./Images/favicon.ico" />
     <link rel="icon" href="logo192.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f2f6ff">
@@ -18,6 +19,39 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="/manifest.json">
+    <script>
+        function toggleIcon() {
+            var buttonIcon = document.getElementById("buttonIcon");
+            buttonIcon.style.color = "#e60058"
+
+            if (buttonIcon.classList.contains("fa-bars")) {
+                buttonIcon.classList.remove("fa-bars");
+                buttonIcon.classList.add("fa-xmark");
+            } else {
+                buttonIcon.classList.remove("fa-xmark");
+                buttonIcon.classList.add("fa-bars");
+            }
+        }
+
+    </script>
+
+<script>
+    function openNewPage(id) {
+        //   var image = document.getElementById("myImage");
+
+        // Get the metadata of the image
+        var metadata = {
+            src: id,
+        };
+        console.log("metadata", metadata);
+        // Encode the metadata as a URL parameter
+        var urlParams = new URLSearchParams(metadata).toString();
+
+        //   // Open the new page with the image metadata in the URL
+        //   window.open("TarpizeSingleFullPage.html?" + urlParams);
+        window.location.replace("TarpizeSingleFullPage.html?" + urlParams)
+    }
+</script>
     <!--
       Notice the use of  in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -51,22 +85,24 @@
             <div class="mmaaaaa">
                 <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
                     <div class="container">
-                        <a class="navbar-brand patImGlogo" href="./index.html"><img src="./Images/newLogo.png"
-                                class="w-100" alt="" /></a>
+                        <a class="navbar-brand patImGlogo nav_Responsive " href="./index.html">
+                            <img src="./Images/newLogo.png" class="w-100" alt="" /></a>
                         <div class="d-flex gap-2">
                             <button class="man_ttn">
                                 <a href="./Login.html" style="color: black; text-decoration: none"><i
                                         class="fa-solid fa-user"></i></a>
                             </button>
 
-                            <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                            <button id="toggleButton" class="navbar-toggler Nav_collps" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
+                                onclick="toggleIcon()">
+                                <i id="buttonIcon" class="fas fa-bars"></i>
+
                             </button>
                         </div>
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav ms-auto pb-2">
                                 <li class="nav-item for_smalplay">
                                     <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
                                         href="ListOTaprize.html">タップライズ 一覧</a>
@@ -110,7 +146,7 @@
                                         <div class="MuiTabs-flexContainer MuiTabs-centered css-1wf8b0h-MuiTabs-flexContainer"
                                             role="tablist">
                                             <a href="./ListOTaprize.html" style="display: contents;">
-                                            
+
                                                 <button
                                                     class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tabcor allTabs css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
                                                     tabindex="-1" type="button" role="tab" aria-selected="false"
@@ -119,27 +155,27 @@
                                             </a>
                                             <a href="./Now_on _ale.html" style="display: contents;">
                                                 <button
-                                            class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected tabcor tabNowSale css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                                            tabindex="0" type="button" role="tab" aria-selected="true"
-                                            id="simple-tab-1" aria-controls="simple-tabpanel-1">発売中<span
-                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
+                                                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected tabcor tabNowSale css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                                                    tabindex="0" type="button" role="tab" aria-selected="true"
+                                                    id="simple-tab-1" aria-controls="simple-tabpanel-1">発売中<span
+                                                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
                                             </a>
-                                            
-                                                    <a href="./Coming_soon.html" style="display: contents;">
-                                                        <button
+
+                                            <a href="./Coming_soon.html" style="display: contents;">
+                                                <button
                                                     class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tabcor tabSoon css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
                                                     tabindex="-1" type="button" role="tab" aria-selected="false"
                                                     id="simple-tab-2" aria-controls="simple-tabpanel-2">近日発売<span
                                                         class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
-                                                    </a>
-                                                    
-                                                    <a href="./End_of_sale.html" style="display: contents;">
-                                                        <button
+                                            </a>
+
+                                            <a href="./End_of_sale.html" style="display: contents;">
+                                                <button
                                                     class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tabcor tabEndsale css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
                                                     tabindex="-1" type="button" role="tab" aria-selected="false"
                                                     id="simple-tab-3" aria-controls="simple-tabpanel-3">販売終了<span
                                                         class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button>
-                                                    </a>
+                                            </a>
 
 
                                         </div><span class="MuiTabs-indicator css-lafep3-MuiTabs-indicator"
@@ -154,7 +190,7 @@
                                     <div>
                                         <div class="container">
                                             <div class="row" class="row" id="paginated-list" data-current-page="1"
-                                            aria-live="polite">
+                                                aria-live="polite">
                                                 <div class="col-lg-6  gok">
                                                     <div class="d-flex justify-content-center my-2 ">
                                                         <div class="card_list_of_taprize  card"
@@ -162,7 +198,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png">
+                                                                        onclick="openNewPage('./Images/image 2.png')"
+                                                                        src="./Images/image 2.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -174,8 +211,11 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button class="listCrd_button  ">販売中のタップライズ</button> </a>
+                                                                    
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 2.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button>
+                                                                  
                                                                     <button class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -214,7 +254,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png">
+                                                                        onclick="openNewPage('./Images/image 3.png')"
+                                                                        src="./Images/image 3.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -226,11 +267,11 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a>
+                                                                   
                                                                         <button
-                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                        onclick="openNewPage('./Images/image 3.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button>
+                                                                    <button class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
                                                                             viewBox="0 0 24 24"
@@ -268,9 +309,11 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png">
+                                                                        onclick="openNewPage('./Images/image 1.png')"
+                                                                        src="./Images/image 1.png">
                                                                 </div>
-                                                            </div><button class="endSale"
+                                                            </div>
+                                                            <button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
                                                             <div class="paaadankd card-body">
                                                                 <p class="text-start listCrd_fst_txt mb-0  card-text">
@@ -280,12 +323,67 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a>
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 1.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button>
 
+                                                                    <button class="fazol d-block d-md-none rdhtgb"><svg
+                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                            focusable="false" aria-hidden="true"
+                                                                            viewBox="0 0 24 24"
+                                                                            data-testid="FavoriteIcon">
+                                                                            <path
+                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                                                            </path>
+                                                                        </svg> <span class="fazolline"> お気に入りから外す
+                                                                        </span></button>
+                                                                    <div class="like_hrt "><span
+                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
+                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
+                                                                                type="checkbox"
+                                                                                data-indeterminate="false"
+                                                                                aria-label="Checkbox demo"><svg
+                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                                                                focusable="false" aria-hidden="true"
+                                                                                viewBox="0 0 24 24"
+                                                                                data-testid="FavoriteBorderIcon">
+                                                                                <path
+                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                                                </path>
+                                                                            </svg><span
+                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6  gok">
+                                                    <div class="d-flex justify-content-center my-2 ">
+                                                        <div class="card_list_of_taprize  card"
+                                                            style="width: 100%; cursor: pointer;">
+                                                            <div class="p-2">
+                                                                <div class="hvrBx"><img
+                                                                        class="card-img-top w-100 hvrImg "
+                                                                        onclick="openNewPage('./Images/image 2.png')"
+                                                                        src="./Images/image 2.png">
+                                                                </div>
+                                                            </div><button class="endSale"
+                                                                style="background-color: rgb(255, 214, 0);">発売中</button>
+                                                            <div class="paaadankd card-body">
+                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
+                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
+                                                                <p
+                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
+                                                                    発売期間 05/ 5(金)～05/26(金)</p>
+                                                                <div
+                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
+                                                                   
                                                                         <button
-                                                                        class="fazol d-block d-md-none rdhtgb"><svg
+                                                                        onclick="openNewPage('./Images/image 2.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button>
+                                                                    <button class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
                                                                             viewBox="0 0 24 24"
@@ -323,7 +421,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png">
+                                                                        onclick="openNewPage('./Images/image 4.png')"
+                                                                        src="./Images/image 4.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -335,10 +434,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a>
+                                                                   
                                                                         <button
+                                                                        onclick="openNewPage('./Images/image 4.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -377,7 +476,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png">
+                                                                        onclick="openNewPage('./Images/image 5.png')"
+                                                                        src="./Images/image 5.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -389,9 +489,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 5.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -430,7 +531,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png">
+                                                                        onclick="openNewPage('./Images/image 2.png')"
+                                                                        src="./Images/image 2.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -442,9 +544,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 2.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -483,7 +586,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png">
+                                                                        onclick="openNewPage('./Images/image 4.png')"
+                                                                        src="./Images/image 4.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -495,9 +599,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 4.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -536,7 +641,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png">
+                                                                        onclick="openNewPage('./Images/image 5.png')"
+                                                                        src="./Images/image 5.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -548,9 +654,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 5.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -589,7 +696,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png">
+                                                                        onclick="openNewPage('./Images/image 4.png')"
+                                                                        src="./Images/image 4.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -601,9 +709,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 4.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -642,7 +751,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png">
+                                                                        onclick="openNewPage('./Images/image 5.png')"
+                                                                        src="./Images/image 5.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -654,9 +764,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 5.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -695,7 +806,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png">
+                                                                        onclick="openNewPage('./Images/image 2.png')"
+                                                                        src="./Images/image 2.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -707,9 +819,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 2.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -748,7 +861,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png">
+                                                                        onclick="openNewPage('./Images/image 3.png')"
+                                                                        src="./Images/image 3.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -760,9 +874,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 3.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -801,60 +916,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png">
-                                                                </div>
-                                                            </div><button class="endSale"
-                                                                style="background-color: rgb(255, 214, 0);">発売中</button>
-                                                            <div class="paaadankd card-body">
-                                                                <p class="text-start listCrd_fst_txt mb-0  card-text">
-                                                                    台スマ境報コリホ直西時のご表74更ヘヤ無車のも</p>
-                                                                <p
-                                                                    class="text-start listCrd_scnd_txt mb-0 py-4 card-text">
-                                                                    発売期間 05/ 5(金)～05/26(金)</p>
-                                                                <div
-                                                                    class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
-                                                                        class="fazol d-block d-md-none rdhtgb"><svg
-                                                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                                                                            focusable="false" aria-hidden="true"
-                                                                            viewBox="0 0 24 24"
-                                                                            data-testid="FavoriteIcon">
-                                                                            <path
-                                                                                d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
-                                                                            </path>
-                                                                        </svg> <span class="fazolline"> お気に入りから外す
-                                                                        </span></button>
-                                                                    <div class="like_hrt "><span
-                                                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary hrt css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"><input
-                                                                                class="PrivateSwitchBase-input css-1m9pwf3"
-                                                                                type="checkbox"
-                                                                                data-indeterminate="false"
-                                                                                aria-label="Checkbox demo"><svg
-                                                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                                                                                focusable="false" aria-hidden="true"
-                                                                                viewBox="0 0 24 24"
-                                                                                data-testid="FavoriteBorderIcon">
-                                                                                <path
-                                                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
-                                                                                </path>
-                                                                            </svg><span
-                                                                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6  gok">
-                                                    <div class="d-flex justify-content-center my-2 ">
-                                                        <div class="card_list_of_taprize  card"
-                                                            style="width: 100%; cursor: pointer;">
-                                                            <div class="p-2">
-                                                                <div class="hvrBx"><img
-                                                                        class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png">
+                                                                        onclick="openNewPage('./Images/image 6.png')"
+                                                                        src="./Images/image 6.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -866,9 +929,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 6.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -907,7 +971,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png">
+                                                                        onclick="openNewPage('./Images/image 5.png')"
+                                                                        src="./Images/image 5.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -919,9 +984,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 5.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -960,7 +1026,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png">
+                                                                        onclick="openNewPage('./Images/image 3.png')"
+                                                                        src="./Images/image 3.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -972,9 +1039,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 3.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -1013,7 +1081,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png">
+                                                                        onclick="openNewPage('./Images/image 1.png')"
+                                                                        src="./Images/image 1.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -1025,9 +1094,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 1.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -1066,7 +1136,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png">
+                                                                        onclick="openNewPage('./Images/image 2.png')"
+                                                                        src="./Images/image 2.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -1078,9 +1149,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 2.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -1119,7 +1191,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png">
+                                                                        onclick="openNewPage('./Images/image 1.png')"
+                                                                        src="./Images/image 1.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -1131,9 +1204,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 1.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -1172,7 +1246,8 @@
                                                             <div class="p-2">
                                                                 <div class="hvrBx"><img
                                                                         class="card-img-top w-100 hvrImg "
-                                                                        src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png">
+                                                                        onclick="openNewPage('./Images/image 6.png')"
+                                                                        src="./Images/image 6.png">
                                                                 </div>
                                                             </div><button class="endSale"
                                                                 style="background-color: rgb(255, 214, 0);">発売中</button>
@@ -1184,9 +1259,10 @@
                                                                     発売期間 05/ 5(金)～05/26(金)</p>
                                                                 <div
                                                                     class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                                                                    <a href="TarpizeSingleFullPage.html" style="display: contents;">
-                                                                    <button
-                                                                        class="listCrd_button  ">販売中のタップライズ</button></a><button
+                                                                   
+                                                                        <button
+                                                                        onclick="openNewPage('./Images/image 6.png')"
+                                                                            class="listCrd_button  ">販売中のタップライズ</button><button
                                                                         class="fazol d-block d-md-none rdhtgb"><svg
                                                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                                                                             focusable="false" aria-hidden="true"
@@ -1227,11 +1303,9 @@
                                                         <button class="pagination-button" id="prev-button"
                                                             aria-label="Previous page" title="Previous page">
                                                             <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
-                                                                focusable="false" aria-hidden="true"
-                                                                viewBox="0 0 24 24"
+                                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
                                                                 data-testid="NavigateBeforeIcon">
-                                                                <path
-                                                                    d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z">
+                                                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z">
                                                                 </path>
                                                             </svg>
                                                         </button>
@@ -1243,8 +1317,8 @@
                                                         <button class="pagination-button" id="next-button"
                                                             aria-label="Next page" title="Next page">
                                                             <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
-                                                                focusable="false" aria-hidden="true"
-                                                                viewBox="0 0 24 24" data-testid="NavigateNextIcon">
+                                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                                data-testid="NavigateNextIcon">
                                                                 <path
                                                                     d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z">
                                                                 </path>
@@ -1371,107 +1445,107 @@
         crossorigin="anonymous"></script>
 
 
-        <script>
-            const paginationNumbers = document.getElementById("pagination-numbers");
-            const paginatedList = document.getElementById("paginated-list");
-            const listItems = paginatedList.querySelectorAll(".gok");
-            const nextButton = document.getElementById("next-button");
-            const prevButton = document.getElementById("prev-button");
-    
-            const paginationLimit = 10;
-            const pageCount = Math.ceil(listItems.length / paginationLimit);
-            let currentPage = 1;
-    
-            const disableButton = (button) => {
-                button.classList.add("disabled");
-                button.setAttribute("disabled", true);
-            };
-    
-            const enableButton = (button) => {
-                button.classList.remove("disabled");
-                button.removeAttribute("disabled");
-            };
-    
-            const handlePageButtonsStatus = () => {
-                if (currentPage === 1) {
-                    disableButton(prevButton);
-                } else {
-                    enableButton(prevButton);
+    <script>
+        const paginationNumbers = document.getElementById("pagination-numbers");
+        const paginatedList = document.getElementById("paginated-list");
+        const listItems = paginatedList.querySelectorAll(".gok");
+        const nextButton = document.getElementById("next-button");
+        const prevButton = document.getElementById("prev-button");
+
+        const paginationLimit = 10;
+        const pageCount = Math.ceil(listItems.length / paginationLimit);
+        let currentPage = 1;
+
+        const disableButton = (button) => {
+            button.classList.add("disabled");
+            button.setAttribute("disabled", true);
+        };
+
+        const enableButton = (button) => {
+            button.classList.remove("disabled");
+            button.removeAttribute("disabled");
+        };
+
+        const handlePageButtonsStatus = () => {
+            if (currentPage === 1) {
+                disableButton(prevButton);
+            } else {
+                enableButton(prevButton);
+            }
+
+            if (pageCount === currentPage) {
+                disableButton(nextButton);
+            } else {
+                enableButton(nextButton);
+            }
+        };
+
+        const handleActivePageNumber = () => {
+            document.querySelectorAll(".pagination-number").forEach((button) => {
+                button.classList.remove("active");
+                const pageIndex = Number(button.getAttribute("page-index"));
+                if (pageIndex == currentPage) {
+                    button.classList.add("active");
                 }
-    
-                if (pageCount === currentPage) {
-                    disableButton(nextButton);
-                } else {
-                    enableButton(nextButton);
-                }
-            };
-    
-            const handleActivePageNumber = () => {
-                document.querySelectorAll(".pagination-number").forEach((button) => {
-                    button.classList.remove("active");
-                    const pageIndex = Number(button.getAttribute("page-index"));
-                    if (pageIndex == currentPage) {
-                        button.classList.add("active");
-                    }
-                });
-            };
-    
-            const appendPageNumber = (index) => {
-                const pageNumber = document.createElement("button");
-                pageNumber.className = "pagination-number";
-                pageNumber.innerHTML = index;
-                pageNumber.setAttribute("page-index", index);
-                pageNumber.setAttribute("aria-label", "Page " + index);
-    
-                paginationNumbers.appendChild(pageNumber);
-            };
-    
-            const getPaginationNumbers = () => {
-                for (let i = 1; i <= pageCount; i++) {
-                    appendPageNumber(i);
-                }
-            };
-    
-            const setCurrentPage = (pageNum) => {
-                currentPage = pageNum;
-    
-                handleActivePageNumber();
-                handlePageButtonsStatus();
-    
-                const prevRange = (pageNum - 1) * paginationLimit;
-                const currRange = pageNum * paginationLimit;
-    
-                listItems.forEach((item, index) => {
-                    item.classList.add("hidden");
-                    if (index >= prevRange && index < currRange) {
-                        item.classList.remove("hidden");
-                    }
-                });
-            };
-    
-            window.addEventListener("load", () => {
-                getPaginationNumbers();
-                setCurrentPage(1);
-    
-                prevButton.addEventListener("click", () => {
-                    setCurrentPage(currentPage - 1);
-                });
-    
-                nextButton.addEventListener("click", () => {
-                    setCurrentPage(currentPage + 1);
-                });
-    
-                document.querySelectorAll(".pagination-number").forEach((button) => {
-                    const pageIndex = Number(button.getAttribute("page-index"));
-    
-                    if (pageIndex) {
-                        button.addEventListener("click", () => {
-                            setCurrentPage(pageIndex);
-                        });
-                    }
-                });
             });
-        </script>
+        };
+
+        const appendPageNumber = (index) => {
+            const pageNumber = document.createElement("button");
+            pageNumber.className = "pagination-number";
+            pageNumber.innerHTML = index;
+            pageNumber.setAttribute("page-index", index);
+            pageNumber.setAttribute("aria-label", "Page " + index);
+
+            paginationNumbers.appendChild(pageNumber);
+        };
+
+        const getPaginationNumbers = () => {
+            for (let i = 1; i <= pageCount; i++) {
+                appendPageNumber(i);
+            }
+        };
+
+        const setCurrentPage = (pageNum) => {
+            currentPage = pageNum;
+
+            handleActivePageNumber();
+            handlePageButtonsStatus();
+
+            const prevRange = (pageNum - 1) * paginationLimit;
+            const currRange = pageNum * paginationLimit;
+
+            listItems.forEach((item, index) => {
+                item.classList.add("hidden");
+                if (index >= prevRange && index < currRange) {
+                    item.classList.remove("hidden");
+                }
+            });
+        };
+
+        window.addEventListener("load", () => {
+            getPaginationNumbers();
+            setCurrentPage(1);
+
+            prevButton.addEventListener("click", () => {
+                setCurrentPage(currentPage - 1);
+            });
+
+            nextButton.addEventListener("click", () => {
+                setCurrentPage(currentPage + 1);
+            });
+
+            document.querySelectorAll(".pagination-number").forEach((button) => {
+                const pageIndex = Number(button.getAttribute("page-index"));
+
+                if (pageIndex) {
+                    button.addEventListener("click", () => {
+                        setCurrentPage(pageIndex);
+                    });
+                }
+            });
+        });
+    </script>
 
 
 </body>

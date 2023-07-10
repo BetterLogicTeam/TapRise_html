@@ -1,8 +1,8 @@
 <html lang="ja-jp">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="./Images/favicon.ico" />
+  <meta charset="utf-8" />  <link rel="icon" href="./Images/favicon.ico" />
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f2f6ff" />
   <meta name="description" content="Web site created using create-react-app" />
@@ -22,6 +22,21 @@
           user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
         -->
   <link rel="manifest" href="/manifest.json" />
+  <script>
+    function toggleIcon() {
+     var buttonIcon = document.getElementById("buttonIcon");
+     buttonIcon.style.color="#e60058"
+
+     if (buttonIcon.classList.contains("fa-bars")) {
+       buttonIcon.classList.remove("fa-bars");
+       buttonIcon.classList.add("fa-xmark");
+     } else {
+       buttonIcon.classList.remove("fa-xmark");
+       buttonIcon.classList.add("fa-bars");
+     }
+   }
+  
+ </script>
   <!--
           Notice the use of  in the tags above.
           It will be replaced with the URL of the `public` folder during the build.
@@ -68,6 +83,12 @@ function closeFullscreen() {
   overlay.parentNode.removeChild(overlay);
 }
 
+
+const searchParams = new URLSearchParams(window.location.search);
+const id = searchParams.get('src');
+console.log("searchParams",id);
+// document.getElementById('imageBox').src = id;
+
   </script>
 </head>
 
@@ -78,21 +99,23 @@ function closeFullscreen() {
       <div class="mmaaaaa">
         <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
           <div class="container">
-            <a class="navbar-brand patImGlogo" href="./index.html"><img src="./Images/newLogo.png" class="w-100"
-                alt="" /></a>
+            <a class="navbar-brand patImGlogo nav_Responsive " href="./index.html">
+              <img src="./Images/newLogo.png" class="w-100"
+                alt=""  /></a>
             <div class="d-flex gap-2">
               <button class="man_ttn">
                 <a href="./Login.html" style="color: black; text-decoration: none"><i class="fa-solid fa-user"></i></a>
               </button>
 
-              <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+              <button id="toggleButton" class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                aria-label="Toggle navigation"  onclick="toggleIcon()">
+                <i id="buttonIcon" class="fas fa-bars"></i>
+              
               </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav ms-auto pb-2">
                 <li class="nav-item for_smalplay">
                   <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
                     href="ListOTaprize.html">タップライズ 一覧</a>
@@ -123,9 +146,9 @@ function closeFullscreen() {
           <div class="conta_uper">
             <div class="containerrrr">
               <div class="row m-0">
-                <div class="col-md-12 col-lg-7 text-center lftgacHPiCUpEr">
-                  <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png"
-                    class="lftgacHPiC" alt="" />
+                <div class="col-md-12 col-lg-7 text-center lftgacHPiCUpEr" id="imageBox">
+                  <!-- <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png"
+                    class="lftgacHPiC" id="imageBox" alt="" /> -->
                 </div>
                 <div class="col-md-12 mt-3 mt-lg-0 col-lg-5">
                   <div class="tarsize_content text-start">
@@ -173,7 +196,7 @@ function closeFullscreen() {
                           <option value="9">9</option>
                         </select>
                       </div>
-                      <a href="./PurchaseTab.html?id=1">
+                      <a href="./PurchaseTab.html?id=1" style="display: contents;">
                         <button class="snlstWhite BdrRdiS">
                           購入する - 1回660円(税込)
                         </button>
@@ -182,7 +205,7 @@ function closeFullscreen() {
                   </div>
                   <div class="row align-items-center my-3">
                     <div class="col-md-9 wdLGr">
-                      <a href="./PurchaseTab.html?id=2">
+                      <a href="./PurchaseTab.html?id=2" style="display: contents;">
 
                         <button class="snlstTen exRDB abbc">
                           10連ガチャ (ボイス付き)
@@ -1694,7 +1717,7 @@ function closeFullscreen() {
                   </div>
                 </div>
                 <div class="swiper-slide Rem" data-swiper-slide-index="31" style="width: 244.75px; margin-right: 15px">
-                  <div class="card dko card_slider hvrBx BigScreenslidr">
+                  <div class="card dko card_slider border hvrBx BigScreenslidr">
                     <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
                       width="50%" class="hvrImg" />
                     <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
@@ -1814,7 +1837,11 @@ function closeFullscreen() {
       }
     });
   </script>
+
+  
   <script>
+document.getElementById('imageBox').innerHTML = '<img src="'+id+'" id="imageBox" class="lftgacHPiC" />';
+
     const meta = document.createElement("meta");
     meta.name = "theme-color";
     meta.content = "#f2f6ff";

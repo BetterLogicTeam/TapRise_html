@@ -1,7 +1,8 @@
 <html lang="ja-jp">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <link rel="icon" href="./Images/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -17,6 +18,56 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./Style/Index_style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script>
+    function toggleIcon() {
+      var buttonIcon = document.getElementById("buttonIcon");
+      buttonIcon.style.color = "#e60058"
+
+      if (buttonIcon.classList.contains("fa-bars")) {
+        buttonIcon.classList.remove("fa-bars");
+        buttonIcon.classList.add("fa-xmark");
+      } else {
+        buttonIcon.classList.remove("fa-xmark");
+        buttonIcon.classList.add("fa-bars");
+      }
+    }
+
+  </script>
+  <script>
+    function openNewPage(id) {
+      //   var image = document.getElementById("myImage");
+
+      // Get the metadata of the image
+      var metadata = {
+        src: id,
+
+      };
+      console.log("metadata", metadata);
+      // Encode the metadata as a URL parameter
+      var urlParams = new URLSearchParams(metadata).toString();
+
+      //   // Open the new page with the image metadata in the URL
+      //   window.open("TarpizeSingleFullPage.html?" + urlParams);
+      window.location.replace("TarpizeSingleFullPage.html?" + urlParams)
+    }
+
+
+
+    
+  </script>
+  
+   <style>
+    .favorite {
+      color: red;
+    }
+  </style>
 </head>
 
 <body cz-shortcut-listen="true">
@@ -26,21 +77,22 @@
       <div class="mmaaaaa">
         <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
           <div class="container">
-            <a class="navbar-brand patImGlogo" href="./index.html"><img src="./Images/newLogo.png" class="w-100"
-                alt="" /></a>
+            <a class="navbar-brand patImGlogo nav_Responsive " href="./index.html">
+              <img src="./Images/newLogo.png" class="w-100" alt="" /></a>
             <div class="d-flex gap-2">
               <button class="man_ttn">
                 <a href="./Login.html" style="color: black; text-decoration: none"><i class="fa-solid fa-user"></i></a>
               </button>
 
-              <button class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
+              <button id="toggleButton" class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                aria-label="Toggle navigation" onclick="toggleIcon()">
+                <i id="buttonIcon" class="fas fa-bars"></i>
+
               </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav ms-auto pb-2">
                 <li class="nav-item for_smalplay">
                   <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
                     href="ListOTaprize.html">タップライズ 一覧</a>
@@ -94,12 +146,11 @@
                   transition-duration: 0ms;
                   transform: translate3d(-2467.62px, 0px, 0px);
                 ">
-              <div class="swiper-slide Rem" data-swiper-slide-index="32" style="width: 244.75px; margin-right: 15px">
+              <div class="swiper-slide Rem" data-swiper-slide-index="32">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 1.png" alt="" width="50%" height="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -112,10 +163,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="33" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 2.png" onclick="openNewPage('./Images/image 2.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -128,10 +178,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="34" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 1.png" onclick="openNewPage('./Images/image 1.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -144,10 +193,9 @@
               </div>
               <div class="swiper-slide Rem" style="width: 244.75px; margin-right: 15px" data-swiper-slide-index="35">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 2.png" onclick="openNewPage('./Images/image 2.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -160,10 +208,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="0" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 1.png" onclick="openNewPage('./Images/image 1.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -176,10 +223,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="1" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 4.png" onclick="openNewPage('./Images/image 4.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -192,10 +238,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="2" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 6.png" onclick="openNewPage('./Images/image 6.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -208,10 +253,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="3" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 1.png" onclick="openNewPage('./Images/image 1.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -224,10 +268,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="4" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 4.png" onclick="openNewPage('./Images/image 4.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -240,10 +283,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="5" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 6.png" onclick="openNewPage('./Images/image 6.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -257,10 +299,9 @@
               <div class="swiper-slide swiper-slide-prev Rem" data-swiper-slide-index="6"
                 style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 4.png" onclick="openNewPage('./Images/image 4.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -274,10 +315,9 @@
               <div class="swiper-slide swiper-slide-active Rem" data-swiper-slide-index="7"
                 style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 3.png" onclick="openNewPage('./Images/image 3.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -291,10 +331,9 @@
               <div class="swiper-slide swiper-slide-next Rem" data-swiper-slide-index="8"
                 style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 6.png" onclick="openNewPage('./Images/image 6.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -307,10 +346,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="9" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 4.png" onclick="openNewPage('./Images/image 4.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -323,10 +361,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="10" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 6.png" onclick="openNewPage('./Images/image 6.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -339,10 +376,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="11" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 4.png" onclick="openNewPage('./Images/image 4.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -355,10 +391,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="12" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 2.png" onclick="openNewPage('./Images/image 2.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -371,10 +406,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="13" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 3.png" onclick="openNewPage('./Images/image 3.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -387,10 +421,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="14" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 2.png" onclick="openNewPage('./Images/image 2.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -403,10 +436,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="15" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 3.png" onclick="openNewPage('./Images/image 3.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -419,10 +451,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="16" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 2.png" onclick="openNewPage('./Images/image 2.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -435,10 +466,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="17" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 5.png" onclick="openNewPage('./Images/image 5.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -451,10 +481,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="18" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 2.png" onclick="openNewPage('./Images/image 2.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -467,10 +496,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="19" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 5.png" onclick="openNewPage('./Images/image 5.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -483,10 +511,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="20" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 3.png" onclick="openNewPage('./Images/image 3.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -499,10 +526,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="21" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 5.png" onclick="openNewPage('./Images/image 5.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -515,10 +541,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="22" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 3.png" onclick="openNewPage('./Images/image 3.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -531,10 +556,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="23" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 5.png" onclick="openNewPage('./Images/image 5.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -547,10 +571,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="24" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 6.png" onclick="openNewPage('./Images/image 6.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -563,10 +586,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="25" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 5.png" onclick="openNewPage('./Images/image 5.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -579,10 +601,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="26" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 5.png" onclick="openNewPage('./Images/image 5.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -595,10 +616,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="27" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 5.png" onclick="openNewPage('./Images/image 5.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -611,10 +631,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="28" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 3.png" onclick="openNewPage('./Images/image 3.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -627,10 +646,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="29" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 1.png" onclick="openNewPage('./Images/image 1.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -643,10 +661,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="30" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 6.png" onclick="openNewPage('./Images/image 6.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -659,10 +676,9 @@
               </div>
               <div class="swiper-slide Rem" data-swiper-slide-index="31" style="width: 244.75px; margin-right: 15px">
                 <div class="card dko card_slider hvrBx BigScreenslidr">
-                  <a href="./TarpizeSingleFullPage.html">
-                    <img src="https://taprize.netlify.app/static/media/image 2.54affba5d3186d6a1236.png" alt=""
-                      width="50%" class="hvrImg" />
-                  </a>
+
+                  <img src="./Images/image 2.png" onclick="openNewPage('./Images/image 2.png')" alt="" width="50%" />
+
                   <div class="row mt-3 p-2 mb-3 crddSldAGN bigmoretxt">
                     <div class="col-lg-3 text-start">
                       <p class="slider_date">2023.5.2</p>
@@ -681,16 +697,16 @@
         <div class="Taprise_on_sale_bg">
           <div class="container">
             <h1 style="cursor: pointer">販売中のタップライズ</h1>
+            <!-- <button id="favoriteButton">Favorite</button> -->
             <div class="row mt-3 mt-md-5 last1">
               <div class="col-lg-6">
                 <div class="d-flex justify-content-center my-2">
                   <div class="card_list_of_taprize card" style="width: 100%; cursor: pointer">
                     <div class="p-2">
-                      <a href="./TarpizeSingleFullPage.html">
-                        <div class="hvrBx">
-                          <img class="card-img-top w-100 hvrImg"
-                            src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" />
-                        </div>
+
+                      <div class="hvrBx">
+                        <img class="card-img-top w-100 hvrImg"  onclick="openNewPage('./Images/image 1.png')" src="./Images/image 1.png" />
+                      </div>
                       </a>
                     </div>
                     <button class="endSale" style="background-color: rgb(255, 214, 0)">
@@ -704,10 +720,10 @@
                         発売期間 05/ 5(金)～05/26(金)
                       </p>
                       <div class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                        <a href="./TarpizeSingleFullPage.html" style="display: contents;">
-                          <button class="listCrd_button">
-                            販売中のタップライズ</button>
-                        </a>
+
+                        <button  onclick="openNewPage('./Images/image 1.png')" class="listCrd_button">
+                          販売中のタップライズ</button>
+
                         <button class="fazol d-block d-md-none rdhtgb">
                           <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                             focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavoriteIcon">
@@ -738,11 +754,10 @@
                 <div class="d-flex justify-content-center my-2">
                   <div class="card_list_of_taprize card" style="width: 100%; cursor: pointer">
                     <div class="p-2">
-                      <a href="./TarpizeSingleFullPage.html">
-                        <div class="hvrBx">
-                          <img class="card-img-top w-100 hvrImg"
-                            src="https://taprize.netlify.app/static/media/image 4.40b9ae9a030ec280ec7b.png" />
-                        </div>
+
+                      <div class="hvrBx">
+                        <img class="card-img-top w-100 hvrImg"  onclick="openNewPage('./Images/image 4.png')" src="./Images/image 4.png" />
+                      </div>
                       </a>
                     </div>
                     <button class="endSale" style="background-color: rgb(138, 199, 255)">
@@ -756,10 +771,10 @@
                         発売期間 05/ 5(金)～05/26(金)
                       </p>
                       <div class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                        <a href="./TarpizeSingleFullPage.html" style="display: contents;">
-                          <button class="listCrd_button">
-                            販売中のタップライズ</button>
-                        </a>
+
+                        <button  onclick="openNewPage('./Images/image 4.png')" class="listCrd_button">
+                          販売中のタップライズ</button>
+
                         <button class="fazol d-block d-md-none rdhtgb">
                           <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                             focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavoriteIcon">
@@ -790,11 +805,10 @@
                 <div class="d-flex justify-content-center my-2">
                   <div class="card_list_of_taprize card" style="width: 100%; cursor: pointer">
                     <div class="p-2">
-                      <a href="./TarpizeSingleFullPage.html">
-                        <div class="hvrBx">
-                          <img class="card-img-top w-100 hvrImg"
-                            src="https://taprize.netlify.app/static/media/image 3.b9773083f393816ea686.png" />
-                        </div>
+
+                      <div class="hvrBx">
+                        <img class="card-img-top w-100 hvrImg"  onclick="openNewPage('./Images/image 3.png')" src="./Images/image 3.png" />
+                      </div>
                       </a>
                     </div>
                     <button class="endSale" style="background-color: rgb(255, 214, 0)">
@@ -808,10 +822,10 @@
                         発売期間 05/ 5(金)～05/26(金)
                       </p>
                       <div class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                        <a href="./TarpizeSingleFullPage.html" style="display: contents;">
-                          <button class="listCrd_button">
-                            販売中のタップライズ</button>
-                        </a>
+
+                        <button  onclick="openNewPage('./Images/image 3.png')" class="listCrd_button">
+                          販売中のタップライズ</button>
+
                         <button class="fazol d-block d-md-none rdhtgb">
                           <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                             focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavoriteIcon">
@@ -842,11 +856,10 @@
                 <div class="d-flex justify-content-center my-2">
                   <div class="card_list_of_taprize card" style="width: 100%; cursor: pointer">
                     <div class="p-2">
-                      <a href="./TarpizeSingleFullPage.html">
-                        <div class="hvrBx">
-                          <img class="card-img-top w-100 hvrImg"
-                            src="https://taprize.netlify.app/static/media/image 6.b80b91f06d064e1d2af5.png" />
-                        </div>
+
+                      <div class="hvrBx">
+                        <img class="card-img-top w-100 hvrImg"  onclick="openNewPage('./Images/image 6.png')" src="./Images/image 6.png" />
+                      </div>
                       </a>
                     </div>
                     <button class="endSale" style="background-color: rgb(138, 199, 255)">
@@ -860,10 +873,10 @@
                         発売期間 05/ 5(金)～05/26(金)
                       </p>
                       <div class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                        <a href="./TarpizeSingleFullPage.html" style="display: contents;">
-                          <button class="listCrd_button">
-                            販売中のタップライズ</button>
-                        </a>
+
+                        <button  onclick="openNewPage('./Images/image 6.png')" class="listCrd_button">
+                          販売中のタップライズ</button>
+
                         <button class="fazol d-block d-md-none rdhtgb">
                           <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                             focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavoriteIcon">
@@ -894,11 +907,10 @@
                 <div class="d-flex justify-content-center my-2">
                   <div class="card_list_of_taprize card" style="width: 100%; cursor: pointer">
                     <div class="p-2">
-                      <a href="./TarpizeSingleFullPage.html">
-                        <div class="hvrBx">
-                          <img class="card-img-top w-100 hvrImg"
-                            src="https://taprize.netlify.app/static/media/image 5.95beeece5f2015437cdc.png" />
-                        </div>
+
+                      <div class="hvrBx">
+                        <img class="card-img-top w-100 hvrImg"  onclick="openNewPage('./Images/image 5.png')" src="./Images/image 5.png" />
+                      </div>
                       </a>
                     </div>
                     <button class="endSale" style="background-color: rgb(255, 214, 0)">
@@ -912,10 +924,10 @@
                         発売期間 05/ 5(金)～05/26(金)
                       </p>
                       <div class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                        <a href="./TarpizeSingleFullPage.html" style="display: contents;">
-                          <button class="listCrd_button">
-                            販売中のタップライズ</button>
-                        </a>
+
+                        <button  onclick="openNewPage('./Images/image 5.png')" class="listCrd_button">
+                          販売中のタップライズ</button>
+
                         <button class="fazol d-block d-md-none rdhtgb">
                           <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                             focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavoriteIcon">
@@ -946,11 +958,10 @@
                 <div class="d-flex justify-content-center my-2">
                   <div class="card_list_of_taprize card" style="width: 100%; cursor: pointer">
                     <div class="p-2">
-                      <a href="./TarpizeSingleFullPage.html">
-                        <div class="hvrBx">
-                          <img class="card-img-top w-100 hvrImg"
-                            src="https://taprize.netlify.app/static/media/image 1.df0749514d8c65c59e09.png" />
-                        </div>
+
+                      <div class="hvrBx">
+                        <img class="card-img-top w-100 hvrImg"  onclick="openNewPage('./Images/image 1.png')" src="./Images/image 1.png" />
+                      </div>
                       </a>
                     </div>
                     <button class="endSale" style="background-color: rgb(138, 199, 255)">
@@ -964,10 +975,10 @@
                         発売期間 05/ 5(金)～05/26(金)
                       </p>
                       <div class="d-flex flex-column flex-md-row gap-3 caerd_heart">
-                        <a href="./TarpizeSingleFullPage.html" style="display: contents;">
-                          <button class="listCrd_button">
-                            販売中のタップライズ</button>
-                        </a>
+
+                        <button  onclick="openNewPage('./Images/image 1.png')" class="listCrd_button">
+                          販売中のタップライズ</button>
+
                         <button class="fazol d-block d-md-none rdhtgb">
                           <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                             focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavoriteIcon">
@@ -1319,6 +1330,13 @@
           spaceBetween: 15,
         },
       },
+    });
+  </script>
+  <script>
+    var favoriteButton = document.getElementById("favoriteButton");
+
+    favoriteButton.addEventListener("click", function() {
+      favoriteButton.classList.toggle("favorite");
     });
   </script>
 
