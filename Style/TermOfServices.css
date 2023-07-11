@@ -18863,7 +18863,7 @@
         }
 
         .h3_text {
-            font-weight: 600;
+            font-weight: 600 !important;
             font-size: 36px;
             line-height: 43px;
             text-align: center;

@@ -15044,7 +15044,7 @@
     }
 
     .frmlfftr {
-      font-size: 16px !important;
+      font-size: 17px !important;
       font-weight: 600 !important;
       line-height: 22px !important;
       width: 25%;
@@ -15169,7 +15169,7 @@
     }
 
     .snlstWhite {
-      font-weight: 700;
+      font-weight: 500;
       padding: 13px 15px !important;
       width: 100% !important;
       border-radius: 45px;
@@ -15635,7 +15635,7 @@
   .sectitl {
     text-transform: uppercase;
     color: #020140 !important;
-    font-weight: 700;
+    font-weight: 500 !important;
     font-size: 24px;
   }
 
@@ -15755,7 +15755,7 @@
     color: #2eb3ff;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
   }
   .FrEndPd {
     cursor: pointer;
@@ -15789,7 +15789,7 @@
 
     .lower_content > p {
       font-size: 12px !important;
-      font-weight: 700;
+      font-weight: 500;
     }
   }
 
@@ -15800,8 +15800,8 @@
     }
 
     .blue_heading {
-      font-size: 15px;
-      font-weight: 700;
+      font-size: 15px !important;
+      font-weight: 500 !important;
     }
 
     .black_heading {
@@ -15835,7 +15835,7 @@
 
   @media only screen and (max-width: 990px) {
     .blue_heading {
-      font-size: 16px !important;
+      font-size: 15px !important;
     }
 
     .lower_content > p {
@@ -15997,7 +15997,7 @@
   }
 
   .dInfo {
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     font-size: 40px;
     line-height: 48px !important;
     color: #000e31;
@@ -16019,7 +16019,7 @@
     }
 
     .dInfo {
-      font-weight: 500 !important;
+      font-weight: 600 !important;
       font-size: 27px;
       line-height: 48px !important;
     }

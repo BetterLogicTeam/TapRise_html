@@ -20381,9 +20381,10 @@
       display: flex;
       justify-content: center !important;
       align-items: center !important;
-      width: 100% !important;
+      width: 60% !important;
       font-size: 16px;
       border-radius: 45px;
+      padding: 15px 0px !important;
     }
   }
 
@@ -20408,14 +20409,14 @@
     and
     (max-width: 700px) {
     .rssssssspomm {
-      flex-direction: column !important;
+      flex-direction: row !important;
     }
     .comfim_p {
       font-size: 18px !important;
     }
 
     .red_buttonnn {
-      padding: 15px 80px !important ;
+      /* padding: 15px 80px !important ; */
       margin-bottom: 2rem !important;
     }
 

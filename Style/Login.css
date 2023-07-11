@@ -15777,7 +15777,7 @@
             }
 
             .left_side_p {
-                font-weight: 590 !important;
+                font-weight: 500 !important;
                 font-size: 15px !important;
             }
 
@@ -17133,7 +17133,7 @@
         @media only screen and (max-width: 600px) {
 
             .passwordstepTwo_p {
-                font-weight: 700;
+                font-weight: 500 !important;
             }
         }
 
@@ -17237,7 +17237,7 @@
             height: 55px;
             left: 24px;
             top: 352px;
-            font-weight: 600;
+            font-weight: 500 !important; 
             color: white;
 
             background: #E60058;
@@ -19470,7 +19470,7 @@
 
 
         .pass_4_tst {
-            font-weight: 700;
+            font-weight: 500;
             font-size: 17px;
             line-height: 140%;
 
@@ -19513,12 +19513,16 @@
         @media only screen and (min-width:350px) and (max-width:410px) {
             .h3_text {
                 font-size: 30px !important;
+                font-weight: 600 !important;
+
             }
         }
 
         @media only screen and (min-width:411px) and (max-width:699px) {
             .h3_text {
                 font-size: 34px !important;
+                font-weight: 600 !important;
+
             }
 
 
@@ -19530,6 +19534,8 @@
         @media only screen and (min-width:700px) and (max-width:999px) {
             .h3_text {
                 font-size: 28px !important;
+                font-weight: 600 !important;
+
             }
         }
 

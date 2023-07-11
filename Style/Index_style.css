@@ -10948,7 +10948,7 @@ height: auto !important;
 
   .News_Heading {
     font-weight: 600;
-    font-size: 23px;
+    font-size: 29px;
     padding-top: 29px !important;
     padding-bottom: 0px !important;
   }
@@ -10964,6 +10964,7 @@ height: auto !important;
 
   .landing_Bg button {
     font-size: 15px;
+    font-weight: 500 !important;
     width: 339px !important;
     height: 75px !important;
     padding: 13px 24px !important;
@@ -12476,7 +12477,7 @@ height: 80vh;
   color: #020140;
   font-size: 28px;
   line-height: 39px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .forred {
@@ -12488,7 +12489,7 @@ height: 80vh;
 
 .joinDetails {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 22.4px;
   color: #020140;
   width: 71%;
@@ -12530,7 +12531,7 @@ height: 80vh;
     color: #020140;
     font-size: 22px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   .flowTitle {
@@ -12548,7 +12549,7 @@ height: 80vh;
 
   .joinDetails {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 22.4px;
     color: #020140;
     width: 100%;
@@ -18112,7 +18113,7 @@ max-width: 100% !important;
 
 .ressssss_heaaaaaddddd {
   font-size: 36px !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   color: #020140 !important;
 }
 
@@ -18123,6 +18124,8 @@ max-width: 100% !important;
   }
   .ressssss_heaaaaaddddd {
     font-size: 26px !important;
+  font-weight: 600 !important;
+
   }
 }
 
@@ -18159,7 +18162,7 @@ max-width: 100% !important;
   height: 28px;
   font-family: "Noto Sans JP", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   line-height: 140%;
   text-transform: uppercase;

@@ -26440,7 +26440,7 @@ input::-webkit-inner-spin-button {
 }
 
 .h3_text {
-    font-weight: 600;
+    font-weight: 600 !important;
     font-size: 36px;
     line-height: 43px;
     text-align: center;
@@ -27033,7 +27033,7 @@ input::-webkit-inner-spin-button {
 
 .h3_text {
     font-size: 36px !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     color: #020140 !important;
 }
 
@@ -27075,6 +27075,7 @@ input::-webkit-inner-spin-button {
 @media only screen and (max-width:349px) {
     .h3_text {
         font-size: 25px !important;
+        font-weight: 600 !important;
     }
 }
 
@@ -27082,12 +27083,14 @@ input::-webkit-inner-spin-button {
 @media only screen and (min-width:350px) and (max-width:410px) {
     .h3_text {
         font-size: 30px !important;
+        font-weight: 600 !important;
     }
 }
 
 @media only screen and (min-width:411px) and (max-width:699px) {
     .h3_text {
         font-size: 34px !important;
+        font-weight: 600 !important;
     }
 
 
@@ -27099,6 +27102,7 @@ input::-webkit-inner-spin-button {
 @media only screen and (min-width:700px) and (max-width:999px) {
     .h3_text {
         font-size: 28px !important;
+        font-weight: 600 !important;
     }
 }
 
@@ -28826,9 +28830,10 @@ input::-webkit-inner-spin-button {
         display: flex;
         justify-content: center !important;
         align-items: center !important;
-        width: 100% !important;
+        width: 60% !important;
         font-size: 16px;
         border-radius: 45px;
+        padding: 15px 0px !important;
     }
 }
 
@@ -28858,7 +28863,7 @@ input::-webkit-inner-spin-button {
 
 
     .rssssssspomm {
-        flex-direction: column !important;
+        flex-direction: row !important;
     }
 
     .comfim_p {
@@ -28866,7 +28871,7 @@ input::-webkit-inner-spin-button {
     }
 
     .red_buttonnn {
-        padding: 15px 80px !important;
+        /* padding: 15px 80px !important; */
         margin-bottom: 2rem !important;
     }
 

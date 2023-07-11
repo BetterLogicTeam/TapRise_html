@@ -28923,7 +28923,7 @@ input::-webkit-inner-spin-button {
 
 .ressssss_heaaaaaddddd {
     font-size: 36px !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     color: #020140 !important;
 }
 
@@ -28935,6 +28935,7 @@ input::-webkit-inner-spin-button {
 
     .ressssss_heaaaaaddddd {
         font-size: 26px !important;
+        font-weight: 600 !important;
     }
 
 
@@ -28973,7 +28974,7 @@ input::-webkit-inner-spin-button {
     height: 28px;
     font-family: 'Noto Sans JP', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 140%;
     text-transform: uppercase;
