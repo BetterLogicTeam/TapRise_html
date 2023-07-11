@@ -14956,18 +14956,18 @@ background-image: url('../Assets/select_arrow.png');
   .snlstWhite {
     font-weight: 700;
     padding: 13px 25px !important;
-    width: 63% !important;
+    width: 100% !important;
     border-radius: 45px;
     font-size: 14px !important;
   }
 
   .form-select {
     display: block;
-    width: 50% !important;
+    width: 100% !important;
   }
 
   .inptBtw {
-    width: 60% !important;
+    width: 66% !important;
   }
 
   .lftgacHPiC {
