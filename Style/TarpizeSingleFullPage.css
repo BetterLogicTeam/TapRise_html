@@ -14876,7 +14876,7 @@
   }
 
   .tarsize_content > h3 {
-    font-weight: 500 !important;
+    font-weight: 700 !important;
     font-size: 36px !important;
     line-height: 43px !important;
   }
@@ -15066,7 +15066,7 @@
 
     .lftgacHPiC {
       width: 100% !important;
-      height: 215px !important;
+      height: 199px !important;
     }
 
     .circula {
@@ -15195,7 +15195,7 @@
     }
 
     .tarsize_content > h3 {
-      font-weight: 500 !important;
+      font-weight: 700 !important;
       font-size: 36px !important;
       line-height: 43px !important;
       margin-top: 2rem;
@@ -15287,7 +15287,7 @@
     }
 
     .tarsize_content > h3 {
-      font-weight: 500 !important;
+      font-weight: 700 !important;
       font-size: 50px !important;
       line-height: 43px !important;
       margin-top: 3rem;
@@ -15477,7 +15477,7 @@
     .snlstWhite {
       font-weight: 700;
       padding: 13px 25px !important;
-      width: 63% !important;
+      width: 100% !important;
       border-radius: 45px;
       font-size: 14px !important;
     }
