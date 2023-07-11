@@ -409,6 +409,11 @@
 }
 
 
+.nonaawdwdwd{
+  border-bottom: none !important;
+}
+
+
 
 @media only screen and (max-width:600px){
   .main_web_part{
@@ -1577,4 +1582,5 @@ font-size: 16px;
 
 h3{
 padding-bottom: 0px !important;
+border-bottom: none !important;
 }
