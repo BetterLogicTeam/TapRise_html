@@ -20539,7 +20539,7 @@
 
         .main_footer_bg {
             background-color: white !important;
-            padding: 40px 30px 15px 30px !important;
+            padding: 40px 30px 15px 30px ;
         }
 
         .upper>p {
@@ -22761,7 +22761,7 @@
   
         .main_login_page {
             background: #f2f6ff !important;
-            padding: 60px 20px !important;
+            padding: 60px 20px;
             height: auto;
         }
 
@@ -27732,7 +27732,7 @@
         }
 
 
-        @media (min-width:1650px) {
+        @media (min-width:1600px) {
             .edit_main_page {
                 height: 78vh;
             }
@@ -28855,7 +28855,7 @@
   
         .confirmation_bg {
             background-color: #F2F6FF;
-            padding-bottom: 30px !important;
+            padding-bottom: 30px;
             /* padding: 10px !important; */
         }
 
@@ -30199,3 +30199,9 @@
               width: 22% !important;
             }
           }
+
+          @media only screen and (max-width:1145px){
+  .footerLnks {
+    font-size: 11px !important;
+  }
+}

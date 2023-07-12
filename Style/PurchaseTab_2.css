@@ -21207,9 +21207,13 @@ input::-webkit-inner-spin-button {
     color: #ffffff;
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1600px) {
     .edit_main_page {
         height: 78vh;
+    }
+
+    .nabaidhddij{
+    padding-bottom: 30vh !important;
     }
 }
 
@@ -23439,3 +23443,10 @@ td {
     }
 
 }
+
+
+@media only screen and (max-width:1145px){
+    .footerLnks {
+      font-size: 11px !important;
+    }
+  }

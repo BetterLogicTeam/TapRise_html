@@ -13392,7 +13392,7 @@
 
         .main_footer_bg {
             background-color: white !important;
-            padding: 40px 30px 15px 30px !important;
+            padding: 40px 30px 15px 30px ;
         }
 
         .upper>p {
@@ -15615,7 +15615,7 @@
    
         .main_login_page {
             background: #f2f6ff !important;
-            padding: 60px 20px !important;
+            padding: 60px 20px;
             height: auto;
         }
 
@@ -17272,7 +17272,7 @@
 
 
 
-        @media only screen and (min-width:2000px) {
+        @media only screen and (min-width:1600px) {
             .main_password_req_bg {
                 height: 70vh !important;
                 display: flex !important;
@@ -20586,7 +20586,7 @@
         }
 
 
-        @media (min-width:1650px) {
+        @media (min-width:1600px) {
             .edit_main_page {
                 height: 78vh;
             }
@@ -21708,7 +21708,7 @@
    
         .confirmation_bg {
             background-color: #F2F6FF;
-            padding-bottom: 30px !important;
+            padding-bottom: 30px;
             /* padding: 10px !important; */
         }
 
@@ -22583,4 +22583,13 @@
             margin: 0 -8px;
         }
   
-  
+  @media only screen and (min-width:1600px){
+    .tab_main_reos{
+        padding-bottom: 20vh !important;
+    }
+  }
+  @media only screen and (max-width:1145px){
+    .footerLnks {
+      font-size: 11px !important;
+    }
+  }

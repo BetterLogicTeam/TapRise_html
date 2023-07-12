@@ -16632,7 +16632,7 @@
     }
   }
 
-  @media only screen and (min-width: 2000px) {
+  @media only screen and (min-width: 1600px) {
     .main_password_req_bg {
       height: 70vh !important;
       display: flex !important;
@@ -19761,7 +19761,7 @@
     color: #ffffff;
   }
 
-  @media (min-width: 1650px) {
+  @media (min-width: 1600px) {
     .edit_main_page {
       height: 78vh;
     }
@@ -21540,5 +21540,12 @@
 @media (min-width:768px) and (max-width:992px) {
   .tabcor{
     width: 22% !important;
+  }
+}
+
+
+@media only screen and (max-width:1145px){
+  .footerLnks {
+    font-size: 11px !important;
   }
 }

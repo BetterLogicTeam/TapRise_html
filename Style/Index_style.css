@@ -14338,7 +14338,7 @@ line-height: 37px !important;
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1600px) {
   .main_password_req_bg {
     height: 70vh !important;
     display: flex !important;
@@ -17425,7 +17425,7 @@ max-width: 100% !important;
   color: #ffffff;
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1600px) {
   .edit_main_page {
     height: 78vh;
   }
@@ -19303,4 +19303,23 @@ min-height: 58px;
   }
 }
 
+
+ 
+
+
+/* to resolve the footer problem this is used  */
+
+  @media only screen and (min-width:1600){
+    .tab_main_reos{
+        padding-bottom: 40vh !important;
+    }
+
+
+    .newwwsnkf {
+      padding-bottom: 40vh !important;
+    }
+  }
+
+
+ 
 

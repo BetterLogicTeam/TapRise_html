@@ -1584,3 +1584,40 @@ h3{
 padding-bottom: 0px !important;
 border-bottom: none !important;
 }
+
+
+@media only screen and (max-width:1145px){
+  .footerLnks {
+    font-size: 11px !important;
+  }
+}
+
+
+
+
+@media only screen and (min-width:1599px){
+  .newwwsnkf {
+    padding-bottom: 40vh !important;
+  }
+
+  .tabaldjamm{
+    padding-bottom: 50vh !important ;
+  }
+
+  .password_bg{
+    padding-bottom: 30vh !important;
+  }
+
+
+  .amnankfwk{
+    padding-bottom: 30vh !important;
+  }
+
+  .trmupperTop{
+    padding-bottom: 35vh !important;
+  }
+
+  .privacy_content{
+    padding-bottom: 30vh !important ;
+  }
+} 
