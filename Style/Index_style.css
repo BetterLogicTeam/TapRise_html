@@ -15044,7 +15044,7 @@ background-image: url('../Assets/select_arrow.png');
 
 .tarpize_cards_main {
   background: #f2f6ff !important;
-  padding: 80px 10px 40px 10px !important;
+  padding: 80px 0px 0px 0px !important;
 }
 .tarpize_content_cards {
   margin-left: 1rem;

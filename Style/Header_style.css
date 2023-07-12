@@ -2,7 +2,7 @@
   background: #f2f6ff;
   border-bottom: 1px solid #d2e9ff;
   height: 74px !important;
-  padding: 1px 120px !important;
+  /* padding: 1px 120px !important; */
 }
 #buttonIcon{
   color: #E60058;
