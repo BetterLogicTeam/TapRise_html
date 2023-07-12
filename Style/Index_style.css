@@ -19297,3 +19297,10 @@ min-height: 58px;
 
 
 
+@media only screen and (max-width:1145px){
+  .footerLnks {
+    font-size: 11px !important;
+  }
+}
+
+
