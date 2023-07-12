@@ -2,12 +2,13 @@
 
 <head>
 
-    <meta charset="utf-8"><link rel="icon" href="./Images/favicon.ico" />
-    <link rel="icon" href="logo192.png"    >
+    <meta charset="utf-8">
+    <link rel="icon" href="./Images/favicon.ico" />
+    <link rel="icon" href="logo192.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f2f6ff">
     <meta name="description" content="Web site created using create-react-app">
-    <link rel="apple-touch-icon" href="/logo192.png"   >
+    <link rel="apple-touch-icon" href="/logo192.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -18,7 +19,7 @@
           manifest.json provides metadata used when your web app is installed on a
           user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
         -->
-  <link rel="stylesheet" href="./Style/Index_style.css">
+    <link rel="stylesheet" href="./Style/Index_style.css">
 
     <link rel="manifest" href="/manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,9 +35,9 @@
           Learn how to configure a non-root public URL by running `npm run build`.
         -->
 
-        <link rel="stylesheet" href="demo/css/style.css" />
-        <link rel="stylesheet" href="dist/css/glightbox.css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="demo/css/style.css" />
+    <link rel="stylesheet" href="dist/css/glightbox.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./Style/ListOfResults.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,63 +49,64 @@
     <meta name="theme-color" content="#f2f6ff">
     <script>
         function toggleIcon() {
-         var buttonIcon = document.getElementById("buttonIcon");
-         buttonIcon.style.color="#e60058"
-   
-         if (buttonIcon.classList.contains("fa-bars")) {
-           buttonIcon.classList.remove("fa-bars");
-           buttonIcon.classList.add("fa-xmark");
-         } else {
-           buttonIcon.classList.remove("fa-xmark");
-           buttonIcon.classList.add("fa-bars");
-         }
-       }
-      
-     </script>
-      <script>
-        function openNewPage(id) {
-          //   var image = document.getElementById("myImage");
-    
-          // Get the metadata of the image
-          var metadata = {
-            src: id,
-    
-          };
-          console.log("metadata", metadata);
-          // Encode the metadata as a URL parameter
-          var urlParams = new URLSearchParams(metadata).toString();
-    
-          //   // Open the new page with the image metadata in the URL
-          //   window.open("TarpizeSingleFullPage.html?" + urlParams);
-          window.location.replace("TarpizeSingleFullPage.html?" + urlParams)
+            var buttonIcon = document.getElementById("buttonIcon");
+            buttonIcon.style.color = "#e60058"
+
+            if (buttonIcon.classList.contains("fa-bars")) {
+                buttonIcon.classList.remove("fa-bars");
+                buttonIcon.classList.add("fa-xmark");
+            } else {
+                buttonIcon.classList.remove("fa-xmark");
+                buttonIcon.classList.add("fa-bars");
+            }
         }
-      </script>
 
-    
-  <script>
-    
-    function openFullscreen(image) {
-  // Create the fullscreen overlay
-  const overlay = document.createElement('div');
-  overlay.classList.add('fullscreen-overlay');
-  document.body.appendChild(overlay);
+    </script>
+   
+   <script>
+    function openNewPage(id) {
+        //   var image = document.getElementById("myImage");
 
-  // Create the image element in fullscreen mode
-  const fullscreenImage = new Image();
-  fullscreenImage.src = image.src;
-  fullscreenImage.classList.add('fullscreen-image');
-  overlay.appendChild(fullscreenImage);
+        // Get the metadata of the image
+        var metadata = {
+            src: id,
 
-  // Close the fullscreen overlay when clicked
-  overlay.addEventListener('click', closeFullscreen);
-}
+        };
+        console.log("metadata", metadata);
+        // Encode the metadata as a URL parameter
+        var urlParams = new URLSearchParams(metadata).toString();
+        
+        //   // Open the new page with the image metadata in the URL
+        //   window.open("TarpizeSingleFullPage.html?" + urlParams);
+        window.location.replace("TarpizeSingleFullPage.html?" + urlParams)
+    }
+</script>
 
-function closeFullscreen() {
-  const overlay = document.querySelector('.fullscreen-overlay');
-  overlay.parentNode.removeChild(overlay);
-}
 
-  </script>
+    <script>
+
+        function openFullscreen(image) {
+            // Create the fullscreen overlay
+            const overlay = document.createElement('div');
+            overlay.classList.add('fullscreen-overlay');
+            document.body.appendChild(overlay);
+
+            // Create the image element in fullscreen mode
+            const fullscreenImage = new Image();
+            fullscreenImage.src = image.src;
+            fullscreenImage.classList.add('fullscreen-image');
+            overlay.appendChild(fullscreenImage);
+
+            // Close the fullscreen overlay when clicked
+            overlay.addEventListener('click', closeFullscreen);
+        }
+
+        function closeFullscreen() {
+            const overlay = document.querySelector('.fullscreen-overlay');
+            overlay.parentNode.removeChild(overlay);
+        }
+
+    </script>
 </head>
 
 
@@ -114,50 +116,53 @@ function closeFullscreen() {
         <div class="App">
             <div class="mmaaaaa">
                 <nav class="navbar navbar-expand-lg navbar-light Nav_bar_Bg fix">
-                  <div class="container">
-                    <a class="navbar-brand patImGlogo nav_Responsive " href="./index.html">
-                      <img src="./Images/newLogo.png" class="w-100"
-                        alt=""  /></a>
-                    <div class="d-flex gap-2">
-                      <button class="man_ttn">
-                        <a href="./Login.html" style="color: black; text-decoration: none"><i class="fa-solid fa-user"></i></a>
-                      </button>
-        
-                      <button id="toggleButton" class="navbar-toggler Nav_collps" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation"  onclick="toggleIcon()">
-                        <i id="buttonIcon" class="fas fa-bars"></i>
-                      
-                      </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                      <ul class="navbar-nav ms-auto pb-2">
-                        <li class="nav-item for_smalplay">
-                          <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
-                            href="ListOTaprize.html">タップライズ 一覧</a>
-                        </li>
-                        <li class="nav-item for_smalplay">
-                          <a class="nav-link text-decoration-none Nav_bar_Link" href="./TermOfServices.html">ご利用ガイド</a>
-                        </li>
-                        <li class="nav-item for_smalplay">
-                          <a class="nav-link text-decoration-none Nav_bar_Link" href="./FAQ.html">よくあるご質問</a>
-                        </li>
-                        <li class="nav-item for_smalplay">
-                          <a class="nav-link text-decoration-none Nav_bar_Link" href="./ContactUs.html">お問い合わせ</a>
-                        </li>
-                        <li class="nav-item mt-2 for_smalplay">
-                          <a href="./Login.html" class="text-decoration-none">
-                            <button class="Navbar_Login_BTN btn_rep">
-                              <i class="fa-solid fa-user"></i> ログイン
+                    <div class="container">
+                        <a class="navbar-brand patImGlogo nav_Responsive " href="./index.html">
+                            <img src="./Images/newLogo.png" class="w-100" alt="" /></a>
+                        <div class="d-flex gap-2">
+                            <button class="man_ttn">
+                                <a href="./Login.html" style="color: black; text-decoration: none"><i
+                                        class="fa-solid fa-user"></i></a>
                             </button>
-                          </a>
-                        </li>
-                      </ul>
+
+                            <button id="toggleButton" class="navbar-toggler Nav_collps" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
+                                onclick="toggleIcon()">
+                                <i id="buttonIcon" class="fas fa-bars"></i>
+
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav ms-auto pb-2">
+                                <li class="nav-item for_smalplay">
+                                    <a class="nav-link text-decoration-none Nav_bar_Link" aria-current="page"
+                                        href="ListOTaprize.html">タップライズ 一覧</a>
+                                </li>
+                                <li class="nav-item for_smalplay">
+                                    <a class="nav-link text-decoration-none Nav_bar_Link"
+                                        href="./TermOfServices.html">ご利用ガイド</a>
+                                </li>
+                                <li class="nav-item for_smalplay">
+                                    <a class="nav-link text-decoration-none Nav_bar_Link" href="./FAQ.html">よくあるご質問</a>
+                                </li>
+                                <li class="nav-item for_smalplay">
+                                    <a class="nav-link text-decoration-none Nav_bar_Link"
+                                        href="./ContactUs.html">お問い合わせ</a>
+                                </li>
+                                <li class="nav-item mt-2 for_smalplay">
+                                    <a href="./Login.html" class="text-decoration-none">
+                                        <button class="Navbar_Login_BTN btn_rep">
+                                            <i class="fa-solid fa-user"></i> ログイン
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </div>
                 </nav>
-              </div>
-              <div class="List_of_Results_main_div py-4">
+            </div>
+            <div class="List_of_Results_main_div py-4">
                 <h1 class="text-center ressssss_heaaaaaddddd pt-5">結果一覧</h1>
                 <div class="container mt-5">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -165,14 +170,13 @@ function closeFullscreen() {
                             <div>
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z">
-                                        <a href="./Images/image 8.png" class="glightbox">
+                                           <a href="./Images/image 8.png" class="glightbox">
 
-                                            <img alt="..."
-                                                class="ant-image-img card-img-top p-2"
-                                                src="./Images/image 8.png"  >
+                                            <img alt="..." class="ant-image-img card-img-top p-2"
+                                                src="./Images/image 8.png">
                                         </a>
-                                        
-                                       
+
+
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -188,12 +192,11 @@ function closeFullscreen() {
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z">
                                         <a href="./Images/Taprize_materials/image_2.png" class="glightbox">
-                                            <img alt="..."
-                                                class="ant-image-img card-img-top p-2"
-                                                src="./Images/Taprize_materials/image_2.png"  >
-                                                </a>
+                                            <img alt="..." class="ant-image-img card-img-top p-2"
+                                                src="./Images/Taprize_materials/image_2.png">
+                                        </a>
 
-                                       
+
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -209,10 +212,9 @@ function closeFullscreen() {
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z">
                                         <a href="./Images/Taprize_materials/image_3.png" class="glightbox">
-                                            <img alt="..."
-                                                class="ant-image-img card-img-top p-2"
-                                                src="./Images/Taprize_materials/image_3.png"  >
-                                                </a>
+                                            <img alt="..." class="ant-image-img card-img-top p-2"
+                                                src="./Images/Taprize_materials/image_3.png">
+                                        </a>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -226,11 +228,11 @@ function closeFullscreen() {
                         <div class="col">
                             <div>
                                 <div class="card h-100 List_of_Results_card">
-                                    <div class="ant-image css-dev-only-do-not-override-k7429z"> <a href="./Images/Taprize_materials/image_4.png" class="glightbox">
-                                        <img alt="..."
-                                            class="ant-image-img card-img-top p-2"
-                                            src="./Images/Taprize_materials/image_4.png"  >
-                                            </a>
+                                    <div class="ant-image css-dev-only-do-not-override-k7429z"> <a
+                                            href="./Images/Taprize_materials/image_4.png" class="glightbox">
+                                            <img alt="..." class="ant-image-img card-img-top p-2"
+                                                src="./Images/Taprize_materials/image_4.png">
+                                        </a>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -244,30 +246,11 @@ function closeFullscreen() {
                         <div class="col">
                             <div>
                                 <div class="card h-100 List_of_Results_card">
-                                    <div class="ant-image css-dev-only-do-not-override-k7429z"> <a href="./Images/Taprize_materials/image_5.png" class="glightbox">
-                                        <img alt="..."
-                                            class="ant-image-img card-img-top p-2"
-                                            src="./Images/Taprize_materials/image_5.png"  >
-                                            </a>
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
-                                                class="List_of_Results_scnd_span ps-3">パートエカンバッジ D-2</span>
-                                            <p class="List_of_Results_para pt-3">数量: 1</p>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div>
-                                <div class="card h-100 List_of_Results_card">
-                                    <div class="ant-image css-dev-only-do-not-override-k7429z">
-                                         <a href="./Images/Taprize_materials/image_10.png" class="glightbox">
-                                            <img alt="..."
-                                                class="ant-image-img card-img-top p-2"
-                                                src="./Images/Taprize_materials/image_10.png"  >
-                                                </a>
+                                    <div class="ant-image css-dev-only-do-not-override-k7429z"> <a
+                                            href="./Images/Taprize_materials/image_5.png" class="glightbox">
+                                            <img alt="..." class="ant-image-img card-img-top p-2"
+                                                src="./Images/Taprize_materials/image_5.png">
+                                        </a>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -282,11 +265,28 @@ function closeFullscreen() {
                             <div>
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z">
-                                         <a href="./Images/Taprize_materials/image_7.png" class="glightbox">
-                                            <img alt="..."
-                                                class="ant-image-img card-img-top p-2"
-                                                src="./Images/Taprize_materials/image_7.png"  >
-                                                </a>
+                                        <a href="./Images/Taprize_materials/image_10.png" class="glightbox">
+                                            <img alt="..." class="ant-image-img card-img-top p-2"
+                                                src="./Images/Taprize_materials/image_10.png">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
+                                                class="List_of_Results_scnd_span ps-3">パートエカンバッジ D-2</span>
+                                            <p class="List_of_Results_para pt-3">数量: 1</p>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <div class="card h-100 List_of_Results_card">
+                                    <div class="ant-image css-dev-only-do-not-override-k7429z">
+                                        <a href="./Images/Taprize_materials/image_7.png" class="glightbox">
+                                            <img alt="..." class="ant-image-img card-img-top p-2"
+                                                src="./Images/Taprize_materials/image_7.png">
+                                        </a>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -302,10 +302,9 @@ function closeFullscreen() {
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z">
                                         <a href="./Images/Taprize_materials/image_88.png" class="glightbox">
-                                            <img alt="..."
-                                                class="ant-image-img card-img-top p-2"
-                                                src="./Images/Taprize_materials/image_88.png"  >
-                                                </a>
+                                            <img alt="..." class="ant-image-img card-img-top p-2"
+                                                src="./Images/Taprize_materials/image_88.png">
+                                        </a>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -321,10 +320,9 @@ function closeFullscreen() {
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z">
                                         <a href="./Images/Taprize_materials/image_9.png" class="glightbox">
-                                            <img alt="..."
-                                                class="ant-image-img card-img-top p-2"
-                                                src="./Images/Taprize_materials/image_9.png"  >
-                                                </a>
+                                            <img alt="..." class="ant-image-img card-img-top p-2"
+                                                src="./Images/Taprize_materials/image_9.png">
+                                        </a>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -340,10 +338,9 @@ function closeFullscreen() {
                                 <div class="card h-100 List_of_Results_card">
                                     <div class="ant-image css-dev-only-do-not-override-k7429z">
                                         <a href="./Images/Taprize_materials/image_8.png" class="glightbox">
-                                            <img alt="..."
-                                                class="ant-image-img card-img-top p-2"
-                                                src="./Images/Taprize_materials/image_8.png"  >
-                                                </a>
+                                            <img alt="..." class="ant-image-img card-img-top p-2"
+                                                src="./Images/Taprize_materials/image_8.png">
+                                        </a>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title"><span class="List_of_Results_fst_span">A賞 : </span><span
@@ -355,14 +352,387 @@ function closeFullscreen() {
                             </div>
                         </div>
                     </div>
-                    <a href="./ListOTaprize.html" class="text-decoration-none">
+
+
+                    <div class="container pt-3">
+                        <div class="row align-items-center">
+                            <div class=" col-lg-6 ">
+                                <h2 class="text-left left_valy_ka_txt py-5 h1_table_icons">音声ダウンロード特典 </h2>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="MuiBox-root css-0">
+                                    <div class="MuiTabs-root tbUper css-1ujnqem-MuiTabs-root">
+                                        <div class="MuiTabs-scroller MuiTabs-fixed css-jpln7h-MuiTabs-scroller"
+                                            style="overflow: hidden; margin-bottom: 0px;">
+                                            <div class="MuiTabs-flexContainer MuiTabs-centered css-1wf8b0h-MuiTabs-flexContainer"
+                                                role="tablist">
+
+                                                <button
+                                                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected  tabcor_achsg Coupon_list145 css-1h9z7r5-MuiButtonBase-root-MuiTab-root "
+                                                    tabindex="0" type="button" role="tab" aria-selected="true"
+                                                    id="simple-tab-0" aria-controls="simple-tabpanel-0"
+                                                    onclick="showHeading('simple-tab-0')">クーポン一覧<span
+                                                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span>
+                                                </button>
+                                                <button
+                                                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary  tabcor_achsg Coupon_list245 css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                                                    tabindex="-1" type="button" role="tab" aria-selected="false"
+                                                    id="simple-tab-1" aria-controls="simple-tabpanel-1"
+                                                    onclick="showParagraph('simple-tab-1')">購入履歴<span
+                                                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span>
+                                                </button>
+
+                                            </div><span class="MuiTabs-indicator css-lafep3-MuiTabs-indicator"
+                                                style="left: 20.6094px; width: 302.391px;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- red part yaha sy start huta hai  -->
+
+                        <div class=" " id="code" style="display: block;">
+                            <div class=" tabcor_achsg_ka_container">
+                                <div class="MuiBox-root css-1v2sggx">
+                                    <div class="container">
+                                        <div role="tabpanel" id="simple-tabpanel-0" aria-labelledby="simple-tab-0">
+                                            <div class="MuiBox-root css-19kzrtu">
+                                                <p
+                                                    class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root">
+                                                <div>
+                                                    <div class="container mobile_vala_stauts">
+                                                        <div class="row justify-content-center ">
+                                                            <div
+                                                                class="col-6 tableBg  border_table notataion_border p-3">
+                                                                <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                                            </div>
+                                                            <div
+                                                                class="col-3 d-flex justify-content-center tableBg align-items-center  bgtableicon notataion_border p-3">
+                                                                <img src="./Images/mpb.svg" class="mobile_main_img">
+                                                            </div>
+                                                            <div
+                                                                class="col-3 border_table1 d-flex justify-content-center align-items-center tableBg notataion_border p-3">
+                                                                <img src="./Images/Mb.svg" class="mobile_main_img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-6  tableBg   notataion_border p-3">
+                                                                <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                                            </div>
+                                                            <div
+                                                                class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border p-3">
+                                                                <img src="/Images/stb.svg" class="mobile_main_img">
+                                                            </div>
+                                                            <div
+                                                                class="col-3  d-flex justify-content-center align-items-center tableBg notataion_border p-3">
+                                                                <img src="./Images/Mb.svg" class="mobile_main_img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-6  tableBg   notataion_border p-3">
+                                                                <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                                            </div>
+                                                            <div
+                                                                class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border py-3">
+                                                                <img src="./Images/mpb.svg" class="mobile_main_img">
+                                                            </div>
+                                                            <div
+                                                                class="col-3  d-flex justify-content-center align-items-center tableBg notataion_border py-3">
+                                                                <img src="./Images/Mb.svg" class="mobile_main_img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-6 border_table2 tableBg   notataion_border p-3">
+                                                                <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                                            </div>
+                                                            <div
+                                                                class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border py-3">
+                                                                <img src="./Images/mpb.svg" class="mobile_main_img">
+                                                            </div>
+                                                            <div
+                                                                class="col-3 border_table3 d-flex justify-content-center align-items-center tableBg notataion_border py-3">
+                                                                <img src="./Images/Mb.svg" class="mobile_main_img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+
+                                                    <div class="container desktop_vala_stauts">
+                                                        <div class="row justify-content-center ">
+                                                            <div
+                                                                class="col-6 tableBg new_fntt border_table notataion_border p-3">
+                                                                <p> No.1 </p>
+                                                            </div>
+                                                            <div
+                                                                class="col-2 d-flex justify-content-center tableBg  bgtableicon notataion_border p-3">
+                                                                <img src="./Images/ply_blk.svg">
+                                                            </div>
+                                                            <div
+                                                                class="col-4 border_table1 d-flex justify-content-center tableBg notataion_border p-3">
+                                                                <button class="Shipping_ka_new_btn">ダウンロード</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-6  tableBg new_fntt  notataion_border p-3">
+                                                                <p> No.3 </p>
+                                                            </div>
+                                                            <div
+                                                                class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
+                                                                <img src="./Images/stb.svg">
+                                                            </div>
+                                                            <div
+                                                                class="col-4  d-flex justify-content-center tableBg notataion_border p-3">
+                                                                <button class="Shipping_ka_new_btn">ダウンロード</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-6  tableBg new_fntt  notataion_border p-3">
+                                                                <p> No.3 </p>
+                                                            </div>
+                                                            <div
+                                                                class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
+                                                                <img src="./Images/ply_blk.svg">
+                                                            </div>
+                                                            <div
+                                                                class="col-4  d-flex justify-content-center tableBg notataion_border p-3">
+                                                                <button class="Shipping_ka_new_btn">ダウンロード</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-6 border_table2 tableBg new_fntt  notataion_border p-3">
+                                                                <p> No.4 </p>
+                                                            </div>
+                                                            <div
+                                                                class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
+                                                                <img src="./Images/ply_blk.svg">
+                                                            </div>
+                                                            <div
+                                                                class="col-4 border_table3 d-flex justify-content-center tableBg notataion_border p-3">
+                                                                <button class="Shipping_ka_new_btn">ダウンロード</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class=" tabcor_achsg_ka_container">
+                                <div class="MuiBox-root css-1v2sggx">
+                                    <div class="container">
+                                        <div role="tabpanel" hidden="" id="simple-tabpanel-1"
+                                            aria-labelledby="simple-tab-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- red part yaha py khtm hujata hai  -->
+
+
+                        <!-- black waala hai ya sb  -->
+                        <div style="display: none;" id="code1">
+                            <div class="container mobile_vala_stauts">
+                                <div class="row justify-content-center ">
+                                    <div class="col-6 tableBg  border_table notataion_border p-3">
+                                        <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                    </div>
+                                    <div
+                                        class="col-3 d-flex justify-content-center tableBg align-items-center  bgtableicon notataion_border p-3">
+                                        <img src="./Images/blackm.svg" class="mobile_main_img"></img>
+                                    </div>
+                                    <div
+                                        class="col-3 border_table1 d-flex justify-content-center align-items-center tableBg notataion_border p-3">
+                                        <img src="./Images/icon_bl.svg" class="mobile_main_img" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6  tableBg   notataion_border p-3">
+                                        <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                    </div>
+                                    <div
+                                        class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border p-3">
+                                        <img src="./Images/blackm.svg" class="mobile_main_img"></img>
+                                    </div>
+                                    <div
+                                        class="col-3  d-flex justify-content-center align-items-center tableBg notataion_border p-3">
+                                        <img src="./Images/icon_bl.svg" class="mobile_main_img" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6  tableBg   notataion_border p-3">
+                                        <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                    </div>
+                                    <div
+                                        class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border py-3">
+                                        <img src="./Images/blackm.svg" class="mobile_main_img"></img>
+                                    </div>
+                                    <div
+                                        class="col-3  d-flex justify-content-center align-items-center tableBg notataion_border py-3">
+                                        <img src="./Images/icon_bl.svg" class="mobile_main_img" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6 border_table2 tableBg   notataion_border p-3">
+                                        <p> こちらに概要を入力してください。タップライズのスペシャル音声。 </p>
+                                    </div>
+                                    <div
+                                        class="col-3 d-flex justify-content-center align-items-center tableBg bgtableicon  notataion_border py-3">
+                                        <img src="./Images/blackm.svg" class="mobile_main_img"></img>
+                                    </div>
+                                    <div
+                                        class="col-3 border_table3 d-flex justify-content-center align-items-center tableBg notataion_border py-3">
+                                        <img src="./Images/icon_bl.svg" class="mobile_main_img" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container desktop_vala_stauts">
+                                <div class="row justify-content-center ">
+                                    <div class="col-6 tableBg new_fntt border_table notataion_border p-3">
+                                        <p> No.1 </p>
+                                    </div>
+                                    <div
+                                        class="col-2 d-flex justify-content-center tableBg  bgtableicon notataion_border p-3">
+                                        <img src="./Images/bll.svg"></img>
+                                    </div>
+                                    <div
+                                        class="col-4 border_table1 d-flex justify-content-center tableBg notataion_border p-3">
+                                        <button class="Shipping_ka_new_btn blck_tblsk">ダウンロード</button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6  tableBg new_fntt  notataion_border p-3">
+                                        <p> No.3 </p>
+                                    </div>
+                                    <div
+                                        class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
+                                        <img src="./Images/bll.svg"></img>
+                                    </div>
+                                    <div class="col-4  d-flex justify-content-center tableBg notataion_border p-3">
+                                        <button class="Shipping_ka_new_btn blck_tblsk ">ダウンロード</button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6  tableBg new_fntt  notataion_border p-3">
+                                        <p> No.3 </p>
+                                    </div>
+                                    <div
+                                        class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
+                                        <img src="./Images/bll.svg"></img>
+                                    </div>
+                                    <div class="col-4  d-flex justify-content-center tableBg notataion_border p-3">
+                                        <button class="Shipping_ka_new_btn blck_tblsk">ダウンロード</button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6 border_table2 tableBg new_fntt  notataion_border p-3">
+                                        <p> No.4 </p>
+                                    </div>
+                                    <div
+                                        class="col-2 d-flex justify-content-center tableBg bgtableicon  notataion_border p-3">
+                                        <img src="./Images/bll.svg"></img>
+                                    </div>
+                                    <div
+                                        class="col-4 border_table3 d-flex justify-content-center tableBg notataion_border p-3">
+                                        <button class="Shipping_ka_new_btn blck_tblsk">ダウンロード</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <!-- black part yaha par end hu rha hai  -->
+
+
+                        <div class="container">
+                            <div class="row mt-3 mx-1 justify-content-center">
+                                <div class="col-lg-4 mt-3 mt-md-0">
+                              <a href="ListOTaprize.html" style="display: contents;">      <button class="new_bjnkjsn">商品一覧へ戻る</button> </a>
+                                </div>
+                                <div class="col-lg-4 mt-3 mt-md-0 text-center  ">
+                                 <!-- <a href="TarpizeSingleFullPage.html" style="display: contents;">   -->
+                                     <button onclick="openNewPage('./Images/image 1.png')"
+                                        class="new_bjnkjsn" >もう一度購入</button> 
+                                    <!-- </a> -->
+                                    </div>
+                                <div class="col-lg-4 mt-3 mt-md-0 text-center text-md-end">
+                                  <a href="ListOfResults.html" style="display: contents;">  <button
+                                        class="new_bjnkjsn">コレクションへ</button> </a>
+                                    </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- <a href="./ListOTaprize.html" class="text-decoration-none">
 
                         <div class="List_of_Results_btttn">
                             
                             <button> <span class="word_color "> 戻る </span> </button></div>
-                    </a>
+                    </a> -->
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="main_footer_bg">
                 <div class="container-fluid widthkl_for_upper">
                     <div class="row footer_aling">
@@ -418,7 +788,7 @@ function closeFullscreen() {
             var paragraph = document.getElementById("code1");
             var buttonBg = document.getElementById(id);
             if (buttonBg.classList.contains("Mui-selected")) {
-               
+
             } else {
                 // text.classList.remove("red");
                 var buttonBg1 = document.getElementById("simple-tab-1");
@@ -437,7 +807,7 @@ function closeFullscreen() {
             var paragraph = document.getElementById("code1");
             var buttonBg = document.getElementById(id);
             if (buttonBg.classList.contains("Mui-selected")) {
-                
+
             } else {
                 var buttonBg1 = document.getElementById("simple-tab-0");
                 buttonBg1.classList.remove("Mui-selected");
@@ -451,58 +821,58 @@ function closeFullscreen() {
     </script>
 
 
-        
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
-<script src="demo/js/valde.min.js"></script>
-<script src="dist/js/glightbox.js"></script>
-<script src="demo/js/site.js"></script>
-<script>
-    var lightbox = GLightbox();
-    lightbox.on('open', (target) => {
-        console.log('lightbox opened');
-    });
-    var lightboxDescription = GLightbox({
-        selector: '.glightbox2'
-    });
-    var lightboxVideo = GLightbox({
-        selector: '.glightbox3'
-    });
-    lightboxVideo.on('slide_changed', ({ prev, current }) => {
-        console.log('Prev slide', prev);
-        console.log('Current slide', current);
 
-        const { slideIndex, slideNode, slideConfig, player } = current;
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+    <script src="demo/js/valde.min.js"></script>
+    <script src="dist/js/glightbox.js"></script>
+    <script src="demo/js/site.js"></script>
+    <script>
+        var lightbox = GLightbox();
+        lightbox.on('open', (target) => {
+            console.log('lightbox opened');
+        });
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2'
+        });
+        var lightboxVideo = GLightbox({
+            selector: '.glightbox3'
+        });
+        lightboxVideo.on('slide_changed', ({ prev, current }) => {
+            console.log('Prev slide', prev);
+            console.log('Current slide', current);
 
-        if (player) {
-            if (!player.ready) {
-                // If player is not ready
-                player.on('ready', (event) => {
-                    // Do something when video is ready
+            const { slideIndex, slideNode, slideConfig, player } = current;
+
+            if (player) {
+                if (!player.ready) {
+                    // If player is not ready
+                    player.on('ready', (event) => {
+                        // Do something when video is ready
+                    });
+                }
+
+                player.on('play', (event) => {
+                    console.log('Started play');
+                });
+
+                player.on('volumechange', (event) => {
+                    console.log('Volume change');
+                });
+
+                player.on('ended', (event) => {
+                    console.log('Video ended');
                 });
             }
+        });
 
-            player.on('play', (event) => {
-                console.log('Started play');
-            });
+        var lightboxInlineIframe = GLightbox({
+            selector: '.glightbox4'
+        });
 
-            player.on('volumechange', (event) => {
-                console.log('Volume change');
-            });
 
-            player.on('ended', (event) => {
-                console.log('Video ended');
-            });
-        }
-    });
+    </script>
 
-    var lightboxInlineIframe = GLightbox({
-        selector: '.glightbox4'
-    });
 
-  
-</script>
-
-    
     <script>
         const meta = document.createElement('meta');
         meta.name = "theme-color";
