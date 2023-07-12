@@ -432,10 +432,12 @@
   left: 0;
   background: #000;
   will-change: opacity;
+  opacity: 0.5;
 }
 
 .glightbox-mobile .goverlay {
   background: #000;
+  opacity: 0.5;
 }
 
 .gprev,

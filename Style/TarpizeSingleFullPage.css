@@ -11347,6 +11347,7 @@
     .upper {
       flex-direction: column !important;
       text-align: center;
+      margin-top:0px;
     }
   }
 
