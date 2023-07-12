@@ -13219,7 +13219,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media (min-width:831px) and (max-width:1200px) {
+@media (min-width:831px) and (max-width:992px) {
     .Nav_bar_Link {
         margin-top: 0.7rem;
         /* font-style: normal; */
@@ -13230,6 +13230,19 @@ fieldset:disabled .btn {
         color: #010124 !important;
         font-family: 'Barlow', sans-serif;
     }
+
+    @media (min-width: 993px) and (max-width: 1110px) {
+        .Nav_bar_Link {
+          margin-top: 0.7rem;
+          /* font-style: normal; */
+          font-weight: 800 !important;
+          font-size: 10px;
+          /* line-height: 140%; */
+          margin-left: 0rem !important;
+          color: #010124 !important;
+          font-family: "Barlow", sans-serif;
+        }
+      }
 
     /* .Nav_bar_Bg {
             background: #F2F6FF;
@@ -22632,8 +22645,8 @@ html {
   }
 
 
-  @media only screen and (max-width:1145px){
+  @media only screen and (max-width:1200px){
     .footerLnks {
-      font-size: 11px !important;
+      font-size: 10px !important;
     }
   }

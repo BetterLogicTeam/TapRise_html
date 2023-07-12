@@ -23445,8 +23445,8 @@ td {
 }
 
 
-@media only screen and (max-width:1145px){
+@media only screen and (max-width:1200px){
     .footerLnks {
-      font-size: 11px !important;
+      font-size: 0px !important;
     }
   }
